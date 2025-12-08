@@ -1,0 +1,374 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+    provider = "prisma-client-js"
+    output   = "../generated/prisma"
+}
+
+datasource db {
+    provider = "sqlite"
+    // NOTE: When using mysql or sqlserver, uncomment the @db.Text annotations in model Account below
+    // Further reading:
+    // https://next-auth.js.org/adapters/prisma#create-the-prisma-schema
+    // https://www.prisma.io/docs/reference/api-reference/prisma-schema-reference#string
+    url      = env("DATABASE_URL")
+}
+
+// ============ USER & AUTH ============
+
+enum UserRole {
+    ADMIN
+    MANAGER
+    STAFF
+    CUSTOMER
+}
+
+model User {
+    id            String    @id @default(cuid())
+    name          String?
+    email         String?   @unique
+    emailVerified DateTime?
+    image         String?
+    role          UserRole  @default(CUSTOMER)
+    accounts      Account[]
+    sessions      Session[]
+    posts         Post[]
+    customer      Customer?
+
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+}
+
+// Necessary for Next auth
+model Account {
+    id                       String  @id @default(cuid())
+    userId                   String
+    type                     String
+    provider                 String
+    providerAccountId        String
+    refresh_token            String? // @db.Text
+    access_token             String? // @db.Text
+    expires_at               Int?
+    token_type               String?
+    scope                    String?
+    id_token                 String? // @db.Text
+    session_state            String?
+    user                     User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+    refresh_token_expires_in Int?
+
+    @@unique([provider, providerAccountId])
+}
+
+model Session {
+    id           String   @id @default(cuid())
+    sessionToken String   @unique
+    userId       String
+    expires      DateTime
+    user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+    identifier String
+    token      String   @unique
+    expires    DateTime
+
+    @@unique([identifier, token])
+}
+
+// Sample post model (can be removed later)
+model Post {
+    id        Int      @id @default(autoincrement())
+    name      String
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+
+    createdBy   User   @relation(fields: [createdById], references: [id])
+    createdById String
+
+    @@index([name])
+}
+
+// ============ PRODUCTS ============
+
+enum ProductStatus {
+    DRAFT
+    ACTIVE
+    ARCHIVED
+}
+
+model Product {
+    id          String   @id @default(cuid())
+    sku         String   @unique
+    name        String
+    slug        String   @unique
+    description String?
+
+    // Pricing
+    price     Float
+    salePrice Float?
+    costPrice Float? // For profit tracking
+
+    // Categorization
+    category    String
+    subcategory String?
+
+    // Inventory
+    stockQuantity     Int     @default(0)
+    lowStockThreshold Int     @default(5)
+    trackInventory    Boolean @default(true)
+
+    // Media
+    images   ProductImage[]
+    gradient String? // For display styling
+
+    // Attributes
+    size       String?
+    ageRange   String?
+    weight     Float? // For shipping calculation
+    dimensions String? // LxWxH
+
+    // Status
+    status   ProductStatus @default(DRAFT)
+    badge    String? // NEW, POPULAR, SALE
+    featured Boolean       @default(false)
+
+    // SEO
+    metaTitle       String?
+    metaDescription String?
+
+    // Relations
+    orderItems OrderItem[]
+
+    // Timestamps
+    createdAt   DateTime  @default(now())
+    updatedAt   DateTime  @updatedAt
+    publishedAt DateTime?
+
+    @@index([category])
+    @@index([status])
+    @@index([sku])
+}
+
+model ProductImage {
+    id        String  @id @default(cuid())
+    url       String
+    alt       String?
+    position  Int     @default(0)
+    productId String
+    product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+}
+
+// ============ CUSTOMERS ============
+
+model Customer {
+    id     String  @id @default(cuid())
+    userId String? @unique
+    user   User?   @relation(fields: [userId], references: [id])
+
+    // Contact Info
+    email     String  @unique
+    phone     String?
+    firstName String
+    lastName  String
+    company   String?
+
+    // Addresses
+    addresses Address[]
+
+    // Communication Preferences
+    emailMarketing Boolean @default(false)
+    smsMarketing   Boolean @default(false)
+
+    // Stats
+    totalOrders Int   @default(0)
+    totalSpent  Float @default(0)
+
+    // Relations
+    orders Order[]
+
+    // Notes (admin only)
+    notes String?
+    tags  String? // Comma-separated tags
+
+    // Timestamps
+    createdAt   DateTime  @default(now())
+    updatedAt   DateTime  @updatedAt
+    lastOrderAt DateTime?
+
+    @@index([email])
+    @@index([lastName])
+}
+
+enum AddressType {
+    SHIPPING
+    BILLING
+}
+
+model Address {
+    id         String   @id @default(cuid())
+    customerId String
+    customer   Customer @relation(fields: [customerId], references: [id], onDelete: Cascade)
+
+    type      AddressType @default(SHIPPING)
+    isDefault Boolean     @default(false)
+
+    firstName  String
+    lastName   String
+    company    String?
+    address1   String
+    address2   String?
+    city       String
+    state      String
+    postalCode String
+    country    String  @default("US")
+    phone      String?
+
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+}
+
+// ============ ORDERS ============
+
+enum OrderStatus {
+    PENDING
+    CONFIRMED
+    PROCESSING
+    SHIPPED
+    DELIVERED
+    CANCELLED
+    REFUNDED
+}
+
+enum PaymentStatus {
+    PENDING
+    PAID
+    PARTIALLY_PAID
+    REFUNDED
+    FAILED
+}
+
+enum FulfillmentStatus {
+    UNFULFILLED
+    PARTIALLY_FULFILLED
+    FULFILLED
+}
+
+model Order {
+    id          String @id @default(cuid())
+    orderNumber String @unique // Human-readable: JJ-2024-0001
+
+    // Customer
+    customerId String
+    customer   Customer @relation(fields: [customerId], references: [id])
+
+    // Items
+    items OrderItem[]
+
+    // Pricing
+    subtotal       Float
+    taxAmount      Float @default(0)
+    shippingAmount Float @default(0)
+    discountAmount Float @default(0)
+    totalAmount    Float
+
+    // Status
+    status            OrderStatus       @default(PENDING)
+    paymentStatus     PaymentStatus     @default(PENDING)
+    fulfillmentStatus FulfillmentStatus @default(UNFULFILLED)
+
+    // Shipping
+    shippingMethod  String?
+    trackingNumber  String?
+    trackingUrl     String?
+    shippingCarrier String? // UPS, FedEx, USPS, etc.
+
+    // Addresses (snapshot at order time - stored as JSON string)
+    shippingAddress String // JSON
+    billingAddress  String // JSON
+
+    // Payment
+    paymentMethod String?
+    paymentId     String? // Stripe/PayPal transaction ID
+
+    // Notes
+    customerNotes String?
+    internalNotes String?
+
+    // Timestamps
+    createdAt   DateTime  @default(now())
+    updatedAt   DateTime  @updatedAt
+    paidAt      DateTime?
+    shippedAt   DateTime?
+    deliveredAt DateTime?
+    cancelledAt DateTime?
+
+    @@index([orderNumber])
+    @@index([customerId])
+    @@index([status])
+    @@index([createdAt])
+}
+
+model OrderItem {
+    id        String  @id @default(cuid())
+    orderId   String
+    order     Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+    productId String
+    product   Product @relation(fields: [productId], references: [id])
+
+    // Snapshot at order time
+    sku        String
+    name       String
+    price      Float
+    quantity   Int
+    totalPrice Float
+
+    // Options/variants if applicable (stored as JSON string)
+    options String?
+}
+
+// ============ MAILING LIST / SUBSCRIBERS ============
+
+model Subscriber {
+    id        String  @id @default(cuid())
+    email     String  @unique
+    phone     String?
+    firstName String?
+    lastName  String?
+
+    // Subscription status
+    emailSubscribed Boolean @default(true)
+    smsSubscribed   Boolean @default(false)
+
+    // Source tracking
+    source String? // website, checkout, import, etc.
+
+    // Engagement
+    confirmedAt    DateTime?
+    unsubscribedAt DateTime?
+
+    // Timestamps
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+
+    @@index([email])
+}
+
+// ============ AUDIT LOG (Optional - for tracking admin actions) ============
+
+model AuditLog {
+    id        String   @id @default(cuid())
+    userId    String
+    action    String // CREATE, UPDATE, DELETE
+    entity    String // Product, Order, Customer, etc.
+    entityId  String
+    oldValues String? // JSON of previous values
+    newValues String? // JSON of new values
+    ipAddress String?
+    userAgent String?
+    createdAt DateTime @default(now())
+
+    @@index([userId])
+    @@index([entity, entityId])
+    @@index([createdAt])
+}

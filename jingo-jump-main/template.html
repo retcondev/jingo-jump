@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-orange': '#ff6a00',
+                        'brand-dark': '#1a1a1a',
+                        'brand-blue': '#28a7e1',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>::-webkit-scrollbar { display: none;}</style>
+</head>
+<body class="font-poppins bg-white">
+
+<header id="header" class="sticky top-0 z-50 bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="text-3xl font-bold text-brand-orange">JingoJump</div>
+        <nav class="hidden md:flex space-x-8">
+            <a href="#" class="text-brand-dark font-medium hover:text-brand-orange transition">Shop</a>
+            <a href="#" class="text-brand-dark font-medium hover:text-brand-orange transition">About</a>
+            <a href="#" class="text-brand-dark font-medium hover:text-brand-orange transition">Events</a>
+            <a href="#" class="text-brand-dark font-medium hover:text-brand-orange transition">Contact</a>
+        </nav>
+        <div class="flex items-center space-x-6">
+            <i class="fa-solid fa-magnifying-glass text-brand-dark text-xl cursor-pointer hover:text-brand-orange transition"></i>
+            <i class="fa-regular fa-user text-brand-dark text-xl cursor-pointer hover:text-brand-orange transition"></i>
+            <i class="fa-solid fa-cart-shopping text-brand-dark text-xl cursor-pointer hover:text-brand-orange transition"></i>
+        </div>
+    </div>
+</header>
+
+<section id="hero" class="relative h-[600px] flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/89949419d1-d16f8bf27293d8a93057.png" alt="colorful inflatable bounce house water slide in backyard party with kids playing, bright sunny day, vibrant colors, commercial photography" />
+        <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30"></div>
+    </div>
+    <div class="relative z-10 text-center text-white px-6 max-w-4xl">
+        <h1 class="text-6xl font-bold mb-4 leading-tight">NEW JINGO JUNGLE COLLECTION!</h1>
+        <p class="text-2xl mb-8 font-medium">Our tallest slides + newest bounce house combos</p>
+        <button class="bg-brand-orange text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-orange-600 transition shadow-lg">Shop Now</button>
+    </div>
+</section>
+
+<section id="shop-by-type" class="py-20 px-6 bg-gray-50">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-center text-brand-dark mb-12">Shop By Type</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition transform hover:-translate-y-2">
+                <div class="h-64 overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/1499b30bef-5e40083be32813e9582f.png" alt="colorful bounce house inflatable castle for kids, commercial product photo, white background" />
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-semibold text-brand-dark">Bounce Houses</h3>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition transform hover:-translate-y-2">
+                <div class="h-64 overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/c936dd8ec2-6d83d7823806455adf99.png" alt="inflatable water slide with pool, commercial product photo, blue and colorful, white background" />
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-semibold text-brand-dark">Water Slides</h3>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition transform hover:-translate-y-2">
+                <div class="h-64 overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/316840bb87-25764533442e45826d8a.png" alt="inflatable bounce house combo with slide attached, commercial product photo, colorful, white background" />
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-semibold text-brand-dark">Combos</h3>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition transform hover:-translate-y-2">
+                <div class="h-64 overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/f2f1afe26e-99182d56d26654ccac9b.png" alt="inflatable obstacle course for kids and adults, commercial product photo, colorful, white background" />
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-semibold text-brand-dark">Obstacle Courses</h3>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition transform hover:-translate-y-2">
+                <div class="h-64 overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/c1871fccfe-0484efb4e4aa70d1364b.png" alt="interactive inflatable game for parties, commercial product photo, colorful, white background" />
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-semibold text-brand-dark">Interactive Games</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="trending-now" class="py-20 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+        <div class="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+            <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/c9a68195a9-3a8ff85ee528f3c319de.png" alt="giant inflatable water slide with tropical jungle theme, kids playing, sunny day, commercial photography, vibrant colors" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col items-center justify-end pb-16">
+                <h2 class="text-5xl font-bold text-white mb-6">TRENDING NOW</h2>
+                <button class="bg-brand-orange text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-orange-600 transition shadow-lg">Shop Featured</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="shop-by-event" class="py-20 px-6 bg-gray-50">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-center text-brand-dark mb-12">Shop By Event</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="relative h-80 rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl transition transform hover:-translate-y-2">
+                <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d7e8f00910-761692e8ca94cfef4828.png" alt="backyard birthday party with inflatable bounce house, kids celebrating, balloons, sunny day" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end justify-center pb-8">
+                    <h3 class="text-2xl font-bold text-white">Backyard Parties</h3>
+                </div>
+            </div>
+            <div class="relative h-80 rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl transition transform hover:-translate-y-2">
+                <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a7b25a18ec-24d69a397b1f7c050a22.png" alt="school carnival event with inflatable games, children playing, outdoor festival atmosphere" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end justify-center pb-8">
+                    <h3 class="text-2xl font-bold text-white">School & Church Events</h3>
+                </div>
+            </div>
+            <div class="relative h-80 rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl transition transform hover:-translate-y-2">
+                <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/63a0dd0a82-3932ad57f39eb360be49.png" alt="public park recreation area with inflatable attractions, families enjoying, community event" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end justify-center pb-8">
+                    <h3 class="text-2xl font-bold text-white">Parks & Recreation</h3>
+                </div>
+            </div>
+            <div class="relative h-80 rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl transition transform hover:-translate-y-2">
+                <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/ca706de37a-64b18c3c15ffb043c2d1.png" alt="indoor play center with colorful inflatable equipment, children playing safely indoors" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end justify-center pb-8">
+                    <h3 class="text-2xl font-bold text-white">Indoor Play Centers</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="shop-the-look" class="py-20 px-6 bg-white">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-center text-brand-dark mb-12">Shop The Look</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                <div class="h-72 overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/fdafbbc948-2fc467a1c86f23e69d96.png" alt="tropical themed inflatable water slide combo, commercial product photo, vibrant colors" />
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-brand-dark mb-2">Tropical Thunder Slide</h3>
+                    <p class="text-gray-600 mb-4">30ft dual lane water slide with splash pool</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold text-brand-orange">$4,299</span>
+                        <button class="bg-brand-blue text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600 transition">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                <div class="h-72 overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/f5df884970-b598a387f4df55683c51.png" alt="castle themed bounce house with towers, commercial product photo, colorful medieval design" />
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-brand-dark mb-2">Royal Castle Bouncer</h3>
+                    <p class="text-gray-600 mb-4">Large castle bounce house with safety netting</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold text-brand-orange">$2,899</span>
+                        <button class="bg-brand-blue text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600 transition">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                <div class="h-72 overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/0e6f8c0a68-ee94769946f006759a0d.png" alt="inflatable obstacle course with tunnels and climbing walls, commercial product photo, colorful" />
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-brand-dark mb-2">Mega Obstacle Challenge</h3>
+                    <p class="text-gray-600 mb-4">40ft obstacle course with multiple challenges</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold text-brand-orange">$5,499</span>
+                        <button class="bg-brand-blue text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600 transition">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                <div class="h-72 overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/978f9b29cf-a8148c8649a83400ef0a.png" alt="interactive inflatable basketball game, commercial product photo, colorful sports theme" />
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-brand-dark mb-2">Slam Dunk Challenge</h3>
+                    <p class="text-gray-600 mb-4">Interactive basketball shooting game</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold text-brand-orange">$1,799</span>
+                        <button class="bg-brand-blue text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600 transition">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="faq" class="py-20 px-6 bg-gray-50">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl font-bold text-center text-brand-dark mb-12">Frequently Asked Questions</h2>
+        <div class="space-y-4">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <button class="faq-toggle w-full text-left px-6 py-5 flex items-center justify-between font-semibold text-lg text-brand-dark hover:bg-gray-50 transition">
+                    <span>What material are your inflatables made from?</span>
+                    <i class="fa-solid fa-chevron-down text-brand-orange transition-transform"></i>
+                </button>
+                <div class="faq-content hidden px-6 pb-5 text-gray-600">
+                    Our inflatables are made from commercial-grade 18oz PVC vinyl material, designed for durability and safety. All materials meet or exceed ASTM safety standards.
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <button class="faq-toggle w-full text-left px-6 py-5 flex items-center justify-between font-semibold text-lg text-brand-dark hover:bg-gray-50 transition">
+                    <span>How long does shipping take?</span>
+                    <i class="fa-solid fa-chevron-down text-brand-orange transition-transform"></i>
+                </button>
+                <div class="faq-content hidden px-6 pb-5 text-gray-600">
+                    Standard shipping takes 7-10 business days. Expedited shipping options are available at checkout. All products ship from our warehouse within 2 business days of order confirmation.
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <button class="faq-toggle w-full text-left px-6 py-5 flex items-center justify-between font-semibold text-lg text-brand-dark hover:bg-gray-50 transition">
+                    <span>Do you offer warranties?</span>
+                    <i class="fa-solid fa-chevron-down text-brand-orange transition-transform"></i>
+                </button>
+                <div class="faq-content hidden px-6 pb-5 text-gray-600">
+                    Yes! All JingoJump products come with a 2-year manufacturer warranty covering defects in materials and workmanship. Extended warranty options are available for purchase.
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <button class="faq-toggle w-full text-left px-6 py-5 flex items-center justify-between font-semibold text-lg text-brand-dark hover:bg-gray-50 transition">
+                    <span>What blower is required for setup?</span>
+                    <i class="fa-solid fa-chevron-down text-brand-orange transition-transform"></i>
+                </button>
+                <div class="faq-content hidden px-6 pb-5 text-gray-600">
+                    Each product listing includes recommended blower specifications. Most units require a 1.5HP to 2HP commercial blower. Blowers can be purchased separately or as part of a package deal.
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <button class="faq-toggle w-full text-left px-6 py-5 flex items-center justify-between font-semibold text-lg text-brand-dark hover:bg-gray-50 transition">
+                    <span>Can I use these inflatables for commercial rental business?</span>
+                    <i class="fa-solid fa-chevron-down text-brand-orange transition-transform"></i>
+                </button>
+                <div class="faq-content hidden px-6 pb-5 text-gray-600">
+                    Absolutely! All our products are commercial-grade and designed for rental business use. We offer bulk discounts for rental companies and provide business support resources.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer" class="bg-brand-dark text-white py-16 px-6">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <div>
+                <h3 class="text-2xl font-bold text-brand-orange mb-4">JingoJump</h3>
+                <p class="text-gray-400 mb-6">Premium commercial inflatables for unforgettable events and endless fun.</p>
+                <div class="flex space-x-4">
+                    <i class="fa-brands fa-facebook text-2xl cursor-pointer hover:text-brand-orange transition"></i>
+                    <i class="fa-brands fa-instagram text-2xl cursor-pointer hover:text-brand-orange transition"></i>
+                    <i class="fa-brands fa-twitter text-2xl cursor-pointer hover:text-brand-orange transition"></i>
+                    <i class="fa-brands fa-youtube text-2xl cursor-pointer hover:text-brand-orange transition"></i>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Shop</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-brand-orange transition">Bounce Houses</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition">Water Slides</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition">Combos</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition">Obstacle Courses</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Support</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-brand-orange transition">Contact Us</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition">Warranty Info</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition">Shipping Policy</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition">Returns</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                <p class="text-gray-400 mb-4">Subscribe for exclusive deals and new product launches.</p>
+                <div class="flex">
+                    <input type="email" placeholder="Your email" class="flex-1 px-4 py-2 rounded-l-full text-brand-dark focus:outline-none">
+                    <button class="bg-brand-orange px-6 py-2 rounded-r-full font-semibold hover:bg-orange-600 transition">Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+            <p>&copy; 2024 JingoJump. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+window.addEventListener('load', function() {
+    const faqToggles = document.querySelectorAll('.faq-toggle');
+    faqToggles.forEach(toggle => {
+        toggle.addEventListener('click', function() {
+            const content = this.nextElementSibling;
+            const icon = this.querySelector('i');
+            content.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        });
+    });
+});
+</script>
+
+</body>
+</html>

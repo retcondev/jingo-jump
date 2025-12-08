@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Categories - Card Slider</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .slider-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slider-track {
+            display: flex;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            gap: 1.5rem;
+        }
+
+        .category-card {
+            flex: 0 0 calc(20% - 1.2rem);
+            min-width: calc(20% - 1.2rem);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .category-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .category-card:hover .card-inner {
+            box-shadow: 0 20px 40px rgba(255, 106, 0, 0.15);
+        }
+
+        .card-inner {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .category-card:hover .image-container img {
+            transform: scale(1.1);
+        }
+
+        .category-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: rgba(255, 106, 0, 0.95);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            letter-spacing: 0.02em;
+        }
+
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: white;
+            border: none;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+            transition: all 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background: #ff6a00;
+            box-shadow: 0 8px 30px rgba(255, 106, 0, 0.25);
+            transform: translateY(-50%) scale(1.05);
+        }
+
+        .nav-button:hover svg {
+            color: white;
+        }
+
+        .nav-button:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .nav-button.prev {
+            left: -28px;
+        }
+
+        .nav-button.next {
+            right: -28px;
+        }
+
+        .nav-button svg {
+            width: 24px;
+            height: 24px;
+            color: #ff6a00;
+            transition: color 0.3s ease;
+        }
+
+        .dot-indicators {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #d1d5db;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dot:hover {
+            background: #ff6a00;
+            opacity: 0.6;
+        }
+
+        .dot.active {
+            background: #ff6a00;
+            width: 32px;
+            border-radius: 5px;
+        }
+
+        .shop-now-btn {
+            background: linear-gradient(135deg, #ff6a00 0%, #ff8533 100%);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.875rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            margin-top: auto;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .category-card:hover .shop-now-btn {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .shop-now-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 106, 0, 0.3);
+        }
+
+        /* Responsive styles */
+        @media (max-width: 1536px) {
+            .category-card {
+                flex: 0 0 calc(25% - 1.125rem);
+                min-width: calc(25% - 1.125rem);
+            }
+        }
+
+        @media (max-width: 1280px) {
+            .category-card {
+                flex: 0 0 calc(33.333% - 1rem);
+                min-width: calc(33.333% - 1rem);
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .category-card {
+                flex: 0 0 calc(50% - 0.75rem);
+                min-width: calc(50% - 0.75rem);
+            }
+
+            .nav-button.prev {
+                left: -20px;
+            }
+
+            .nav-button.next {
+                right: -20px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .category-card {
+                flex: 0 0 100%;
+                min-width: 100%;
+            }
+
+            .nav-button {
+                width: 44px;
+                height: 44px;
+            }
+
+            .nav-button.prev {
+                left: 10px;
+            }
+
+            .nav-button.next {
+                right: 10px;
+            }
+
+            .image-container {
+                height: 180px;
+            }
+
+            .shop-now-btn {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .section-title {
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Category Slider Section -->
+    <section class="py-16 px-4 md:px-8 lg:px-16">
+        <div class="max-w-7xl mx-auto">
+
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <h2 class="section-title text-4xl md:text-5xl font-bold mb-4">
+                    Browse Our Categories
+                </h2>
+                <p class="subtitle text-lg md:text-xl max-w-2xl mx-auto">
+                    Discover the perfect inflatable for your next event. From commercial units to fun accessories, we have everything you need.
+                </p>
+            </div>
+
+            <!-- Slider Container -->
+            <div class="slider-container relative px-12">
+
+                <!-- Previous Button -->
+                <button class="nav-button prev" id="prevBtn" aria-label="Previous categories">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                </button>
+
+                <!-- Slider Track -->
+                <div class="slider-track" id="sliderTrack">
+
+                    <!-- Category Card 1: COMMERCIAL UNITS -->
+                    <div class="category-card">
+                        <div class="card-inner">
+                            <div class="image-container">
+                                <img src="public/category-images/res_icon_2021-1.jpg"
+                                     alt="Commercial Units"
+                                     loading="lazy">
+                                <span class="category-badge">POPULAR</span>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Commercial Units</h3>
+                                <p class="text-gray-600 text-sm mb-4 flex-grow">
+                                    Heavy-duty inflatables built for high-traffic commercial use
+                                </p>
+                                <button class="shop-now-btn">
+                                    Shop Now →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category Card 2: LIGHT-COMMERCIAL UNITS -->
+                    <div class="category-card">
+                        <div class="card-inner">
+                            <div class="image-container">
+                                <img src="public/category-images/res_icon_2021-1.jpg"
+                                     alt="Light-Commercial Units"
+                                     loading="lazy">
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Light-Commercial Units</h3>
+                                <p class="text-gray-600 text-sm mb-4 flex-grow">
+                                    Perfect balance of durability and value for growing businesses
+                                </p>
+                                <button class="shop-now-btn">
+                                    Shop Now →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category Card 3: OPEN BOX PRODUCTS -->
+                    <div class="category-card">
+                        <div class="card-inner">
+                            <div class="image-container">
+                                <img src="public/category-images/open_box_image-1.jpg"
+                                     alt="Open Box Products"
+                                     loading="lazy">
+                                <span class="category-badge">DEAL</span>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Open Box Products</h3>
+                                <p class="text-gray-600 text-sm mb-4 flex-grow">
+                                    Gently used or display items at unbeatable prices
+                                </p>
+                                <button class="shop-now-btn">
+                                    Shop Now →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category Card 4: CLEARANCE SALE -->
+                    <div class="category-card">
+                        <div class="card-inner">
+                            <div class="image-container">
+                                <img src="public/category-images/clearance_sale.jpg"
+                                     alt="Clearance Sale"
+                                     loading="lazy">
+                                <span class="category-badge">SALE</span>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Clearance Sale</h3>
+                                <p class="text-gray-600 text-sm mb-4 flex-grow">
+                                    Huge discounts on select inventory. Limited quantities!
+                                </p>
+                                <button class="shop-now-btn">
+                                    Shop Now →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category Card 5: BOUNCERS 13 x 13 -->
+                    <div class="category-card">
+                        <div class="card-inner">
+                            <div class="image-container">
+                                <img src="public/category-images/Bouncer_13-150x150-1-1.jpg"
+                                     alt="Bouncers 13 x 13"
+                                     loading="lazy">
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Bouncers 13 x 13</h3>
+                                <p class="text-gray-600 text-sm mb-4 flex-grow">
+                                    Classic bounce houses in the perfect compact size
+                                </p>
+                                <button class="shop-now-btn">
+                                    Shop Now →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category Card 6: BOUNCERS 15×15 -->
+                    <div class="category-card">
+                        <div class="card-inner">
+                            <div class="image-container">
+                                <img src="public/category-images/Bouncer_13-150x150-1-1.jpg"
+                                     alt="Bouncers 15×15"
+                                     loading="lazy">
+                                <span class="category-badge">POPULAR</span>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Bouncers 15×15</h3>
+                                <p class="text-gray-600 text-sm mb-4 flex-grow">
+                                    Extra spacious bounce houses for bigger parties
+                                </p>
+                                <button class="shop-now-btn">
+                                    Shop Now →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category Card 7: WATER SLIDES -->
+                    <div class="category-card">
+                        <div class="card-inner">
+                            <div class="image-container">
+                                <img src="public/category-images/water_slide-150x150-2.jpg"
+                                     alt="Water Slides"
+                                     loading="lazy">
+                                <span class="category-badge">HOT</span>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Water Slides</h3>
+                                <p class="text-gray-600 text-sm mb-4 flex-grow">
+                                    Cool off with thrilling inflatable water slides
+                                </p>
+                                <button class="shop-now-btn">
+                                    Shop Now →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category Card 8: COMBO UNITS -->
+                    <div class="category-card">
+                        <div class="card-inner">
+                            <div class="image-container">
+                                <img src="public/category-images/combo-150x150-2.jpg"
+                                     alt="Combo Units"
+                                     loading="lazy">
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Combo Units</h3>
+                                <p class="text-gray-600 text-sm mb-4 flex-grow">
+                                    Bounce, slide, and climb in one amazing unit
+                                </p>
+                                <button class="shop-now-btn">
+                                    Shop Now →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category Card 9: PACKAGE DEALS -->
+                    <div class="category-card">
+                        <div class="card-inner">
+                            <div class="image-container">
+                                <img src="public/category-images/package_deals-1.jpg"
+                                     alt="Package Deals"
+                                     loading="lazy">
+                                <span class="category-badge">SAVE</span>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Package Deals</h3>
+                                <p class="text-gray-600 text-sm mb-4 flex-grow">
+                                    Bundle and save with our curated packages
+                                </p>
+                                <button class="shop-now-btn">
+                                    Shop Now →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category Card 10: SLIDES & OBSTACLES -->
+                    <div class="category-card">
+                        <div class="card-inner">
+                            <div class="image-container">
+                                <img src="public/category-images/slide_obstacle-150x150-2.jpg"
+                                     alt="Slides & Obstacles"
+                                     loading="lazy">
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Slides & Obstacles</h3>
+                                <p class="text-gray-600 text-sm mb-4 flex-grow">
+                                    Challenge courses and exciting slide adventures
+                                </p>
+                                <button class="shop-now-btn">
+                                    Shop Now →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category Card 11: SPORTS & GAMES -->
+                    <div class="category-card">
+                        <div class="card-inner">
+                            <div class="image-container">
+                                <img src="public/category-images/sports_games-150x150-2.jpg"
+                                     alt="Sports & Games"
+                                     loading="lazy">
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Sports & Games</h3>
+                                <p class="text-gray-600 text-sm mb-4 flex-grow">
+                                    Interactive sports and game inflatables for competition
+                                </p>
+                                <button class="shop-now-btn">
+                                    Shop Now →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category Card 12: LIGHT-COMMERCIAL BOUNCERS -->
+                    <div class="category-card">
+                        <div class="card-inner">
+                            <div class="image-container">
+                                <img src="public/category-images/Bouncer_13-150x150-1-1.jpg"
+                                     alt="Light-Commercial Bouncers"
+                                     loading="lazy">
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Light-Commercial Bouncers</h3>
+                                <p class="text-gray-600 text-sm mb-4 flex-grow">
+                                    Durable bouncers for moderate commercial use
+                                </p>
+                                <button class="shop-now-btn">
+                                    Shop Now →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category Card 13: MODULAR ART PANELS -->
+                    <div class="category-card">
+                        <div class="card-inner">
+                            <div class="image-container">
+                                <img src="public/category-images/art_panel-2022-150x150-2-1.jpg"
+                                     alt="Modular Art Panels"
+                                     loading="lazy">
+                                <span class="category-badge">NEW</span>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Modular Art Panels</h3>
+                                <p class="text-gray-600 text-sm mb-4 flex-grow">
+                                    Customizable art panels to brand your inflatables
+                                </p>
+                                <button class="shop-now-btn">
+                                    Shop Now →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category Card 14: ACCESSORIES -->
+                    <div class="category-card">
+                        <div class="card-inner">
+                            <div class="image-container">
+                                <img src="public/category-images/accessories-150x150-2.jpg"
+                                     alt="Accessories"
+                                     loading="lazy">
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Accessories</h3>
+                                <p class="text-gray-600 text-sm mb-4 flex-grow">
+                                    Blowers, stakes, repair kits, and essential accessories
+                                </p>
+                                <button class="shop-now-btn">
+                                    Shop Now →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Next Button -->
+                <button class="nav-button next" id="nextBtn" aria-label="Next categories">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </button>
+
+            </div>
+
+            <!-- Dot Indicators -->
+            <div class="dot-indicators" id="dotIndicators">
+                <!-- Dots will be generated by JavaScript -->
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        // Slider functionality
+        class CategorySlider {
+            constructor() {
+                this.track = document.getElementById('sliderTrack');
+                this.prevBtn = document.getElementById('prevBtn');
+                this.nextBtn = document.getElementById('nextBtn');
+                this.dotContainer = document.getElementById('dotIndicators');
+                this.cards = document.querySelectorAll('.category-card');
+                this.currentIndex = 0;
+                this.cardsPerView = this.getCardsPerView();
+                this.totalSlides = Math.ceil(this.cards.length / this.cardsPerView);
+
+                this.init();
+            }
+
+            getCardsPerView() {
+                const width = window.innerWidth;
+                if (width < 640) return 1;
+                if (width < 1024) return 2;
+                if (width < 1280) return 3;
+                if (width < 1536) return 4;
+                return 5;
+            }
+
+            init() {
+                this.createDots();
+                this.updateSlider();
+                this.attachEventListeners();
+
+                // Handle window resize
+                let resizeTimer;
+                window.addEventListener('resize', () => {
+                    clearTimeout(resizeTimer);
+                    resizeTimer = setTimeout(() => {
+                        const newCardsPerView = this.getCardsPerView();
+                        if (newCardsPerView !== this.cardsPerView) {
+                            this.cardsPerView = newCardsPerView;
+                            this.totalSlides = Math.ceil(this.cards.length / this.cardsPerView);
+                            this.currentIndex = Math.min(this.currentIndex, this.totalSlides - 1);
+                            this.createDots();
+                            this.updateSlider();
+                        }
+                    }, 250);
+                });
+            }
+
+            createDots() {
+                this.dotContainer.innerHTML = '';
+                for (let i = 0; i < this.totalSlides; i++) {
+                    const dot = document.createElement('div');
+                    dot.classList.add('dot');
+                    if (i === 0) dot.classList.add('active');
+                    dot.addEventListener('click', () => this.goToSlide(i));
+                    this.dotContainer.appendChild(dot);
+                }
+            }
+
+            attachEventListeners() {
+                this.prevBtn.addEventListener('click', () => this.prev());
+                this.nextBtn.addEventListener('click', () => this.next());
+
+                // Keyboard navigation
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'ArrowLeft') this.prev();
+                    if (e.key === 'ArrowRight') this.next();
+                });
+
+                // Touch/swipe support
+                let touchStartX = 0;
+                let touchEndX = 0;
+
+                this.track.addEventListener('touchstart', (e) => {
+                    touchStartX = e.changedTouches[0].screenX;
+                }, { passive: true });
+
+                this.track.addEventListener('touchend', (e) => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    this.handleSwipe();
+                }, { passive: true });
+
+                const handleSwipe = () => {
+                    const swipeThreshold = 50;
+                    const diff = touchStartX - touchEndX;
+
+                    if (Math.abs(diff) > swipeThreshold) {
+                        if (diff > 0) {
+                            this.next();
+                        } else {
+                            this.prev();
+                        }
+                    }
+                };
+
+                this.handleSwipe = handleSwipe;
+            }
+
+            updateSlider() {
+                // Calculate the offset based on current index and cards per view
+                const cardWidth = this.cards[0].offsetWidth;
+                const gap = 24; // 1.5rem in pixels
+                const offset = -(this.currentIndex * (cardWidth + gap) * this.cardsPerView);
+
+                this.track.style.transform = `translateX(${offset}px)`;
+
+                // Update dots
+                const dots = this.dotContainer.querySelectorAll('.dot');
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === this.currentIndex);
+                });
+
+                // Update button states
+                this.prevBtn.disabled = this.currentIndex === 0;
+                this.nextBtn.disabled = this.currentIndex >= this.totalSlides - 1;
+            }
+
+            next() {
+                if (this.currentIndex < this.totalSlides - 1) {
+                    this.currentIndex++;
+                    this.updateSlider();
+                }
+            }
+
+            prev() {
+                if (this.currentIndex > 0) {
+                    this.currentIndex--;
+                    this.updateSlider();
+                }
+            }
+
+            goToSlide(index) {
+                this.currentIndex = index;
+                this.updateSlider();
+            }
+        }
+
+        // Initialize slider when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => {
+                new CategorySlider();
+            });
+        } else {
+            new CategorySlider();
+        }
+
+        // Add click handlers to shop now buttons
+        document.addEventListener('DOMContentLoaded', () => {
+            const shopButtons = document.querySelectorAll('.shop-now-btn');
+            shopButtons.forEach((button, index) => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const categoryName = button.closest('.category-card').querySelector('h3').textContent;
+                    console.log(`Navigating to: ${categoryName}`);
+                    // Add your navigation logic here
+                    alert(`Shop ${categoryName} - Add your navigation logic here`);
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

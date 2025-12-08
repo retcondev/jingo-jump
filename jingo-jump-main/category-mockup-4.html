@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mockup 4: Masonry Grid with Hover Cards - Jingo Jump</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Hero Banner */
+        .category-banner {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 100px 40px;
+            text-align: center;
+            border-radius: 24px;
+            margin-bottom: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .category-banner::before {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            top: -200px;
+            right: -100px;
+        }
+
+        .banner-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .banner-content h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .banner-content p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .banner-stats {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-top: 40px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Filter Chips */
+        .filter-chips-container {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+        }
+
+        .filter-chips-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .filter-chips-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        .filter-actions {
+            display: flex;
+            gap: 15px;
+        }
+
+        .filter-action-btn {
+            padding: 10px 20px;
+            background: #334155;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .filter-action-btn:hover {
+            background: #475569;
+        }
+
+        .filter-groups {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .filter-group-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #94a3b8;
+            font-weight: 700;
+        }
+
+        .chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .chip {
+            padding: 10px 18px;
+            background: #334155;
+            border: 2px solid transparent;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .chip:hover {
+            background: #475569;
+        }
+
+        .chip.active {
+            background: #667eea;
+            border-color: #7c3aed;
+        }
+
+        /* Toolbar */
+        .products-toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .result-info {
+            font-size: 1.1rem;
+            color: #94a3b8;
+        }
+
+        .result-info span {
+            color: white;
+            font-weight: 700;
+        }
+
+        .toolbar-controls {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .sort-select {
+            padding: 12px 20px;
+            background: #1e293b;
+            border: 2px solid #334155;
+            border-radius: 12px;
+            color: white;
+            font-size: 0.95rem;
+            cursor: pointer;
+        }
+
+        .view-grid-btn {
+            padding: 12px 18px;
+            background: #1e293b;
+            border: 2px solid #334155;
+            border-radius: 12px;
+            color: white;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        /* Masonry Grid */
+        .products-masonry {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+
+        .product-card {
+            background: #1e293b;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(102, 126, 234, 0.3);
+        }
+
+        .product-card.tall {
+            grid-row: span 2;
+        }
+
+        .product-image-container {
+            height: 280px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-card.tall .product-image-container {
+            height: 400px;
+        }
+
+        .product-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            opacity: 0;
+            transition: all 0.3s;
+            display: flex;
+            align-items: flex-end;
+            padding: 25px;
+        }
+
+        .product-card:hover .product-overlay {
+            opacity: 1;
+        }
+
+        .quick-actions {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .quick-btn {
+            flex: 1;
+            padding: 12px;
+            background: white;
+            color: #0f172a;
+            border: none;
+            border-radius: 10px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .quick-btn:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .product-badge-overlay {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: #ef4444;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .product-details {
+            padding: 25px;
+        }
+
+        .product-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 12px;
+        }
+
+        .product-category-tag {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #667eea;
+            font-weight: 800;
+        }
+
+        .wishlist-btn {
+            background: none;
+            border: none;
+            color: #64748b;
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .wishlist-btn:hover {
+            color: #ef4444;
+        }
+
+        .product-name {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .product-rating-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .rating-stars {
+            color: #fbbf24;
+            font-size: 0.9rem;
+        }
+
+        .rating-text {
+            font-size: 0.85rem;
+            color: #94a3b8;
+        }
+
+        .product-features-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .feature-badge {
+            padding: 5px 12px;
+            background: #334155;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            color: #cbd5e1;
+        }
+
+        .product-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+            border-top: 1px solid #334155;
+        }
+
+        .price-section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .price-from {
+            font-size: 0.7rem;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .price-value {
+            font-size: 2rem;
+            font-weight: 900;
+            color: white;
+        }
+
+        .price-period {
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        .book-btn {
+            padding: 14px 28px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .book-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Load More */
+        .load-more-section {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .load-more-btn {
+            padding: 18px 50px;
+            background: #1e293b;
+            color: white;
+            border: 2px solid #334155;
+            border-radius: 15px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .load-more-btn:hover {
+            background: #667eea;
+            border-color: #667eea;
+        }
+
+        @media (max-width: 768px) {
+            .banner-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .banner-stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .products-masonry {
+                grid-template-columns: 1fr;
+            }
+
+            .product-card.tall {
+                grid-row: span 1;
+            }
+
+            .product-card.tall .product-image-container {
+                height: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Category Banner -->
+        <div class="category-banner">
+            <div class="banner-content">
+                <h1>Premium Bouncers</h1>
+                <p>Explore our curated collection of the highest quality inflatable entertainment</p>
+                <div class="banner-stats">
+                    <div class="stat">
+                        <span class="stat-number">68</span>
+                        <span class="stat-label">Total Products</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4.8★</span>
+                        <span class="stat-label">Avg Rating</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filter Chips -->
+        <div class="filter-chips-container">
+            <div class="filter-chips-header">
+                <h2 class="filter-chips-title">Filter By</h2>
+                <div class="filter-actions">
+                    <button class="filter-action-btn">Reset All</button>
+                    <button class="filter-action-btn">Advanced ⚙</button>
+                </div>
+            </div>
+            <div class="filter-groups">
+                <div class="filter-group">
+                    <span class="filter-group-label">Category</span>
+                    <div class="chips">
+                        <button class="chip active">All</button>
+                        <button class="chip">Water Slides</button>
+                        <button class="chip">Combo Units</button>
+                        <button class="chip">Standard</button>
+                        <button class="chip">Obstacles</button>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <span class="filter-group-label">Size</span>
+                    <div class="chips">
+                        <button class="chip active">All Sizes</button>
+                        <button class="chip">Small</button>
+                        <button class="chip">Medium</button>
+                        <button class="chip">Large</button>
+                        <button class="chip">XL</button>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <span class="filter-group-label">Age Range</span>
+                    <div class="chips">
+                        <button class="chip">Toddler</button>
+                        <button class="chip active">Kids</button>
+                        <button class="chip">Teens</button>
+                        <button class="chip">All Ages</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products Toolbar -->
+        <div class="products-toolbar">
+            <div class="result-info">
+                Showing <span>18 products</span>
+            </div>
+            <div class="toolbar-controls">
+                <select class="sort-select">
+                    <option>Sort: Featured</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                    <option>Rating</option>
+                    <option>Newest</option>
+                </select>
+                <button class="view-grid-btn">⊞ Grid</button>
+            </div>
+        </div>
+
+        <!-- Products Masonry Grid -->
+        <div class="products-masonry">
+            <!-- Product 1 - Tall -->
+            <div class="product-card tall">
+                <div class="product-image-container">
+                    <span class="product-badge-overlay">Featured</span>
+                    <div class="product-overlay">
+                        <div class="quick-actions">
+                            <button class="quick-btn">Quick View</button>
+                            <button class="quick-btn">Details</button>
+                        </div>
+                    </div>
+                    [Large Image]
+                </div>
+                <div class="product-details">
+                    <div class="product-header">
+                        <span class="product-category-tag">Water Slide</span>
+                        <button class="wishlist-btn">♡</button>
+                    </div>
+                    <h3 class="product-name">Mega Tsunami Extreme</h3>
+                    <div class="product-rating-row">
+                        <span class="rating-stars">★★★★★</span>
+                        <span class="rating-text">4.9 (234 reviews)</span>
+                    </div>
+                    <div class="product-features-list">
+                        <span class="feature-badge">25x45 ft</span>
+                        <span class="feature-badge">Dual Lane</span>
+                        <span class="feature-badge">Ages 8+</span>
+                    </div>
+                    <div class="product-footer">
+                        <div class="price-section">
+                            <span class="price-from">From</span>
+                            <span class="price-value">$599<span class="price-period">/day</span></span>
+                        </div>
+                        <button class="book-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image-container" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <span class="product-badge-overlay">Hot</span>
+                    <div class="product-overlay">
+                        <div class="quick-actions">
+                            <button class="quick-btn">Quick View</button>
+                            <button class="quick-btn">Details</button>
+                        </div>
+                    </div>
+                    [Image]
+                </div>
+                <div class="product-details">
+                    <div class="product-header">
+                        <span class="product-category-tag">Combo Unit</span>
+                        <button class="wishlist-btn">♡</button>
+                    </div>
+                    <h3 class="product-name">Castle Kingdom</h3>
+                    <div class="product-rating-row">
+                        <span class="rating-stars">★★★★★</span>
+                        <span class="rating-text">4.8 (178)</span>
+                    </div>
+                    <div class="product-features-list">
+                        <span class="feature-badge">18x25 ft</span>
+                        <span class="feature-badge">4-in-1</span>
+                    </div>
+                    <div class="product-footer">
+                        <div class="price-section">
+                            <span class="price-from">From</span>
+                            <span class="price-value">$399<span class="price-period">/day</span></span>
+                        </div>
+                        <button class="book-btn">Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image-container" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <div class="product-overlay">
+                        <div class="quick-actions">
+                            <button class="quick-btn">Quick View</button>
+                            <button class="quick-btn">Details</button>
+                        </div>
+                    </div>
+                    [Image]
+                </div>
+                <div class="product-details">
+                    <div class="product-header">
+                        <span class="product-category-tag">Standard</span>
+                        <button class="wishlist-btn">♡</button>
+                    </div>
+                    <h3 class="product-name">Rainbow Dreams</h3>
+                    <div class="product-rating-row">
+                        <span class="rating-stars">★★★★☆</span>
+                        <span class="rating-text">4.6 (92)</span>
+                    </div>
+                    <div class="product-features-list">
+                        <span class="feature-badge">15x15 ft</span>
+                        <span class="feature-badge">Ages 3+</span>
+                    </div>
+                    <div class="product-footer">
+                        <div class="price-section">
+                            <span class="price-from">From</span>
+                            <span class="price-value">$199<span class="price-period">/day</span></span>
+                        </div>
+                        <button class="book-btn">Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 - Tall -->
+            <div class="product-card tall">
+                <div class="product-image-container" style="background: linear-gradient(135deg, #fa8bff 0%, #2bd2ff 100%);">
+                    <span class="product-badge-overlay">New</span>
+                    <div class="product-overlay">
+                        <div class="quick-actions">
+                            <button class="quick-btn">Quick View</button>
+                            <button class="quick-btn">Details</button>
+                        </div>
+                    </div>
+                    [Large Image]
+                </div>
+                <div class="product-details">
+                    <div class="product-header">
+                        <span class="product-category-tag">Obstacle</span>
+                        <button class="wishlist-btn">♡</button>
+                    </div>
+                    <h3 class="product-name">Ninja Warrior Pro</h3>
+                    <div class="product-rating-row">
+                        <span class="rating-stars">★★★★★</span>
+                        <span class="rating-text">5.0 (67)</span>
+                    </div>
+                    <div class="product-features-list">
+                        <span class="feature-badge">30x50 ft</span>
+                        <span class="feature-badge">Challenge</span>
+                        <span class="feature-badge">Ages 10+</span>
+                    </div>
+                    <div class="product-footer">
+                        <div class="price-section">
+                            <span class="price-from">From</span>
+                            <span class="price-value">$699<span class="price-period">/day</span></span>
+                        </div>
+                        <button class="book-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image-container" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                    <div class="product-overlay">
+                        <div class="quick-actions">
+                            <button class="quick-btn">Quick View</button>
+                            <button class="quick-btn">Details</button>
+                        </div>
+                    </div>
+                    [Image]
+                </div>
+                <div class="product-details">
+                    <div class="product-header">
+                        <span class="product-category-tag">Water Slide</span>
+                        <button class="wishlist-btn">♡</button>
+                    </div>
+                    <h3 class="product-name">Tropical Splash</h3>
+                    <div class="product-rating-row">
+                        <span class="rating-stars">★★★★★</span>
+                        <span class="rating-text">4.7 (145)</span>
+                    </div>
+                    <div class="product-features-list">
+                        <span class="feature-badge">18x30 ft</span>
+                        <span class="feature-badge">Pool</span>
+                    </div>
+                    <div class="product-footer">
+                        <div class="price-section">
+                            <span class="price-from">From</span>
+                            <span class="price-value">$349<span class="price-period">/day</span></span>
+                        </div>
+                        <button class="book-btn">Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <div class="product-image-container" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                    <span class="product-badge-overlay">Sale</span>
+                    <div class="product-overlay">
+                        <div class="quick-actions">
+                            <button class="quick-btn">Quick View</button>
+                            <button class="quick-btn">Details</button>
+                        </div>
+                    </div>
+                    [Image]
+                </div>
+                <div class="product-details">
+                    <div class="product-header">
+                        <span class="product-category-tag">Combo Unit</span>
+                        <button class="wishlist-btn">♡</button>
+                    </div>
+                    <h3 class="product-name">Unicorn Paradise</h3>
+                    <div class="product-rating-row">
+                        <span class="rating-stars">★★★★★</span>
+                        <span class="rating-text">4.9 (201)</span>
+                    </div>
+                    <div class="product-features-list">
+                        <span class="feature-badge">16x20 ft</span>
+                        <span class="feature-badge">Themed</span>
+                    </div>
+                    <div class="product-footer">
+                        <div class="price-section">
+                            <span class="price-from">From</span>
+                            <span class="price-value">$279<span class="price-period">/day</span></span>
+                        </div>
+                        <button class="book-btn">Book</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Load More -->
+        <div class="load-more-section">
+            <button class="load-more-btn">Load More Products</button>
+        </div>
+    </div>
+</body>
+</html>

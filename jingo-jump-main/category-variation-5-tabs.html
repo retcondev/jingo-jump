@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Categories - Tabbed Navigation with Featured Grid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            position: relative;
+        }
+
+        .category-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(255, 106, 0, 0.15);
+        }
+
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #ff6a00, #ff8533);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .category-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .category-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .category-card:hover .category-image {
+            transform: scale(1.1);
+        }
+
+        .image-container {
+            overflow: hidden;
+            background: linear-gradient(135deg, #fff5f0 0%, #ffe6d9 100%);
+            position: relative;
+        }
+
+        .category-name {
+            padding: 20px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 16px;
+            color: #2d3748;
+            background: white;
+            transition: all 0.3s ease;
+        }
+
+        .category-card:hover .category-name {
+            color: #ff6a00;
+            background: #fff5f0;
+        }
+
+        .tab-button {
+            position: relative;
+            padding: 14px 28px;
+            font-weight: 600;
+            font-size: 15px;
+            color: #4a5568;
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            outline: none;
+        }
+
+        .tab-button:hover {
+            border-color: #ff6a00;
+            color: #ff6a00;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 106, 0, 0.15);
+        }
+
+        .tab-button.active {
+            background: linear-gradient(135deg, #ff6a00 0%, #ff8533 100%);
+            color: white;
+            border-color: #ff6a00;
+            box-shadow: 0 6px 20px rgba(255, 106, 0, 0.3);
+        }
+
+        .tab-button.active::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 8px solid #ff6a00;
+        }
+
+        .tab-content {
+            display: none;
+            opacity: 0;
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 42px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ff6a00 0%, #ff8533 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: #718096;
+            font-weight: 400;
+        }
+
+        .badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: linear-gradient(135deg, #ff6a00 0%, #ff8533 100%);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 12px rgba(255, 106, 0, 0.4);
+            z-index: 10;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 28px;
+            margin-top: 32px;
+        }
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+                gap: 20px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .tab-button {
+                padding: 12px 20px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+
+            .tabs-container {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .tab-button {
+                width: 100%;
+            }
+        }
+
+        .category-count {
+            display: inline-block;
+            background: rgba(255, 106, 0, 0.1);
+            color: #ff6a00;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-left: 8px;
+        }
+
+        .tabs-wrapper {
+            background: white;
+            padding: 8px;
+            border-radius: 60px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            display: inline-flex;
+            gap: 12px;
+            margin-bottom: 50px;
+        }
+
+        @media (max-width: 640px) {
+            .tabs-wrapper {
+                flex-direction: column;
+                border-radius: 20px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="max-w-7xl mx-auto">
+        <!-- Header Section -->
+        <div class="section-header">
+            <h1 class="section-title">Product Categories</h1>
+            <p class="section-subtitle">Explore our complete range of inflatable products</p>
+        </div>
+
+        <!-- Tabs Navigation -->
+        <div class="flex justify-center mb-8">
+            <div class="tabs-wrapper">
+                <button class="tab-button active" data-tab="commercial">
+                    Commercial Units
+                    <span class="category-count">2</span>
+                </button>
+                <button class="tab-button" data-tab="bouncers">
+                    Bouncers & Inflatables
+                    <span class="category-count">4</span>
+                </button>
+                <button class="tab-button" data-tab="slides">
+                    Slides & Combos
+                    <span class="category-count">4</span>
+                </button>
+                <button class="tab-button" data-tab="special">
+                    Special Deals
+                    <span class="category-count">4</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Tab Content: Commercial Units -->
+        <div class="tab-content active" id="commercial">
+            <div class="grid-container">
+                <div class="category-card">
+                    <div class="image-container">
+                        <span class="badge">Professional</span>
+                        <img src="category-images/res_icon_2021-1.jpg" alt="Commercial Units" class="category-image">
+                    </div>
+                    <div class="category-name">COMMERCIAL UNITS</div>
+                </div>
+
+                <div class="category-card">
+                    <div class="image-container">
+                        <span class="badge">Versatile</span>
+                        <img src="category-images/res_icon_2021-1.jpg" alt="Light-Commercial Units" class="category-image">
+                    </div>
+                    <div class="category-name">LIGHT-COMMERCIAL UNITS</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab Content: Bouncers & Inflatables -->
+        <div class="tab-content" id="bouncers">
+            <div class="grid-container">
+                <div class="category-card">
+                    <div class="image-container">
+                        <span class="badge">13x13</span>
+                        <img src="category-images/Bouncer_13-150x150-1-1.jpg" alt="Bouncers 13 x 13" class="category-image">
+                    </div>
+                    <div class="category-name">BOUNCERS 13 x 13</div>
+                </div>
+
+                <div class="category-card">
+                    <div class="image-container">
+                        <span class="badge">15x15</span>
+                        <img src="category-images/Bouncer_13-150x150-1-1.jpg" alt="Bouncers 15x15" class="category-image">
+                    </div>
+                    <div class="category-name">BOUNCERS 15×15</div>
+                </div>
+
+                <div class="category-card">
+                    <div class="image-container">
+                        <span class="badge">Light Duty</span>
+                        <img src="category-images/Bouncer_13-150x150-1-1.jpg" alt="Light-Commercial Bouncers" class="category-image">
+                    </div>
+                    <div class="category-name">LIGHT-COMMERCIAL BOUNCERS</div>
+                </div>
+
+                <div class="category-card">
+                    <div class="image-container">
+                        <span class="badge">Fun</span>
+                        <img src="category-images/sports_games-150x150-2.jpg" alt="Sports & Games" class="category-image">
+                    </div>
+                    <div class="category-name">SPORTS & GAMES</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab Content: Slides & Combos -->
+        <div class="tab-content" id="slides">
+            <div class="grid-container">
+                <div class="category-card">
+                    <div class="image-container">
+                        <span class="badge">Wet Fun</span>
+                        <img src="category-images/water_slide-150x150-2.jpg" alt="Water Slides" class="category-image">
+                    </div>
+                    <div class="category-name">WATER SLIDES</div>
+                </div>
+
+                <div class="category-card">
+                    <div class="image-container">
+                        <span class="badge">Best Value</span>
+                        <img src="category-images/combo-150x150-2.jpg" alt="Combo Units" class="category-image">
+                    </div>
+                    <div class="category-name">COMBO UNITS</div>
+                </div>
+
+                <div class="category-card">
+                    <div class="image-container">
+                        <span class="badge">Adventure</span>
+                        <img src="category-images/slide_obstacle-150x150-2.jpg" alt="Slides & Obstacles" class="category-image">
+                    </div>
+                    <div class="category-name">SLIDES & OBSTACLES</div>
+                </div>
+
+                <div class="category-card">
+                    <div class="image-container">
+                        <span class="badge">Essential</span>
+                        <img src="category-images/accessories-150x150-2.jpg" alt="Accessories" class="category-image">
+                    </div>
+                    <div class="category-name">ACCESSORIES</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab Content: Special Deals -->
+        <div class="tab-content" id="special">
+            <div class="grid-container">
+                <div class="category-card">
+                    <div class="image-container">
+                        <span class="badge">Like New</span>
+                        <img src="category-images/open_box_image-1.jpg" alt="Open Box Products" class="category-image">
+                    </div>
+                    <div class="category-name">OPEN BOX PRODUCTS</div>
+                </div>
+
+                <div class="category-card">
+                    <div class="image-container">
+                        <span class="badge">Save Big</span>
+                        <img src="category-images/clearance_sale.jpg" alt="Clearance Sale" class="category-image">
+                    </div>
+                    <div class="category-name">CLEARANCE SALE</div>
+                </div>
+
+                <div class="category-card">
+                    <div class="image-container">
+                        <span class="badge">Bundle</span>
+                        <img src="category-images/package_deals-1.jpg" alt="Package Deals" class="category-image">
+                    </div>
+                    <div class="category-name">PACKAGE DEALS</div>
+                </div>
+
+                <div class="category-card">
+                    <div class="image-container">
+                        <span class="badge">Customize</span>
+                        <img src="category-images/art_panel-2022-150x150-2-1.jpg" alt="Modular Art Panels" class="category-image">
+                    </div>
+                    <div class="category-name">MODULAR ART PANELS</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Tab switching functionality
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons and contents
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                // Show corresponding content
+                const tabId = button.getAttribute('data-tab');
+                const targetContent = document.getElementById(tabId);
+                if (targetContent) {
+                    targetContent.classList.add('active');
+                }
+            });
+        });
+
+        // Add click handlers to category cards (for demonstration)
+        const categoryCards = document.querySelectorAll('.category-card');
+        categoryCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const categoryName = card.querySelector('.category-name').textContent;
+                console.log('Category clicked:', categoryName);
+                // You can add navigation or other functionality here
+            });
+        });
+
+        // Keyboard navigation for tabs
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+                const activeButton = document.querySelector('.tab-button.active');
+                const allButtons = Array.from(tabButtons);
+                const currentIndex = allButtons.indexOf(activeButton);
+
+                let newIndex;
+                if (e.key === 'ArrowLeft') {
+                    newIndex = currentIndex > 0 ? currentIndex - 1 : allButtons.length - 1;
+                } else {
+                    newIndex = currentIndex < allButtons.length - 1 ? currentIndex + 1 : 0;
+                }
+
+                allButtons[newIndex].click();
+            }
+        });
+    </script>
+</body>
+</html>

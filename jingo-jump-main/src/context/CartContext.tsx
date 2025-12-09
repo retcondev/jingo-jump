@@ -1,7 +1,9 @@
 "use client";
 
-import { createContext, useContext, useState, useCallback, type ReactNode } from "react";
+import { createContext, useContext, useState, useCallback, useEffect, type ReactNode } from "react";
 import type { Product } from "~/types/product";
+
+const CART_STORAGE_KEY = "jingo-jump-cart";
 
 export interface CartItem {
   product: Product;
@@ -19,13 +21,61 @@ interface CartContextType {
   closeCart: () => void;
   totalItems: number;
   totalPrice: number;
+  isHydrated: boolean;
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
+// Helper to safely parse cart from localStorage
+function loadCartFromStorage(): CartItem[] {
+  if (typeof window === "undefined") return [];
+  try {
+    const stored = localStorage.getItem(CART_STORAGE_KEY);
+    if (!stored) return [];
+    const parsed = JSON.parse(stored) as unknown;
+    // Validate the parsed data structure
+    if (!Array.isArray(parsed)) return [];
+    return parsed.filter(
+      (item): item is CartItem =>
+        typeof item === "object" &&
+        item !== null &&
+        "product" in item &&
+        "quantity" in item &&
+        typeof item.quantity === "number"
+    );
+  } catch {
+    return [];
+  }
+}
+
+// Helper to save cart to localStorage
+function saveCartToStorage(items: CartItem[]): void {
+  if (typeof window === "undefined") return;
+  try {
+    localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(items));
+  } catch {
+    // Silently fail if localStorage is full or unavailable
+  }
+}
+
 export function CartProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<CartItem[]>([]);
   const [isOpen, setIsOpen] = useState(false);
+  const [isHydrated, setIsHydrated] = useState(false);
+
+  // Hydrate cart from localStorage on mount (client-side only)
+  useEffect(() => {
+    const storedCart = loadCartFromStorage();
+    setItems(storedCart);
+    setIsHydrated(true);
+  }, []);
+
+  // Persist cart to localStorage whenever items change (after hydration)
+  useEffect(() => {
+    if (isHydrated) {
+      saveCartToStorage(items);
+    }
+  }, [items, isHydrated]);
 
   const addToCart = useCallback((product: Product, quantity = 1) => {
     setItems((prev) => {
@@ -84,6 +134,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
         closeCart,
         totalItems,
         totalPrice,
+        isHydrated,
       }}
     >
       {children}

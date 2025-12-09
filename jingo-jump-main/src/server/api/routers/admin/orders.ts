@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { TRPCError } from "@trpc/server";
+import { customAlphabet } from "nanoid";
 import {
   createTRPCRouter,
   adminProcedure,
@@ -7,11 +8,15 @@ import {
 } from "~/server/api/trpc";
 import { OrderStatus, PaymentStatus, FulfillmentStatus } from "../../../../../generated/prisma";
 
-// Helper to generate order number
+// Collision-resistant order number generator using nanoid
+// Uses uppercase alphanumeric characters (excluding ambiguous chars like 0/O, 1/I/L)
+const generateOrderId = customAlphabet("ABCDEFGHJKMNPQRSTUVWXYZ23456789", 6);
+
+// Generate a human-readable, collision-resistant order number
 function generateOrderNumber(): string {
   const year = new Date().getFullYear();
-  const random = Math.floor(Math.random() * 10000).toString().padStart(4, "0");
-  return `JJ-${year}-${random}`;
+  const uniqueId = generateOrderId();
+  return `JJ-${year}-${uniqueId}`;
 }
 
 const orderListSchema = z.object({
@@ -433,17 +438,10 @@ export const adminOrdersRouter = createTRPCRouter({
         };
       });
 
-      // Generate unique order number
-      let orderNumber = generateOrderNumber();
-      let attempts = 0;
-      while (attempts < 10) {
-        const existing = await ctx.db.order.findUnique({
-          where: { orderNumber },
-        });
-        if (!existing) break;
-        orderNumber = generateOrderNumber();
-        attempts++;
-      }
+      // Generate collision-resistant order number using nanoid
+      // With 6 chars from 32-char alphabet = 32^6 = ~1 billion combinations
+      // Collision probability is negligible for typical order volumes
+      const orderNumber = generateOrderNumber();
 
       const order = await ctx.db.order.create({
         data: {

@@ -360,7 +360,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "C:\\Users\\monte\\Downloads\\jingo-jump-main\\jingo-jump-main\\generated\\prisma",
+      "value": "/Users/mike/Documents/GitHub/jingo-jump/jingo-jump-main/generated/prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -369,12 +369,12 @@ const config = {
     "binaryTargets": [
       {
         "fromEnvVar": null,
-        "value": "windows",
+        "value": "darwin-arm64",
         "native": true
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "C:\\Users\\monte\\Downloads\\jingo-jump-main\\jingo-jump-main\\prisma\\schema.prisma",
+    "sourceFilePath": "/Users/mike/Documents/GitHub/jingo-jump/jingo-jump-main/prisma/schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {

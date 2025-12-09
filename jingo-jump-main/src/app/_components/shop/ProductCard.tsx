@@ -14,13 +14,10 @@ export function ProductCard({ product }: ProductCardProps) {
   return (
     <Link href={`/shop/${product.id}`} className="group block overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(15,23,42,0.15)]">
       {/* Product Image */}
-      <div
-        className="relative flex h-72 items-center justify-center text-lg font-bold text-white"
-        style={{ background: product.gradient }}
-      >
+      <div className="relative flex h-72 items-center justify-center bg-white">
         {product.badge && (
           <span
-            className={`absolute left-4 top-4 z-10 rounded-full px-4 py-1.5 text-xs font-black uppercase tracking-wide shadow-lg ${
+            className={`absolute left-4 top-4 z-10 rounded-full px-4 py-1.5 text-xs font-black uppercase tracking-wide text-white shadow-lg ${
               product.badge === "NEW"
                 ? "bg-fuchsia-600"
                 : product.badge === "POPULAR"

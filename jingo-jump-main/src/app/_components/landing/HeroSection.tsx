@@ -7,13 +7,13 @@ import { useState, useEffect } from "react";
 
 const slides = [
   {
-    image: "/hero-images/1.png",
+    image: "/hero-images/Untitled (1920 x 500 px)-3.png",
     badge: "New Collection 2025",
     heading: "Welcome to",
     subheading: "Wholesale Commercial-Grade Inflatables for Your Business",
   },
   {
-    image: "/hero-images/2.png",
+    image: "/hero-images/Untitled (1920 x 500 px)-2.png",
     badge: "Premium Quality",
     heading: "Elevate Your",
     subheading: "Top-Tier Bounce Houses & Water Slides at Wholesale Prices",

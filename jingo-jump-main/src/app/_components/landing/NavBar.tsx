@@ -3,8 +3,9 @@
 import { useState, useEffect, useRef, useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Search, User, ShoppingCart, Menu, X, Phone, ChevronDown } from "lucide-react";
+import { Search, User, ShoppingCart, Menu, X, Phone, ChevronDown, LogOut, Settings, LayoutDashboard } from "lucide-react";
 import { usePathname } from "next/navigation";
+import { useSession, signOut } from "next-auth/react";
 import { mockProducts } from "~/data/mockProducts";
 import { useCart } from "~/context/CartContext";
 
@@ -91,10 +92,15 @@ export function NavBar() {
   const [searchQuery, setSearchQuery] = useState("");
   const [isSearchFocused, setIsSearchFocused] = useState(false);
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
+  const [isAccountMenuOpen, setIsAccountMenuOpen] = useState(false);
   const pathname = usePathname();
   const searchRef = useRef<HTMLDivElement>(null);
   const mobileSearchRef = useRef<HTMLDivElement>(null);
+  const accountMenuRef = useRef<HTMLDivElement>(null);
   const { totalItems, openCart } = useCart();
+  const { data: session, status } = useSession();
+
+  const isAdmin = session?.user?.role && ["ADMIN", "MANAGER", "STAFF"].includes(session.user.role);
 
   // Filter products based on search query
   const searchResults = useMemo(() => {
@@ -119,7 +125,7 @@ export function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close search dropdown when clicking outside
+  // Close dropdowns when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -129,6 +135,12 @@ export function NavBar() {
         !mobileSearchRef.current.contains(event.target as Node)
       ) {
         setIsSearchFocused(false);
+      }
+      if (
+        accountMenuRef.current &&
+        !accountMenuRef.current.contains(event.target as Node)
+      ) {
+        setIsAccountMenuOpen(false);
       }
     };
 
@@ -215,10 +227,7 @@ export function NavBar() {
                                       className="w-full h-full object-cover"
                                     />
                                   ) : (
-                                    <div
-                                      className="w-full h-full"
-                                      style={{ background: product.gradient }}
-                                    />
+                                    <div className="w-full h-full bg-white" />
                                   )}
                                 </div>
                                 {/* Product Info */}
@@ -303,13 +312,106 @@ export function NavBar() {
                 </button>
 
                 {/* My Account Button */}
-                <button className="hidden md:flex items-center gap-2 px-4 py-1.5 border border-gray-300 rounded-full text-sm font-medium text-gray-700 hover:border-primary-500 hover:text-primary-500 transition-all">
-                  <User className="w-4 h-4" strokeWidth={2} />
-                  My Account
-                </button>
+                <div className="hidden md:block relative" ref={accountMenuRef}>
+                  {status === "loading" ? (
+                    <div className="px-4 py-1.5 border border-gray-300 rounded-full">
+                      <div className="w-20 h-4 bg-gray-200 animate-pulse rounded" />
+                    </div>
+                  ) : session ? (
+                    <>
+                      <button
+                        onClick={() => setIsAccountMenuOpen(!isAccountMenuOpen)}
+                        className="flex items-center gap-2 px-4 py-1.5 border border-gray-300 rounded-full text-sm font-medium text-gray-700 hover:border-primary-500 hover:text-primary-500 transition-all"
+                      >
+                        <div className="w-5 h-5 rounded-full bg-primary-100 flex items-center justify-center">
+                          <span className="text-xs font-bold text-primary-600">
+                            {session.user?.name?.charAt(0)?.toUpperCase() ?? "U"}
+                          </span>
+                        </div>
+                        <span className="max-w-[100px] truncate">
+                          {session.user?.name?.split(" ")[0] ?? "Account"}
+                        </span>
+                        <ChevronDown className={`w-3 h-3 transition-transform ${isAccountMenuOpen ? "rotate-180" : ""}`} />
+                      </button>
+
+                      {/* Account Dropdown */}
+                      {isAccountMenuOpen && (
+                        <div className="absolute top-full right-0 mt-2 w-56 bg-white rounded-xl shadow-2xl border border-gray-200 overflow-hidden z-50">
+                          <div className="p-3 border-b border-gray-100 bg-gray-50">
+                            <p className="text-sm font-semibold text-gray-900 truncate">
+                              {session.user?.name}
+                            </p>
+                            <p className="text-xs text-gray-500 truncate">
+                              {session.user?.email}
+                            </p>
+                          </div>
+                          <div className="py-1">
+                            {isAdmin && (
+                              <Link
+                                href="/admin"
+                                onClick={() => setIsAccountMenuOpen(false)}
+                                className="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors"
+                              >
+                                <LayoutDashboard className="w-4 h-4" />
+                                Admin Panel
+                              </Link>
+                            )}
+                            <Link
+                              href="/account"
+                              onClick={() => setIsAccountMenuOpen(false)}
+                              className="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors"
+                            >
+                              <User className="w-4 h-4" />
+                              My Account
+                            </Link>
+                            <Link
+                              href="/account/orders"
+                              onClick={() => setIsAccountMenuOpen(false)}
+                              className="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors"
+                            >
+                              <ShoppingCart className="w-4 h-4" />
+                              My Orders
+                            </Link>
+                            <Link
+                              href="/account/profile"
+                              onClick={() => setIsAccountMenuOpen(false)}
+                              className="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors"
+                            >
+                              <Settings className="w-4 h-4" />
+                              Settings
+                            </Link>
+                          </div>
+                          <div className="border-t border-gray-100 py-1">
+                            <button
+                              onClick={() => {
+                                setIsAccountMenuOpen(false);
+                                signOut({ callbackUrl: "/" });
+                              }}
+                              className="flex items-center gap-3 px-4 py-2.5 text-sm text-red-600 hover:bg-red-50 w-full transition-colors"
+                            >
+                              <LogOut className="w-4 h-4" />
+                              Sign Out
+                            </button>
+                          </div>
+                        </div>
+                      )}
+                    </>
+                  ) : (
+                    <Link
+                      href="/signin"
+                      className="flex items-center gap-2 px-4 py-1.5 border border-gray-300 rounded-full text-sm font-medium text-gray-700 hover:border-primary-500 hover:text-primary-500 transition-all"
+                    >
+                      <User className="w-4 h-4" strokeWidth={2} />
+                      Sign In
+                    </Link>
+                  )}
+                </div>
 
                 {/* View Cart Button */}
-                <button className="flex items-center gap-2 px-4 py-1.5 border border-gray-300 rounded-full text-sm font-medium text-gray-700 hover:border-primary-500 hover:text-primary-500 transition-all">
+                <button
+                  onClick={openCart}
+                  className="flex items-center gap-2 px-4 py-1.5 border border-gray-300 rounded-full text-sm font-medium text-gray-700 hover:border-primary-500 hover:text-primary-500 transition-all"
+                >
                   <ShoppingCart className="w-4 h-4" strokeWidth={2} />
                   <span className="hidden sm:inline">View Cart</span>
                   <span className="flex items-center justify-center w-5 h-5 bg-primary-500 text-white text-xs font-bold rounded-full">
@@ -534,10 +636,7 @@ export function NavBar() {
                                 className="w-full h-full object-cover"
                               />
                             ) : (
-                              <div
-                                className="w-full h-full"
-                                style={{ background: product.gradient }}
-                              />
+                              <div className="w-full h-full bg-white" />
                             )}
                           </div>
                           <div className="flex-1 min-w-0">
@@ -634,14 +733,90 @@ export function NavBar() {
             {/* Divider */}
             <div className="border-t border-gray-100 my-3" />
 
-            {/* Account Link */}
-            <button className="w-full flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-lg transition-all">
-              <User className="w-5 h-5" strokeWidth={2} />
-              My Account
-            </button>
+            {/* Account Links */}
+            {session ? (
+              <>
+                {/* User Info */}
+                <div className="px-4 py-3 mb-2">
+                  <p className="text-sm font-semibold text-gray-900">
+                    {session.user?.name}
+                  </p>
+                  <p className="text-xs text-gray-500 truncate">
+                    {session.user?.email}
+                  </p>
+                </div>
+
+                {isAdmin && (
+                  <Link
+                    href="/admin"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="w-full flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-lg transition-all"
+                  >
+                    <LayoutDashboard className="w-5 h-5" strokeWidth={2} />
+                    Admin Panel
+                  </Link>
+                )}
+
+                <Link
+                  href="/account"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="w-full flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-lg transition-all"
+                >
+                  <User className="w-5 h-5" strokeWidth={2} />
+                  My Account
+                </Link>
+
+                <Link
+                  href="/account/orders"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="w-full flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-lg transition-all"
+                >
+                  <ShoppingCart className="w-5 h-5" strokeWidth={2} />
+                  My Orders
+                </Link>
+
+                <button
+                  onClick={() => {
+                    setIsMobileMenuOpen(false);
+                    signOut({ callbackUrl: "/" });
+                  }}
+                  className="w-full flex items-center gap-3 px-4 py-3 text-sm font-medium text-red-600 hover:bg-red-50 rounded-lg transition-all"
+                >
+                  <LogOut className="w-5 h-5" strokeWidth={2} />
+                  Sign Out
+                </button>
+              </>
+            ) : (
+              <>
+                <Link
+                  href="/signin"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="w-full flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-lg transition-all"
+                >
+                  <User className="w-5 h-5" strokeWidth={2} />
+                  Sign In
+                </Link>
+                <Link
+                  href="/register"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="w-full flex items-center gap-3 px-4 py-3 text-sm font-medium bg-primary-500 text-white hover:bg-primary-600 rounded-lg transition-all"
+                >
+                  Create Account
+                </Link>
+              </>
+            )}
+
+            {/* Divider */}
+            <div className="border-t border-gray-100 my-3" />
 
             {/* Cart Link */}
-            <button className="w-full flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-lg transition-all">
+            <button
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                openCart();
+              }}
+              className="w-full flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-lg transition-all"
+            >
               <ShoppingCart className="w-5 h-5" strokeWidth={2} />
               View Cart
               <span className="ml-auto flex items-center justify-center w-6 h-6 bg-primary-500 text-white text-xs font-bold rounded-full">

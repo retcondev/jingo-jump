@@ -100,10 +100,7 @@ export default function ProductPage() {
                     </div>
                   ) : (
                     // Image Display
-                    <div
-                      className="relative flex h-[500px] items-center justify-center p-8"
-                      style={{ background: product.gradient }}
-                    >
+                    <div className="relative flex h-[500px] items-center justify-center p-8 bg-white">
                       {product.badge && (
                         <span className={`absolute left-6 top-6 z-10 rounded-full px-5 py-2 text-sm font-black uppercase tracking-wide text-white shadow-lg ${
                           product.badge === "NEW" ? "bg-fuchsia-600" :
@@ -134,8 +131,7 @@ export default function ProductPage() {
                       onClick={() => setSelectedImage(idx)}
                       className={`overflow-hidden rounded-xl border-2 transition-all ${
                         selectedImage === idx ? "border-[primary-500]" : "border-slate-200 hover:border-slate-300"
-                      }`}
-                      style={{ background: img === "video" ? "linear-gradient(135deg, #1e293b 0%, #334155 100%)" : product.gradient }}
+                      } ${img === "video" ? "bg-slate-800" : "bg-white"}`}
                     >
                       <div className="relative flex h-32 items-center justify-center p-4">
                         {img === "video" ? (

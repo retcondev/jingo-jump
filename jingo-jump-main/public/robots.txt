@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /account/
+Disallow: /admin/
+Disallow: /checkout/
+Disallow: /api/
+
+Sitemap: https://jingojump.com/sitemap.xml

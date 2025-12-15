@@ -79,27 +79,27 @@ export function SiteFooter() {
             <h4 className="text-sm font-bold uppercase tracking-wider mb-6 text-white">Support</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-gray-400 hover:text-primary-500 transition-colors duration-200 text-sm flex items-center group">
+                <Link href="/contact" className="text-gray-400 hover:text-primary-500 transition-colors duration-200 text-sm flex items-center group">
                   <i className="fa-solid fa-chevron-right text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-primary-500 transition-colors duration-200 text-sm flex items-center group">
+                <Link href="/about" className="text-gray-400 hover:text-primary-500 transition-colors duration-200 text-sm flex items-center group">
                   <i className="fa-solid fa-chevron-right text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                  Warranty Info
-                </a>
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/catalog-request" className="text-gray-400 hover:text-primary-500 transition-colors duration-200 text-sm flex items-center group">
+                  <i className="fa-solid fa-chevron-right text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                  Request Catalog
+                </Link>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-primary-500 transition-colors duration-200 text-sm flex items-center group">
                   <i className="fa-solid fa-chevron-right text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
                   Shipping Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-primary-500 transition-colors duration-200 text-sm flex items-center group">
-                  <i className="fa-solid fa-chevron-right text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                  Returns
                 </a>
               </li>
             </ul>

@@ -6,7 +6,7 @@ import {
   adminProcedure,
   staffProcedure,
 } from "~/server/api/trpc";
-import { OrderStatus, PaymentStatus, FulfillmentStatus } from "../../../../../generated/prisma";
+import { OrderStatus, PaymentStatus, FulfillmentStatus, type Prisma } from "../../../../../generated/prisma";
 
 // Collision-resistant order number generator using nanoid
 // Uses uppercase alphanumeric characters (excluding ambiguous chars like 0/O, 1/I/L)
@@ -168,7 +168,7 @@ export const adminOrdersRouter = createTRPCRouter({
         });
       }
 
-      const updateData: Record<string, unknown> = {
+      const updateData: Prisma.OrderUpdateInput = {
         status: input.status,
       };
 
@@ -184,6 +184,17 @@ export const adminOrdersRouter = createTRPCRouter({
         case OrderStatus.CANCELLED:
           updateData.cancelledAt = new Date();
           break;
+        case OrderStatus.PENDING:
+        case OrderStatus.CONFIRMED:
+        case OrderStatus.PROCESSING:
+        case OrderStatus.REFUNDED:
+          // No additional timestamp updates needed
+          break;
+        default: {
+          // Exhaustiveness check - ensures all enum cases are handled
+          const _exhaustiveCheck: never = input.status;
+          throw new Error(`Unhandled order status: ${String(_exhaustiveCheck)}`);
+        }
       }
 
       const updatedOrder = await ctx.db.order.update({
@@ -212,7 +223,7 @@ export const adminOrdersRouter = createTRPCRouter({
         });
       }
 
-      const updateData: Record<string, unknown> = {
+      const updateData: Prisma.OrderUpdateInput = {
         paymentStatus: input.paymentStatus,
       };
 

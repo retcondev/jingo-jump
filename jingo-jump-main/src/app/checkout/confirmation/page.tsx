@@ -32,7 +32,7 @@ export default function OrderConfirmationPage() {
         <div className="text-center">
           <AlertCircle className="w-16 h-16 text-slate-300 mx-auto mb-4" />
           <h1 className="text-2xl font-bold text-slate-900 mb-2">No order found</h1>
-          <p className="text-slate-600 mb-6">We couldn't find an order to display.</p>
+          <p className="text-slate-600 mb-6">We couldn&apos;t find an order to display.</p>
           <Link
             href="/shop"
             className="inline-flex items-center px-6 py-3 bg-primary-500 text-white font-semibold rounded-xl hover:bg-primary-600 transition-colors"
@@ -224,16 +224,16 @@ export default function OrderConfirmationPage() {
           <h3 className="font-bold text-blue-900 mb-3">What happens next?</h3>
           <ul className="space-y-2 text-blue-800">
             <li className="flex items-start gap-2">
-              <span className="flex-shrink-0 w-5 h-5 bg-blue-200 rounded-full flex items-center justify-center text-xs font-bold text-blue-800">1</span>
-              <span>You'll receive an email confirmation at {order.customer.email}</span>
+              <span className="shrink-0 w-5 h-5 bg-blue-200 rounded-full flex items-center justify-center text-xs font-bold text-blue-800">1</span>
+              <span>You&apos;ll receive an email confirmation at {order.customer.email}</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="flex-shrink-0 w-5 h-5 bg-blue-200 rounded-full flex items-center justify-center text-xs font-bold text-blue-800">2</span>
+              <span className="shrink-0 w-5 h-5 bg-blue-200 rounded-full flex items-center justify-center text-xs font-bold text-blue-800">2</span>
               <span>Our team will process your order within 1-2 business days</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="flex-shrink-0 w-5 h-5 bg-blue-200 rounded-full flex items-center justify-center text-xs font-bold text-blue-800">3</span>
-              <span>You'll receive tracking information once your order ships</span>
+              <span className="shrink-0 w-5 h-5 bg-blue-200 rounded-full flex items-center justify-center text-xs font-bold text-blue-800">3</span>
+              <span>You&apos;ll receive tracking information once your order ships</span>
             </li>
           </ul>
         </div>

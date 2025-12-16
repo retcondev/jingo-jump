@@ -1,0 +1,392 @@
+{
+  "id": 30299,
+  "name": "Mini Fairyland",
+  "slug": "mini-fairyland",
+  "permalink": "https://jingojump.com/product/mini-fairyland/",
+  "date_created": "2024-05-26T14:13:32",
+  "date_created_gmt": "2024-05-26T14:13:32",
+  "date_modified": "2025-07-30T18:00:14",
+  "date_modified_gmt": "2025-07-30T18:00:14",
+  "type": "simple",
+  "status": "publish",
+  "featured": false,
+  "catalog_visibility": "visible",
+  "description": "",
+  "short_description": "<table style=\"width: 240px;\" border=\"0\" cellspacing=\"2\" cellpadding=\"0\">\n<tbody>\n<tr>\n<td height=\"23\"><center><br />\n<span style=\"font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; font-size: small;\"><b>Item #:</b></span></center></td>\n<td height=\"23\"><center><br />\n<span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">MNP14</span></center></td>\n</tr>\n<tr>\n<td height=\"23\"><center><br />\n<span style=\"font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; font-size: small;\"><b>Length:</b></span></center></td>\n<td height=\"23\"><center><br />\n<span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">70&#8243;</span></center></td>\n</tr>\n<tr>\n<td height=\"23\"><center><br />\n<span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Height:</strong></span></center></td>\n<td height=\"23\"><center><br />\n<span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">20&#8243;</span></center></td>\n</tr>\n</tbody>\n</table>\n<p><span style=\"color: black; font-family: Arial,Helvetica,sans-serif; font-size: xx-small;\">Note: Due to constant product development and improvement, artwork, shape, color, size, description and schematic that appear on the web site may not reflect the latest changes.<br />\n</span></p>\n",
+  "sku": "714",
+  "price": "70",
+  "regular_price": "70",
+  "sale_price": "",
+  "date_on_sale_from": null,
+  "date_on_sale_from_gmt": null,
+  "date_on_sale_to": null,
+  "date_on_sale_to_gmt": null,
+  "on_sale": false,
+  "purchasable": true,
+  "total_sales": 0,
+  "virtual": false,
+  "downloadable": false,
+  "downloads": [],
+  "download_limit": 0,
+  "download_expiry": 0,
+  "external_url": "",
+  "button_text": "",
+  "tax_status": "taxable",
+  "tax_class": "",
+  "manage_stock": false,
+  "stock_quantity": null,
+  "backorders": "no",
+  "backorders_allowed": false,
+  "backordered": false,
+  "low_stock_amount": null,
+  "sold_individually": false,
+  "weight": "8",
+  "dimensions": {
+    "length": "",
+    "width": "",
+    "height": ""
+  },
+  "shipping_required": true,
+  "shipping_taxable": true,
+  "shipping_class": "art-panels",
+  "shipping_class_id": 93,
+  "reviews_allowed": false,
+  "average_rating": "0.00",
+  "rating_count": 0,
+  "upsell_ids": [],
+  "cross_sell_ids": [],
+  "parent_id": 0,
+  "purchase_note": "",
+  "categories": [
+    {
+      "id": 20,
+      "name": "uncategorized",
+      "slug": "uncategorized"
+    }
+  ],
+  "brands": [],
+  "tags": [],
+  "images": [
+    {
+      "id": 28591,
+      "date_created": "2024-05-23T12:40:33",
+      "date_created_gmt": "2024-05-23T12:40:33",
+      "date_modified": "2024-05-26T14:13:35",
+      "date_modified_gmt": "2024-05-26T14:13:35",
+      "src": "https://jingojump.com/wp-content/uploads/2024/05/mini_fairyland_p18.jpg",
+      "name": "mini_fairyland_p18.jpg",
+      "alt": "",
+      "srcset": "https://jingojump.com/wp-content/uploads/2024/05/mini_fairyland_p18.jpg 700w, https://jingojump.com/wp-content/uploads/2024/05/mini_fairyland_p18-430x125.jpg 430w, https://jingojump.com/wp-content/uploads/2024/05/mini_fairyland_p18-150x44.jpg 150w, https://jingojump.com/wp-content/uploads/2024/05/mini_fairyland_p18-400x116.jpg 400w",
+      "sizes": "(max-width: 700px) 100vw, 700px",
+      "thumbnail": "https://jingojump.com/wp-content/uploads/2024/05/mini_fairyland_p18-430x125.jpg"
+    },
+    {
+      "id": 28593,
+      "date_created": "2024-05-23T12:40:34",
+      "date_created_gmt": "2024-05-23T12:40:34",
+      "date_modified": "2024-05-23T12:40:34",
+      "date_modified_gmt": "2024-05-23T12:40:34",
+      "src": "https://jingojump.com/wp-content/uploads/2024/05/mini_fairyland_m18.jpg",
+      "name": "mini_fairyland_m18.jpg",
+      "alt": "",
+      "srcset": "https://jingojump.com/wp-content/uploads/2024/05/mini_fairyland_m18.jpg 700w, https://jingojump.com/wp-content/uploads/2024/05/mini_fairyland_m18-430x325.jpg 430w, https://jingojump.com/wp-content/uploads/2024/05/mini_fairyland_m18-150x113.jpg 150w, https://jingojump.com/wp-content/uploads/2024/05/mini_fairyland_m18-397x300.jpg 397w",
+      "sizes": "(max-width: 700px) 100vw, 700px",
+      "thumbnail": "https://jingojump.com/wp-content/uploads/2024/05/mini_fairyland_m18-430x325.jpg"
+    }
+  ],
+  "attributes": [],
+  "default_attributes": [],
+  "variations": [],
+  "grouped_products": [],
+  "menu_order": 187,
+  "price_html": "<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;</span>70.00</bdi></span>",
+  "related_ids": [
+    29958,
+    29946,
+    30004,
+    30125,
+    29993
+  ],
+  "meta_data": [
+    {
+      "id": 48275,
+      "key": "_wpb_vc_js_status",
+      "value": ""
+    },
+    {
+      "id": 48276,
+      "key": "_yoast_wpseo_primary_product_cat",
+      "value": "72"
+    },
+    {
+      "id": 48277,
+      "key": "_yoast_wpseo_content_score",
+      "value": "30"
+    },
+    {
+      "id": 48278,
+      "key": "_yoast_wpseo_title",
+      "value": ""
+    },
+    {
+      "id": 48279,
+      "key": "_yoast_wpseo_metadesc",
+      "value": ""
+    },
+    {
+      "id": 48280,
+      "key": "_yoast_wpseo_metakeywords",
+      "value": ""
+    },
+    {
+      "id": 48281,
+      "key": "_yoast_wpseo_focuskw_text_input",
+      "value": ""
+    },
+    {
+      "id": 48282,
+      "key": "_yoast_wpseo_focuskw",
+      "value": ""
+    },
+    {
+      "id": 48283,
+      "key": "_yoast_wpseo_linkdex",
+      "value": ""
+    },
+    {
+      "id": 48284,
+      "key": "_wp_page_template",
+      "value": "default"
+    },
+    {
+      "id": 48285,
+      "key": "_yoast_wpseo_estimated-reading-time-minutes",
+      "value": ""
+    },
+    {
+      "id": 48286,
+      "key": "_yoast_indexnow_last_ping",
+      "value": ""
+    },
+    {
+      "id": 48287,
+      "key": "redux-metabox-section",
+      "value": ""
+    },
+    {
+      "id": 48288,
+      "key": "product-hot-flash",
+      "value": ""
+    },
+    {
+      "id": 48289,
+      "key": "product-hot-time",
+      "value": ""
+    },
+    {
+      "id": 48290,
+      "key": "cmplz_hide_cookiebanner",
+      "value": ""
+    },
+    {
+      "id": 48291,
+      "key": "_yoast_wpseo_wordproof_timestamp",
+      "value": ""
+    },
+    {
+      "id": 48292,
+      "key": "_yoast_wpseo_inclusive_language_score",
+      "value": ""
+    },
+    {
+      "id": 48293,
+      "key": "_yoast_wpseo_focuskeywords",
+      "value": ""
+    },
+    {
+      "id": 48294,
+      "key": "_yoast_wpseo_keywordsynonyms",
+      "value": ""
+    },
+    {
+      "id": 48295,
+      "key": "woo_feed_availability_date",
+      "value": ""
+    },
+    {
+      "id": 290564,
+      "key": "_wc_gla_synced_at",
+      "value": "1764373294"
+    },
+    {
+      "id": 290565,
+      "key": "_wc_gla_sync_status",
+      "value": "synced"
+    },
+    {
+      "id": 290566,
+      "key": "_wc_gla_visibility",
+      "value": "sync-and-show"
+    },
+    {
+      "id": 290567,
+      "key": "_wc_gla_google_ids",
+      "value": {
+        "US": "online:en:US:gla_30299"
+      }
+    },
+    {
+      "id": 309613,
+      "key": "_wc_gla_mc_status",
+      "value": "disapproved"
+    }
+  ],
+  "stock_status": "outofstock",
+  "has_options": false,
+  "post_password": "",
+  "global_unique_id": "",
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.5 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Mini Fairyland - Jingo Jump</title>\n<!-- Admin only notice: this page does not show a meta description because it does not have one, either write it for this page specifically or go into the [Yoast SEO - Settings] menu and set up a template. -->\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://jingojump.com/product/mini-fairyland/\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:locale\" content=\"en_US\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:type\" content=\"article\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:title\" content=\"Mini Fairyland - Jingo Jump\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:description\" content=\"Item #:  MNP14    Length:  70&quot;    Height:  20&quot;    Note: Due to constant product development and improvement, artwork, shape, color, size, description and schematic that appear on the web site may not reflect the latest changes.\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:url\" content=\"https://jingojump.com/product/mini-fairyland/\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:site_name\" content=\"Jingo Jump\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"article:modified_time\" content=\"2025-07-30T18:00:14+00:00\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:image\" content=\"https://jingojump.com/wp-content/uploads/2024/05/mini_fairyland_p18.jpg\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:width\" content=\"700\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:height\" content=\"203\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" class=\"yoast-seo-meta-tag\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://jingojump.com/product/mini-fairyland/\",\"url\":\"https://jingojump.com/product/mini-fairyland/\",\"name\":\"Mini Fairyland - Jingo Jump\",\"isPartOf\":{\"@id\":\"https://jingojump.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://jingojump.com/product/mini-fairyland/#primaryimage\"},\"image\":{\"@id\":\"https://jingojump.com/product/mini-fairyland/#primaryimage\"},\"thumbnailUrl\":\"https://jingojump.com/wp-content/uploads/2024/05/mini_fairyland_p18.jpg\",\"datePublished\":\"2024-05-26T14:13:32+00:00\",\"dateModified\":\"2025-07-30T18:00:14+00:00\",\"breadcrumb\":{\"@id\":\"https://jingojump.com/product/mini-fairyland/#breadcrumb\"},\"inLanguage\":\"en\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://jingojump.com/product/mini-fairyland/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"en\",\"@id\":\"https://jingojump.com/product/mini-fairyland/#primaryimage\",\"url\":\"https://jingojump.com/wp-content/uploads/2024/05/mini_fairyland_p18.jpg\",\"contentUrl\":\"https://jingojump.com/wp-content/uploads/2024/05/mini_fairyland_p18.jpg\",\"width\":700,\"height\":203},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://jingojump.com/product/mini-fairyland/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://jingojump.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Shop\",\"item\":\"https://jingojump.com/shop/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Mini Fairyland\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://jingojump.com/#website\",\"url\":\"https://jingojump.com/\",\"name\":\"Jingo Jump\",\"description\":\"Inflatable Bouncers for sale\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://jingojump.com/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+    "title": "Mini Fairyland - Jingo Jump",
+    "robots": {
+      "index": "index",
+      "follow": "follow",
+      "max-snippet": "max-snippet:-1",
+      "max-image-preview": "max-image-preview:large",
+      "max-video-preview": "max-video-preview:-1"
+    },
+    "canonical": "https://jingojump.com/product/mini-fairyland/",
+    "og_locale": "en_US",
+    "og_type": "article",
+    "og_title": "Mini Fairyland - Jingo Jump",
+    "og_description": "Item #:  MNP14    Length:  70\"    Height:  20\"    Note: Due to constant product development and improvement, artwork, shape, color, size, description and schematic that appear on the web site may not reflect the latest changes.",
+    "og_url": "https://jingojump.com/product/mini-fairyland/",
+    "og_site_name": "Jingo Jump",
+    "article_modified_time": "2025-07-30T18:00:14+00:00",
+    "og_image": [
+      {
+        "width": 700,
+        "height": 203,
+        "url": "https://jingojump.com/wp-content/uploads/2024/05/mini_fairyland_p18.jpg",
+        "type": "image/jpeg"
+      }
+    ],
+    "twitter_card": "summary_large_image",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://jingojump.com/product/mini-fairyland/",
+          "url": "https://jingojump.com/product/mini-fairyland/",
+          "name": "Mini Fairyland - Jingo Jump",
+          "isPartOf": {
+            "@id": "https://jingojump.com/#website"
+          },
+          "primaryImageOfPage": {
+            "@id": "https://jingojump.com/product/mini-fairyland/#primaryimage"
+          },
+          "image": {
+            "@id": "https://jingojump.com/product/mini-fairyland/#primaryimage"
+          },
+          "thumbnailUrl": "https://jingojump.com/wp-content/uploads/2024/05/mini_fairyland_p18.jpg",
+          "datePublished": "2024-05-26T14:13:32+00:00",
+          "dateModified": "2025-07-30T18:00:14+00:00",
+          "breadcrumb": {
+            "@id": "https://jingojump.com/product/mini-fairyland/#breadcrumb"
+          },
+          "inLanguage": "en",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://jingojump.com/product/mini-fairyland/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "ImageObject",
+          "inLanguage": "en",
+          "@id": "https://jingojump.com/product/mini-fairyland/#primaryimage",
+          "url": "https://jingojump.com/wp-content/uploads/2024/05/mini_fairyland_p18.jpg",
+          "contentUrl": "https://jingojump.com/wp-content/uploads/2024/05/mini_fairyland_p18.jpg",
+          "width": 700,
+          "height": 203
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://jingojump.com/product/mini-fairyland/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jingojump.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shop",
+              "item": "https://jingojump.com/shop/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Mini Fairyland"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://jingojump.com/#website",
+          "url": "https://jingojump.com/",
+          "name": "Jingo Jump",
+          "description": "Inflatable Bouncers for sale",
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://jingojump.com/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en"
+        }
+      ]
+    }
+  },
+  "google_listings_and_ads__channel_visibility": {
+    "is_visible": true,
+    "channel_visibility": "sync-and-show",
+    "sync_status": "synced",
+    "issues": []
+  },
+  "_links": {
+    "self": [
+      {
+        "href": "https://jingojump.com/wp-json/wc/v3/products/30299",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://jingojump.com/wp-json/wc/v3/products"
+      }
+    ]
+  }
+}

@@ -2,6 +2,7 @@ import { postRouter } from "~/server/api/routers/post";
 import { authRouter } from "~/server/api/routers/auth";
 import { accountRouter } from "~/server/api/routers/account";
 import { checkoutRouter } from "~/server/api/routers/checkout";
+import { productsRouter } from "~/server/api/routers/products";
 import { createCallerFactory, createTRPCRouter } from "~/server/api/trpc";
 import {
   adminProductsRouter,
@@ -9,6 +10,7 @@ import {
   adminCustomersRouter,
   adminSubscribersRouter,
   adminDashboardRouter,
+  adminCategoriesRouter,
 } from "~/server/api/routers/admin";
 
 /**
@@ -21,12 +23,14 @@ export const appRouter = createTRPCRouter({
   auth: authRouter,
   account: accountRouter,
   checkout: checkoutRouter,
+  products: productsRouter,
   // Admin routers
   adminProducts: adminProductsRouter,
   adminOrders: adminOrdersRouter,
   adminCustomers: adminCustomersRouter,
   adminSubscribers: adminSubscribersRouter,
   adminDashboard: adminDashboardRouter,
+  adminCategories: adminCategoriesRouter,
 });
 
 // export type definition of API

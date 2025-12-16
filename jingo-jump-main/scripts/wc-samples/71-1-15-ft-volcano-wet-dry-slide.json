@@ -1,0 +1,571 @@
+{
+  "id": 30484,
+  "name": "15 FT Volcano Wet-Dry Slide",
+  "slug": "15-ft-volcano-wet-dry-slide",
+  "permalink": "https://jingojump.com/product/15-ft-volcano-wet-dry-slide/",
+  "date_created": "2024-05-26T14:13:55",
+  "date_created_gmt": "2024-05-26T14:13:55",
+  "date_modified": "2025-11-28T23:30:59",
+  "date_modified_gmt": "2025-11-28T23:30:59",
+  "type": "simple",
+  "status": "publish",
+  "featured": false,
+  "catalog_visibility": "visible",
+  "description": "<p>Commercial grade inflatable unit made from 18 oz commercial vinyl.</p>\n",
+  "short_description": "<table style=\"width: 240px;\" border=\"0\" cellspacing=\"2\" cellpadding=\"0\">\n<tbody>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Model #</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">VLWS15</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Sizes:</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">15&#8242; H x 30&#8242; L x 11&#8242; W</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Weight (lbs):</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">315</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Pieces:</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">1</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Blowers:</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">1</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Operators:</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">1</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Riders:</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">4-6</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Indoor:</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">Yes</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Outdoor:</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">Yes</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Warranty:</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">12 Months</span></td>\n</tr>\n</tbody>\n</table>\n<p><strong><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: medium;\">Unit includes</span></strong></p>\n<p><img class=\"alignnone size-medium wp-image-31406\" src=\"https://jingojump.com/wp-content/uploads/2024/09/Accesories_2024_03-400x72.jpg\" alt=\"\" width=\"400\" height=\"72\" /><br />\n<a href=\"https://jingojump.com/commercial-bouncer-video/\"><img class=\"alignnone size-full wp-image-7758\" src=\"https://www.jingojump.com/wp-content/uploads/2021/03/video_product21.jpg\" alt=\"\" width=\"120\" height=\"69\" /></a></p>\n",
+  "sku": "71-1",
+  "price": "1995",
+  "regular_price": "2695",
+  "sale_price": "1995",
+  "date_on_sale_from": null,
+  "date_on_sale_from_gmt": null,
+  "date_on_sale_to": null,
+  "date_on_sale_to_gmt": null,
+  "on_sale": true,
+  "purchasable": true,
+  "total_sales": 9,
+  "virtual": false,
+  "downloadable": true,
+  "downloads": [],
+  "download_limit": -1,
+  "download_expiry": -1,
+  "external_url": "",
+  "button_text": "",
+  "tax_status": "taxable",
+  "tax_class": "",
+  "manage_stock": true,
+  "stock_quantity": 3,
+  "backorders": "no",
+  "backorders_allowed": false,
+  "backordered": false,
+  "low_stock_amount": null,
+  "sold_individually": false,
+  "weight": "600",
+  "dimensions": {
+    "length": "",
+    "width": "",
+    "height": ""
+  },
+  "shipping_required": true,
+  "shipping_taxable": true,
+  "shipping_class": "bouncers",
+  "shipping_class_id": 87,
+  "reviews_allowed": false,
+  "average_rating": "0.00",
+  "rating_count": 0,
+  "upsell_ids": [],
+  "cross_sell_ids": [],
+  "parent_id": 0,
+  "purchase_note": "",
+  "categories": [
+    {
+      "id": 126,
+      "name": "Clearance Sale",
+      "slug": "clearance-sale"
+    },
+    {
+      "id": 102,
+      "name": "IN STOCK",
+      "slug": "in-stock"
+    },
+    {
+      "id": 103,
+      "name": "ON SALE",
+      "slug": "on-sale"
+    },
+    {
+      "id": 104,
+      "name": "Water Slides",
+      "slug": "water-slides"
+    }
+  ],
+  "brands": [],
+  "tags": [],
+  "images": [
+    {
+      "id": 28921,
+      "date_created": "2024-05-23T12:42:15",
+      "date_created_gmt": "2024-05-23T12:42:15",
+      "date_modified": "2024-05-26T14:13:59",
+      "date_modified_gmt": "2024-05-26T14:13:59",
+      "src": "https://jingojump.com/wp-content/uploads/2024/05/15ft_volcano-Ws1.jpg",
+      "name": "15ft_volcano-Ws1.jpg",
+      "alt": "",
+      "srcset": "https://jingojump.com/wp-content/uploads/2024/05/15ft_volcano-Ws1.jpg 700w, https://jingojump.com/wp-content/uploads/2024/05/15ft_volcano-Ws1-430x325.jpg 430w, https://jingojump.com/wp-content/uploads/2024/05/15ft_volcano-Ws1-150x113.jpg 150w, https://jingojump.com/wp-content/uploads/2024/05/15ft_volcano-Ws1-397x300.jpg 397w",
+      "sizes": "(max-width: 700px) 100vw, 700px",
+      "thumbnail": "https://jingojump.com/wp-content/uploads/2024/05/15ft_volcano-Ws1-430x325.jpg"
+    }
+  ],
+  "attributes": [],
+  "default_attributes": [],
+  "variations": [],
+  "grouped_products": [],
+  "menu_order": 13,
+  "price_html": "<del aria-hidden=\"true\"><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;</span>2,695.00</bdi></span></del> <span class=\"screen-reader-text\">Original price was: &#036;2,695.00.</span><ins aria-hidden=\"true\"><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;</span>1,995.00</bdi></span></ins><span class=\"screen-reader-text\">Current price is: &#036;1,995.00.</span>",
+  "related_ids": [
+    30006,
+    30012,
+    29998,
+    29948,
+    30011
+  ],
+  "meta_data": [
+    {
+      "id": 52580,
+      "key": "_wpb_vc_js_status",
+      "value": "false"
+    },
+    {
+      "id": 52581,
+      "key": "_yoast_wpseo_primary_product_cat",
+      "value": ""
+    },
+    {
+      "id": 52582,
+      "key": "_yoast_wpseo_content_score",
+      "value": "90"
+    },
+    {
+      "id": 52583,
+      "key": "_yoast_wpseo_title",
+      "value": "15 FT Volcano Wet-Dry Slide - Shop commercial Inflatable water slide | Jingo Jump, Inc - USA"
+    },
+    {
+      "id": 52584,
+      "key": "_yoast_wpseo_metadesc",
+      "value": "This commercial water slide is on sale online from Jingo Jump, Inc at best price in USA. This bouncer is perfect for kids summer activities."
+    },
+    {
+      "id": 52585,
+      "key": "_yoast_wpseo_metakeywords",
+      "value": "water slides for sale, inflatable water slides, commercial bouncer manufacturer, commercial bounce house for sale, commercial Inflatable manufacturer, bounce houses wholesale, jumpers for sale, commercial grade bounce house, inflatable bouncers for sale, jumper for sale commercial inflatables for sale, commercial jumpers for sale, inflatable jumpers for sale"
+    },
+    {
+      "id": 52586,
+      "key": "_yoast_wpseo_focuskw_text_input",
+      "value": "inflatable water slide"
+    },
+    {
+      "id": 52587,
+      "key": "_yoast_wpseo_focuskw",
+      "value": "inflatable water slide"
+    },
+    {
+      "id": 52588,
+      "key": "_yoast_wpseo_linkdex",
+      "value": "28"
+    },
+    {
+      "id": 52589,
+      "key": "_wp_page_template",
+      "value": "default"
+    },
+    {
+      "id": 52590,
+      "key": "_yoast_wpseo_estimated-reading-time-minutes",
+      "value": "1"
+    },
+    {
+      "id": 52591,
+      "key": "_yoast_indexnow_last_ping",
+      "value": "1714957813"
+    },
+    {
+      "id": 52592,
+      "key": "redux-metabox-section",
+      "value": ""
+    },
+    {
+      "id": 52593,
+      "key": "product-hot-flash",
+      "value": ""
+    },
+    {
+      "id": 52594,
+      "key": "product-hot-time",
+      "value": ""
+    },
+    {
+      "id": 52595,
+      "key": "cmplz_hide_cookiebanner",
+      "value": ""
+    },
+    {
+      "id": 52596,
+      "key": "_yoast_wpseo_wordproof_timestamp",
+      "value": ""
+    },
+    {
+      "id": 52598,
+      "key": "_yoast_wpseo_focuskeywords",
+      "value": "[]"
+    },
+    {
+      "id": 52599,
+      "key": "_yoast_wpseo_keywordsynonyms",
+      "value": "[\"\"]"
+    },
+    {
+      "id": 52600,
+      "key": "woo_feed_availability_date",
+      "value": ""
+    },
+    {
+      "id": 52601,
+      "key": "_oembed_cfd45353b04886d4cd7e1efa19930544",
+      "value": ""
+    },
+    {
+      "id": 52602,
+      "key": "_oembed_time_cfd45353b04886d4cd7e1efa19930544",
+      "value": ""
+    },
+    {
+      "id": 229829,
+      "key": "woodmart_price_unit_of_measure",
+      "value": ""
+    },
+    {
+      "id": 229830,
+      "key": "woodmart_fbt_bundles_id",
+      "value": [
+        ""
+      ]
+    },
+    {
+      "id": 229831,
+      "key": "_ppcp_button_position",
+      "value": "bottom"
+    },
+    {
+      "id": 229832,
+      "key": "woodmart_total_stock_quantity",
+      "value": ""
+    },
+    {
+      "id": 229833,
+      "key": "_product_360_image_gallery",
+      "value": ""
+    },
+    {
+      "id": 229834,
+      "key": "_woodmart_whb_header",
+      "value": "none"
+    },
+    {
+      "id": 229835,
+      "key": "_woodmart_main_layout",
+      "value": "default"
+    },
+    {
+      "id": 229836,
+      "key": "_woodmart_sidebar_width",
+      "value": "default"
+    },
+    {
+      "id": 229837,
+      "key": "_woodmart_custom_sidebar",
+      "value": "none"
+    },
+    {
+      "id": 229838,
+      "key": "_woodmart_new_label",
+      "value": ""
+    },
+    {
+      "id": 229839,
+      "key": "_woodmart_new_label_date",
+      "value": ""
+    },
+    {
+      "id": 229840,
+      "key": "_woodmart_swatches_attribute",
+      "value": ""
+    },
+    {
+      "id": 229841,
+      "key": "_woodmart_related_off",
+      "value": ""
+    },
+    {
+      "id": 229842,
+      "key": "_woodmart_exclude_show_single_variation",
+      "value": ""
+    },
+    {
+      "id": 229843,
+      "key": "_woodmart_product_video",
+      "value": ""
+    },
+    {
+      "id": 229844,
+      "key": "_woodmart_product_hashtag",
+      "value": ""
+    },
+    {
+      "id": 229845,
+      "key": "_woodmart_single_product_style",
+      "value": "inherit"
+    },
+    {
+      "id": 229846,
+      "key": "_woodmart_thums_position",
+      "value": "inherit"
+    },
+    {
+      "id": 229847,
+      "key": "_woodmart_extra_content",
+      "value": ""
+    },
+    {
+      "id": 229848,
+      "key": "_woodmart_extra_position",
+      "value": "after"
+    },
+    {
+      "id": 229849,
+      "key": "_woodmart_product_design",
+      "value": "inherit"
+    },
+    {
+      "id": 229850,
+      "key": "_woodmart_product-background",
+      "value": ""
+    },
+    {
+      "id": 229851,
+      "key": "_woodmart_hide_tabs_titles",
+      "value": ""
+    },
+    {
+      "id": 229852,
+      "key": "_woodmart_product_custom_tab_title",
+      "value": ""
+    },
+    {
+      "id": 229853,
+      "key": "_woodmart_product_custom_tab_content_type",
+      "value": "text"
+    },
+    {
+      "id": 229854,
+      "key": "_woodmart_product_custom_tab_content",
+      "value": ""
+    },
+    {
+      "id": 229855,
+      "key": "_woodmart_product_custom_tab_html_block",
+      "value": ""
+    },
+    {
+      "id": 229856,
+      "key": "_woodmart_product_custom_tab_title_2",
+      "value": ""
+    },
+    {
+      "id": 229857,
+      "key": "_woodmart_product_custom_tab_content_type_2",
+      "value": "text"
+    },
+    {
+      "id": 229858,
+      "key": "_woodmart_product_custom_tab_content_2",
+      "value": ""
+    },
+    {
+      "id": 229859,
+      "key": "_woodmart_product_custom_tab_html_block_2",
+      "value": ""
+    },
+    {
+      "id": 290935,
+      "key": "_wc_gla_synced_at",
+      "value": "1764373297"
+    },
+    {
+      "id": 290936,
+      "key": "_wc_gla_sync_status",
+      "value": "synced"
+    },
+    {
+      "id": 290937,
+      "key": "_wc_gla_visibility",
+      "value": "sync-and-show"
+    },
+    {
+      "id": 290938,
+      "key": "_wc_gla_google_ids",
+      "value": {
+        "US": "online:en:US:gla_30484"
+      }
+    },
+    {
+      "id": 293079,
+      "key": "_wc_gla_notification_status",
+      "value": "updated"
+    },
+    {
+      "id": 309706,
+      "key": "_wc_gla_mc_status",
+      "value": "disapproved"
+    },
+    {
+      "id": 312027,
+      "key": "_elementor_page_assets",
+      "value": []
+    }
+  ],
+  "stock_status": "instock",
+  "has_options": false,
+  "post_password": "",
+  "global_unique_id": "",
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.5 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>15 FT Volcano Wet-Dry Slide - Shop commercial Inflatable water slide | Jingo Jump, Inc - USA</title>\n<meta name=\"description\" content=\"This commercial water slide is on sale online from Jingo Jump, Inc at best price in USA. This bouncer is perfect for kids summer activities.\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://jingojump.com/product/15-ft-volcano-wet-dry-slide/\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:locale\" content=\"en_US\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:type\" content=\"article\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:title\" content=\"15 FT Volcano Wet-Dry Slide - Shop commercial Inflatable water slide | Jingo Jump, Inc - USA\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:description\" content=\"This commercial water slide is on sale online from Jingo Jump, Inc at best price in USA. This bouncer is perfect for kids summer activities.\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:url\" content=\"https://jingojump.com/product/15-ft-volcano-wet-dry-slide/\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:site_name\" content=\"Jingo Jump\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"article:modified_time\" content=\"2025-11-28T23:30:59+00:00\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:image\" content=\"https://jingojump.com/wp-content/uploads/2024/05/15ft_volcano-Ws1.jpg\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:width\" content=\"700\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:height\" content=\"529\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" class=\"yoast-seo-meta-tag\" />\n\t<meta name=\"twitter:data1\" content=\"1 minute\" class=\"yoast-seo-meta-tag\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://jingojump.com/product/15-ft-volcano-wet-dry-slide/\",\"url\":\"https://jingojump.com/product/15-ft-volcano-wet-dry-slide/\",\"name\":\"15 FT Volcano Wet-Dry Slide - Shop commercial Inflatable water slide | Jingo Jump, Inc - USA\",\"isPartOf\":{\"@id\":\"https://jingojump.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://jingojump.com/product/15-ft-volcano-wet-dry-slide/#primaryimage\"},\"image\":{\"@id\":\"https://jingojump.com/product/15-ft-volcano-wet-dry-slide/#primaryimage\"},\"thumbnailUrl\":\"https://jingojump.com/wp-content/uploads/2024/05/15ft_volcano-Ws1.jpg\",\"datePublished\":\"2024-05-26T14:13:55+00:00\",\"dateModified\":\"2025-11-28T23:30:59+00:00\",\"description\":\"This commercial water slide is on sale online from Jingo Jump, Inc at best price in USA. This bouncer is perfect for kids summer activities.\",\"breadcrumb\":{\"@id\":\"https://jingojump.com/product/15-ft-volcano-wet-dry-slide/#breadcrumb\"},\"inLanguage\":\"en\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://jingojump.com/product/15-ft-volcano-wet-dry-slide/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"en\",\"@id\":\"https://jingojump.com/product/15-ft-volcano-wet-dry-slide/#primaryimage\",\"url\":\"https://jingojump.com/wp-content/uploads/2024/05/15ft_volcano-Ws1.jpg\",\"contentUrl\":\"https://jingojump.com/wp-content/uploads/2024/05/15ft_volcano-Ws1.jpg\",\"width\":700,\"height\":529},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://jingojump.com/product/15-ft-volcano-wet-dry-slide/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://jingojump.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Shop\",\"item\":\"https://jingojump.com/shop/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"15 FT Volcano Wet-Dry Slide\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://jingojump.com/#website\",\"url\":\"https://jingojump.com/\",\"name\":\"Jingo Jump\",\"description\":\"Inflatable Bouncers for sale\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://jingojump.com/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+    "title": "15 FT Volcano Wet-Dry Slide - Shop commercial Inflatable water slide | Jingo Jump, Inc - USA",
+    "description": "This commercial water slide is on sale online from Jingo Jump, Inc at best price in USA. This bouncer is perfect for kids summer activities.",
+    "robots": {
+      "index": "index",
+      "follow": "follow",
+      "max-snippet": "max-snippet:-1",
+      "max-image-preview": "max-image-preview:large",
+      "max-video-preview": "max-video-preview:-1"
+    },
+    "canonical": "https://jingojump.com/product/15-ft-volcano-wet-dry-slide/",
+    "og_locale": "en_US",
+    "og_type": "article",
+    "og_title": "15 FT Volcano Wet-Dry Slide - Shop commercial Inflatable water slide | Jingo Jump, Inc - USA",
+    "og_description": "This commercial water slide is on sale online from Jingo Jump, Inc at best price in USA. This bouncer is perfect for kids summer activities.",
+    "og_url": "https://jingojump.com/product/15-ft-volcano-wet-dry-slide/",
+    "og_site_name": "Jingo Jump",
+    "article_modified_time": "2025-11-28T23:30:59+00:00",
+    "og_image": [
+      {
+        "width": 700,
+        "height": 529,
+        "url": "https://jingojump.com/wp-content/uploads/2024/05/15ft_volcano-Ws1.jpg",
+        "type": "image/jpeg"
+      }
+    ],
+    "twitter_card": "summary_large_image",
+    "twitter_misc": {
+      "Est. reading time": "1 minute"
+    },
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://jingojump.com/product/15-ft-volcano-wet-dry-slide/",
+          "url": "https://jingojump.com/product/15-ft-volcano-wet-dry-slide/",
+          "name": "15 FT Volcano Wet-Dry Slide - Shop commercial Inflatable water slide | Jingo Jump, Inc - USA",
+          "isPartOf": {
+            "@id": "https://jingojump.com/#website"
+          },
+          "primaryImageOfPage": {
+            "@id": "https://jingojump.com/product/15-ft-volcano-wet-dry-slide/#primaryimage"
+          },
+          "image": {
+            "@id": "https://jingojump.com/product/15-ft-volcano-wet-dry-slide/#primaryimage"
+          },
+          "thumbnailUrl": "https://jingojump.com/wp-content/uploads/2024/05/15ft_volcano-Ws1.jpg",
+          "datePublished": "2024-05-26T14:13:55+00:00",
+          "dateModified": "2025-11-28T23:30:59+00:00",
+          "description": "This commercial water slide is on sale online from Jingo Jump, Inc at best price in USA. This bouncer is perfect for kids summer activities.",
+          "breadcrumb": {
+            "@id": "https://jingojump.com/product/15-ft-volcano-wet-dry-slide/#breadcrumb"
+          },
+          "inLanguage": "en",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://jingojump.com/product/15-ft-volcano-wet-dry-slide/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "ImageObject",
+          "inLanguage": "en",
+          "@id": "https://jingojump.com/product/15-ft-volcano-wet-dry-slide/#primaryimage",
+          "url": "https://jingojump.com/wp-content/uploads/2024/05/15ft_volcano-Ws1.jpg",
+          "contentUrl": "https://jingojump.com/wp-content/uploads/2024/05/15ft_volcano-Ws1.jpg",
+          "width": 700,
+          "height": 529
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://jingojump.com/product/15-ft-volcano-wet-dry-slide/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jingojump.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shop",
+              "item": "https://jingojump.com/shop/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "15 FT Volcano Wet-Dry Slide"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://jingojump.com/#website",
+          "url": "https://jingojump.com/",
+          "name": "Jingo Jump",
+          "description": "Inflatable Bouncers for sale",
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://jingojump.com/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en"
+        }
+      ]
+    }
+  },
+  "google_listings_and_ads__channel_visibility": {
+    "is_visible": true,
+    "channel_visibility": "sync-and-show",
+    "sync_status": "synced",
+    "issues": []
+  },
+  "_links": {
+    "self": [
+      {
+        "href": "https://jingojump.com/wp-json/wc/v3/products/30484",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://jingojump.com/wp-json/wc/v3/products"
+      }
+    ]
+  }
+}

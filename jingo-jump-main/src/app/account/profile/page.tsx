@@ -17,7 +17,7 @@ import {
 import { api } from "~/trpc/react";
 
 export default function ProfilePage() {
-  const { data: session, update: updateSession } = useSession();
+  const { update: updateSession } = useSession();
   const utils = api.useUtils();
 
   const { data: profile, isLoading: profileLoading } =
@@ -277,7 +277,7 @@ export default function ProfilePage() {
           {/* Error Message */}
           {updateProfileMutation.error && (
             <div className="p-4 bg-red-50 border border-red-200 rounded-xl flex items-start gap-3">
-              <AlertCircle className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+              <AlertCircle className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
               <p className="text-sm text-red-700">
                 {updateProfileMutation.error.message}
               </p>
@@ -449,7 +449,7 @@ export default function ProfilePage() {
           {/* Error Message */}
           {updatePasswordMutation.error && (
             <div className="p-4 bg-red-50 border border-red-200 rounded-xl flex items-start gap-3">
-              <AlertCircle className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+              <AlertCircle className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
               <p className="text-sm text-red-700">
                 {updatePasswordMutation.error.message}
               </p>

@@ -2,21 +2,20 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useParams, useRouter } from "next/navigation";
+import Image from "next/image";
+import { useParams } from "next/navigation";
 import { api } from "~/trpc/react";
 import {
   ArrowLeft,
   Truck,
   Package,
   CreditCard,
-  User,
-  MapPin,
-  FileText,
   Clock,
   CheckCircle,
   XCircle,
 } from "lucide-react";
-import { OrderStatus, PaymentStatus, FulfillmentStatus } from "../../../../../generated/prisma";
+import type { OrderStatus, PaymentStatus } from "../../../../../generated/prisma";
+import { parseAddressFromJson } from "~/lib/validations/address";
 
 const statusColors: Record<OrderStatus, string> = {
   PENDING: "bg-yellow-100 text-yellow-700",
@@ -30,7 +29,6 @@ const statusColors: Record<OrderStatus, string> = {
 
 export default function OrderDetailPage() {
   const params = useParams();
-  const router = useRouter();
   const orderId = params.id as string;
 
   const [trackingNumber, setTrackingNumber] = useState("");
@@ -41,16 +39,16 @@ export default function OrderDetailPage() {
   const { data: order, isLoading, refetch } = api.adminOrders.get.useQuery({ id: orderId });
 
   const updateStatus = api.adminOrders.updateStatus.useMutation({
-    onSuccess: () => refetch(),
+    onSuccess: () => void refetch(),
   });
 
   const updatePaymentStatus = api.adminOrders.updatePaymentStatus.useMutation({
-    onSuccess: () => refetch(),
+    onSuccess: () => void refetch(),
   });
 
   const addTracking = api.adminOrders.addTracking.useMutation({
     onSuccess: () => {
-      refetch();
+      void refetch();
       setTrackingNumber("");
       setTrackingCarrier("");
       setTrackingUrl("");
@@ -59,7 +57,7 @@ export default function OrderDetailPage() {
 
   const addNote = api.adminOrders.addNote.useMutation({
     onSuccess: () => {
-      refetch();
+      void refetch();
       setInternalNote("");
     },
   });
@@ -83,8 +81,8 @@ export default function OrderDetailPage() {
     );
   }
 
-  const shippingAddress = JSON.parse(order.shippingAddress);
-  const billingAddress = JSON.parse(order.billingAddress);
+  const shippingAddress = parseAddressFromJson(order.shippingAddress);
+  const billingAddress = parseAddressFromJson(order.billingAddress);
 
   return (
     <div className="space-y-6">
@@ -128,12 +126,13 @@ export default function OrderDetailPage() {
             <div className="divide-y divide-slate-100">
               {order.items.map((item) => (
                 <div key={item.id} className="flex items-center gap-4 px-6 py-4">
-                  <div className="h-16 w-16 rounded-lg bg-slate-100 flex items-center justify-center overflow-hidden">
+                  <div className="relative h-16 w-16 rounded-lg bg-slate-100 flex items-center justify-center overflow-hidden">
                     {item.product.images[0] ? (
-                      <img
+                      <Image
                         src={item.product.images[0].url}
                         alt={item.name}
-                        className="h-full w-full object-cover"
+                        fill
+                        className="object-cover"
                       />
                     ) : (
                       <Package className="h-6 w-6 text-slate-400" />

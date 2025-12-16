@@ -112,7 +112,7 @@ function Sidebar({
           Back to Store
         </Link>
         <button
-          onClick={() => signOut({ callbackUrl: "/" })}
+          onClick={() => void signOut({ callbackUrl: "/" })}
           className="w-full flex items-center gap-2 text-sm text-red-600 hover:text-red-700 transition-colors px-3 py-2 rounded-lg hover:bg-red-50"
         >
           <LogOut className="h-4 w-4" />

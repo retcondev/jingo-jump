@@ -2,7 +2,7 @@ import { z } from "zod";
 import { hash, compare } from "bcryptjs";
 import { TRPCError } from "@trpc/server";
 import { createTRPCRouter, protectedProcedure } from "~/server/api/trpc";
-import { AddressType } from "../../../../generated/prisma";
+import { accountAddressSchema } from "~/lib/validations/address";
 
 const updateProfileSchema = z.object({
   name: z.string().min(2).optional(),
@@ -21,21 +21,6 @@ const updatePasswordSchema = z.object({
     .regex(/[A-Z]/, "Password must contain at least one uppercase letter")
     .regex(/[a-z]/, "Password must contain at least one lowercase letter")
     .regex(/[0-9]/, "Password must contain at least one number"),
-});
-
-const addressSchema = z.object({
-  type: z.nativeEnum(AddressType),
-  isDefault: z.boolean().default(false),
-  firstName: z.string().min(1),
-  lastName: z.string().min(1),
-  company: z.string().optional(),
-  address1: z.string().min(1),
-  address2: z.string().optional(),
-  city: z.string().min(1),
-  state: z.string().min(1),
-  postalCode: z.string().min(1),
-  country: z.string().default("US"),
-  phone: z.string().optional(),
 });
 
 export const accountRouter = createTRPCRouter({
@@ -299,7 +284,7 @@ export const accountRouter = createTRPCRouter({
 
   // Add address
   addAddress: protectedProcedure
-    .input(addressSchema)
+    .input(accountAddressSchema)
     .mutation(async ({ ctx, input }) => {
       // Get or create customer
       let customer = await ctx.db.customer.findFirst({
@@ -355,7 +340,7 @@ export const accountRouter = createTRPCRouter({
     .input(
       z.object({
         addressId: z.string(),
-        data: addressSchema.partial(),
+        data: accountAddressSchema.partial(),
       })
     )
     .mutation(async ({ ctx, input }) => {

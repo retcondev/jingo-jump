@@ -1,0 +1,399 @@
+{
+  "id": 30129,
+  "name": "Wild West Art Panel",
+  "slug": "wild-west-art-panel",
+  "permalink": "https://jingojump.com/product/wild-west-art-panel/",
+  "date_created": "2024-05-26T14:13:12",
+  "date_created_gmt": "2024-05-26T14:13:12",
+  "date_modified": "2024-05-26T14:13:16",
+  "date_modified_gmt": "2024-05-26T14:13:16",
+  "type": "simple",
+  "status": "publish",
+  "featured": false,
+  "catalog_visibility": "visible",
+  "description": "",
+  "short_description": "<table style=\"width: 240px;\" border=\"0\" cellspacing=\"2\" cellpadding=\"0\">\n<tbody>\n<tr>\n<td height=\"23\"><center><br />\n<span style=\"font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; font-size: small;\"><b>Item #:</b></span></center></td>\n<td height=\"23\"><center><br />\n<span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">MP2</span></center></td>\n</tr>\n<tr>\n<td height=\"23\"><center><br />\n<span style=\"font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; font-size: small;\"><b>Length:</b></span></center></td>\n<td height=\"23\"><center><br />\n<span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">102&#8243;</span></center></td>\n</tr>\n<tr>\n<td height=\"23\"><center><br />\n<span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Height:</strong></span></center></td>\n<td height=\"23\"><center><br />\n<span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">40&#8243;</span></center></td>\n</tr>\n</tbody>\n</table>\n<p><span style=\"color: black; font-family: Arial,Helvetica,sans-serif; font-size: xx-small;\">Note: Due to constant product development and improvement, artwork, shape, color, size, description and schematic that appear on the web site may not reflect the latest changes.<br />\n</span></p>\n",
+  "sku": "601",
+  "price": "120",
+  "regular_price": "120",
+  "sale_price": "",
+  "date_on_sale_from": null,
+  "date_on_sale_from_gmt": null,
+  "date_on_sale_to": null,
+  "date_on_sale_to_gmt": null,
+  "on_sale": false,
+  "purchasable": true,
+  "total_sales": 0,
+  "virtual": false,
+  "downloadable": false,
+  "downloads": [],
+  "download_limit": 0,
+  "download_expiry": 0,
+  "external_url": "",
+  "button_text": "",
+  "tax_status": "taxable",
+  "tax_class": "",
+  "manage_stock": false,
+  "stock_quantity": null,
+  "backorders": "no",
+  "backorders_allowed": false,
+  "backordered": false,
+  "low_stock_amount": null,
+  "sold_individually": false,
+  "weight": "8",
+  "dimensions": {
+    "length": "",
+    "width": "",
+    "height": ""
+  },
+  "shipping_required": true,
+  "shipping_taxable": true,
+  "shipping_class": "art-panels",
+  "shipping_class_id": 93,
+  "reviews_allowed": false,
+  "average_rating": "0.00",
+  "rating_count": 0,
+  "upsell_ids": [],
+  "cross_sell_ids": [],
+  "parent_id": 0,
+  "purchase_note": "",
+  "categories": [
+    {
+      "id": 20,
+      "name": "uncategorized",
+      "slug": "uncategorized"
+    }
+  ],
+  "brands": [],
+  "tags": [],
+  "images": [
+    {
+      "id": 28335,
+      "date_created": "2024-05-23T12:39:43",
+      "date_created_gmt": "2024-05-23T12:39:43",
+      "date_modified": "2024-05-26T14:13:16",
+      "date_modified_gmt": "2024-05-26T14:13:16",
+      "src": "https://jingojump.com/wp-content/uploads/2024/05/wild_west_p18.jpg",
+      "name": "wild_west_p18.jpg",
+      "alt": "",
+      "srcset": "https://jingojump.com/wp-content/uploads/2024/05/wild_west_p18.jpg 700w, https://jingojump.com/wp-content/uploads/2024/05/wild_west_p18-430x168.jpg 430w, https://jingojump.com/wp-content/uploads/2024/05/wild_west_p18-150x59.jpg 150w, https://jingojump.com/wp-content/uploads/2024/05/wild_west_p18-400x157.jpg 400w",
+      "sizes": "(max-width: 700px) 100vw, 700px",
+      "thumbnail": "https://jingojump.com/wp-content/uploads/2024/05/wild_west_p18-430x168.jpg"
+    },
+    {
+      "id": 28337,
+      "date_created": "2024-05-23T12:39:43",
+      "date_created_gmt": "2024-05-23T12:39:43",
+      "date_modified": "2024-05-23T12:39:43",
+      "date_modified_gmt": "2024-05-23T12:39:43",
+      "src": "https://jingojump.com/wp-content/uploads/2024/05/wild_west_m18.jpg",
+      "name": "wild_west_m18.jpg",
+      "alt": "",
+      "srcset": "https://jingojump.com/wp-content/uploads/2024/05/wild_west_m18.jpg 700w, https://jingojump.com/wp-content/uploads/2024/05/wild_west_m18-430x325.jpg 430w, https://jingojump.com/wp-content/uploads/2024/05/wild_west_m18-150x113.jpg 150w, https://jingojump.com/wp-content/uploads/2024/05/wild_west_m18-397x300.jpg 397w",
+      "sizes": "(max-width: 700px) 100vw, 700px",
+      "thumbnail": "https://jingojump.com/wp-content/uploads/2024/05/wild_west_m18-430x325.jpg"
+    }
+  ],
+  "attributes": [],
+  "default_attributes": [],
+  "variations": [],
+  "grouped_products": [],
+  "menu_order": 312,
+  "price_html": "<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;</span>120.00</bdi></span>",
+  "related_ids": [
+    29958,
+    30003,
+    30125,
+    29955,
+    29936
+  ],
+  "meta_data": [
+    {
+      "id": 44584,
+      "key": "_wpb_vc_js_status",
+      "value": ""
+    },
+    {
+      "id": 44585,
+      "key": "_yoast_wpseo_primary_product_cat",
+      "value": "63"
+    },
+    {
+      "id": 44586,
+      "key": "_yoast_wpseo_content_score",
+      "value": "30"
+    },
+    {
+      "id": 44587,
+      "key": "_yoast_wpseo_title",
+      "value": "Wild West Art Panel - Shop | Jingo Jump, Inc - Los Angeles"
+    },
+    {
+      "id": 44588,
+      "key": "_yoast_wpseo_metadesc",
+      "value": "Shop online this Wild West Art Panel modular art from Jingo Jump, Inc."
+    },
+    {
+      "id": 44589,
+      "key": "_yoast_wpseo_metakeywords",
+      "value": "Wild West Art Panel, jumping castles, jumping castles for kids, kids jumping castles, bouncers, bouncers for kids, los angeles, USA ,jingo jumpmedium castle, bouncers, bouncers for kids, los angeles, usa"
+    },
+    {
+      "id": 44590,
+      "key": "_yoast_wpseo_focuskw_text_input",
+      "value": ""
+    },
+    {
+      "id": 44591,
+      "key": "_yoast_wpseo_focuskw",
+      "value": ""
+    },
+    {
+      "id": 44592,
+      "key": "_yoast_wpseo_linkdex",
+      "value": ""
+    },
+    {
+      "id": 44593,
+      "key": "_wp_page_template",
+      "value": "default"
+    },
+    {
+      "id": 44594,
+      "key": "_yoast_wpseo_estimated-reading-time-minutes",
+      "value": ""
+    },
+    {
+      "id": 44595,
+      "key": "_yoast_indexnow_last_ping",
+      "value": ""
+    },
+    {
+      "id": 44596,
+      "key": "redux-metabox-section",
+      "value": ""
+    },
+    {
+      "id": 44597,
+      "key": "product-hot-flash",
+      "value": ""
+    },
+    {
+      "id": 44598,
+      "key": "product-hot-time",
+      "value": ""
+    },
+    {
+      "id": 44599,
+      "key": "cmplz_hide_cookiebanner",
+      "value": ""
+    },
+    {
+      "id": 44600,
+      "key": "_yoast_wpseo_wordproof_timestamp",
+      "value": ""
+    },
+    {
+      "id": 44601,
+      "key": "_yoast_wpseo_inclusive_language_score",
+      "value": ""
+    },
+    {
+      "id": 44602,
+      "key": "_yoast_wpseo_focuskeywords",
+      "value": ""
+    },
+    {
+      "id": 44603,
+      "key": "_yoast_wpseo_keywordsynonyms",
+      "value": ""
+    },
+    {
+      "id": 44604,
+      "key": "woo_feed_availability_date",
+      "value": ""
+    },
+    {
+      "id": 290244,
+      "key": "_wc_gla_synced_at",
+      "value": "1764373294"
+    },
+    {
+      "id": 290245,
+      "key": "_wc_gla_sync_status",
+      "value": "synced"
+    },
+    {
+      "id": 290246,
+      "key": "_wc_gla_visibility",
+      "value": "sync-and-show"
+    },
+    {
+      "id": 290247,
+      "key": "_wc_gla_google_ids",
+      "value": {
+        "US": "online:en:US:gla_30129"
+      }
+    },
+    {
+      "id": 309533,
+      "key": "_wc_gla_mc_status",
+      "value": "disapproved"
+    },
+    {
+      "id": 312148,
+      "key": "_elementor_page_assets",
+      "value": []
+    }
+  ],
+  "stock_status": "instock",
+  "has_options": false,
+  "post_password": "",
+  "global_unique_id": "",
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.5 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Wild West Art Panel - Shop | Jingo Jump, Inc - Los Angeles</title>\n<meta name=\"description\" content=\"Shop online this Wild West Art Panel modular art from Jingo Jump, Inc.\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://jingojump.com/product/wild-west-art-panel/\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:locale\" content=\"en_US\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:type\" content=\"article\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:title\" content=\"Wild West Art Panel - Shop | Jingo Jump, Inc - Los Angeles\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:description\" content=\"Shop online this Wild West Art Panel modular art from Jingo Jump, Inc.\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:url\" content=\"https://jingojump.com/product/wild-west-art-panel/\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:site_name\" content=\"Jingo Jump\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"article:modified_time\" content=\"2024-05-26T14:13:16+00:00\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:image\" content=\"https://jingojump.com/wp-content/uploads/2024/05/wild_west_p18.jpg\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:width\" content=\"700\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:height\" content=\"274\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" class=\"yoast-seo-meta-tag\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://jingojump.com/product/wild-west-art-panel/\",\"url\":\"https://jingojump.com/product/wild-west-art-panel/\",\"name\":\"Wild West Art Panel - Shop | Jingo Jump, Inc - Los Angeles\",\"isPartOf\":{\"@id\":\"https://jingojump.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://jingojump.com/product/wild-west-art-panel/#primaryimage\"},\"image\":{\"@id\":\"https://jingojump.com/product/wild-west-art-panel/#primaryimage\"},\"thumbnailUrl\":\"https://jingojump.com/wp-content/uploads/2024/05/wild_west_p18.jpg\",\"datePublished\":\"2024-05-26T14:13:12+00:00\",\"dateModified\":\"2024-05-26T14:13:16+00:00\",\"description\":\"Shop online this Wild West Art Panel modular art from Jingo Jump, Inc.\",\"breadcrumb\":{\"@id\":\"https://jingojump.com/product/wild-west-art-panel/#breadcrumb\"},\"inLanguage\":\"en\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://jingojump.com/product/wild-west-art-panel/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"en\",\"@id\":\"https://jingojump.com/product/wild-west-art-panel/#primaryimage\",\"url\":\"https://jingojump.com/wp-content/uploads/2024/05/wild_west_p18.jpg\",\"contentUrl\":\"https://jingojump.com/wp-content/uploads/2024/05/wild_west_p18.jpg\",\"width\":700,\"height\":274},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://jingojump.com/product/wild-west-art-panel/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://jingojump.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Shop\",\"item\":\"https://jingojump.com/shop/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Wild West Art Panel\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://jingojump.com/#website\",\"url\":\"https://jingojump.com/\",\"name\":\"Jingo Jump\",\"description\":\"Inflatable Bouncers for sale\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://jingojump.com/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+    "title": "Wild West Art Panel - Shop | Jingo Jump, Inc - Los Angeles",
+    "description": "Shop online this Wild West Art Panel modular art from Jingo Jump, Inc.",
+    "robots": {
+      "index": "index",
+      "follow": "follow",
+      "max-snippet": "max-snippet:-1",
+      "max-image-preview": "max-image-preview:large",
+      "max-video-preview": "max-video-preview:-1"
+    },
+    "canonical": "https://jingojump.com/product/wild-west-art-panel/",
+    "og_locale": "en_US",
+    "og_type": "article",
+    "og_title": "Wild West Art Panel - Shop | Jingo Jump, Inc - Los Angeles",
+    "og_description": "Shop online this Wild West Art Panel modular art from Jingo Jump, Inc.",
+    "og_url": "https://jingojump.com/product/wild-west-art-panel/",
+    "og_site_name": "Jingo Jump",
+    "article_modified_time": "2024-05-26T14:13:16+00:00",
+    "og_image": [
+      {
+        "width": 700,
+        "height": 274,
+        "url": "https://jingojump.com/wp-content/uploads/2024/05/wild_west_p18.jpg",
+        "type": "image/jpeg"
+      }
+    ],
+    "twitter_card": "summary_large_image",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://jingojump.com/product/wild-west-art-panel/",
+          "url": "https://jingojump.com/product/wild-west-art-panel/",
+          "name": "Wild West Art Panel - Shop | Jingo Jump, Inc - Los Angeles",
+          "isPartOf": {
+            "@id": "https://jingojump.com/#website"
+          },
+          "primaryImageOfPage": {
+            "@id": "https://jingojump.com/product/wild-west-art-panel/#primaryimage"
+          },
+          "image": {
+            "@id": "https://jingojump.com/product/wild-west-art-panel/#primaryimage"
+          },
+          "thumbnailUrl": "https://jingojump.com/wp-content/uploads/2024/05/wild_west_p18.jpg",
+          "datePublished": "2024-05-26T14:13:12+00:00",
+          "dateModified": "2024-05-26T14:13:16+00:00",
+          "description": "Shop online this Wild West Art Panel modular art from Jingo Jump, Inc.",
+          "breadcrumb": {
+            "@id": "https://jingojump.com/product/wild-west-art-panel/#breadcrumb"
+          },
+          "inLanguage": "en",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://jingojump.com/product/wild-west-art-panel/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "ImageObject",
+          "inLanguage": "en",
+          "@id": "https://jingojump.com/product/wild-west-art-panel/#primaryimage",
+          "url": "https://jingojump.com/wp-content/uploads/2024/05/wild_west_p18.jpg",
+          "contentUrl": "https://jingojump.com/wp-content/uploads/2024/05/wild_west_p18.jpg",
+          "width": 700,
+          "height": 274
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://jingojump.com/product/wild-west-art-panel/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jingojump.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shop",
+              "item": "https://jingojump.com/shop/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Wild West Art Panel"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://jingojump.com/#website",
+          "url": "https://jingojump.com/",
+          "name": "Jingo Jump",
+          "description": "Inflatable Bouncers for sale",
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://jingojump.com/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en"
+        }
+      ]
+    }
+  },
+  "google_listings_and_ads__channel_visibility": {
+    "is_visible": true,
+    "channel_visibility": "sync-and-show",
+    "sync_status": "synced",
+    "issues": []
+  },
+  "_links": {
+    "self": [
+      {
+        "href": "https://jingojump.com/wp-json/wc/v3/products/30129",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://jingojump.com/wp-json/wc/v3/products"
+      }
+    ]
+  }
+}

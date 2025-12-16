@@ -1,0 +1,399 @@
+{
+  "id": 30183,
+  "name": "Baby Shower Girl",
+  "slug": "baby-shower-girl",
+  "permalink": "https://jingojump.com/product/baby-shower-girl/",
+  "date_created": "2024-05-26T14:13:18",
+  "date_created_gmt": "2024-05-26T14:13:18",
+  "date_modified": "2024-05-26T14:13:21",
+  "date_modified_gmt": "2024-05-26T14:13:21",
+  "type": "simple",
+  "status": "publish",
+  "featured": false,
+  "catalog_visibility": "visible",
+  "description": "",
+  "short_description": "<table style=\"width: 240px;\" border=\"0\" cellspacing=\"2\" cellpadding=\"0\">\n<tbody>\n<tr>\n<td height=\"23\"><center><br />\n<span style=\"font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; font-size: small;\"><b>Item #:</b></span></center></td>\n<td height=\"23\"><center><br />\n<span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">MP26</span></center></td>\n</tr>\n<tr>\n<td height=\"23\"><center><br />\n<span style=\"font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; font-size: small;\"><b>Length:</b></span></center></td>\n<td height=\"23\"><center><br />\n<span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">102&#8243;</span></center></td>\n</tr>\n<tr>\n<td height=\"23\"><center><br />\n<span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Height:</strong></span></center></td>\n<td height=\"23\"><center><br />\n<span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">40&#8243;</span></center></td>\n</tr>\n</tbody>\n</table>\n<p><span style=\"color: black; font-family: Arial,Helvetica,sans-serif; font-size: xx-small;\">Note: Due to constant product development and improvement, artwork, shape, color, size, description and schematic that appear on the web site may not reflect the latest changes.<br />\n</span></p>\n",
+  "sku": "626",
+  "price": "120",
+  "regular_price": "120",
+  "sale_price": "",
+  "date_on_sale_from": null,
+  "date_on_sale_from_gmt": null,
+  "date_on_sale_to": null,
+  "date_on_sale_to_gmt": null,
+  "on_sale": false,
+  "purchasable": true,
+  "total_sales": 0,
+  "virtual": false,
+  "downloadable": false,
+  "downloads": [],
+  "download_limit": 0,
+  "download_expiry": 0,
+  "external_url": "",
+  "button_text": "",
+  "tax_status": "taxable",
+  "tax_class": "",
+  "manage_stock": false,
+  "stock_quantity": null,
+  "backorders": "no",
+  "backorders_allowed": false,
+  "backordered": false,
+  "low_stock_amount": null,
+  "sold_individually": false,
+  "weight": "8",
+  "dimensions": {
+    "length": "",
+    "width": "",
+    "height": ""
+  },
+  "shipping_required": true,
+  "shipping_taxable": true,
+  "shipping_class": "art-panels",
+  "shipping_class_id": 93,
+  "reviews_allowed": false,
+  "average_rating": "0.00",
+  "rating_count": 0,
+  "upsell_ids": [],
+  "cross_sell_ids": [],
+  "parent_id": 0,
+  "purchase_note": "",
+  "categories": [
+    {
+      "id": 20,
+      "name": "uncategorized",
+      "slug": "uncategorized"
+    }
+  ],
+  "brands": [],
+  "tags": [],
+  "images": [
+    {
+      "id": 28431,
+      "date_created": "2024-05-23T12:40:07",
+      "date_created_gmt": "2024-05-23T12:40:07",
+      "date_modified": "2024-05-26T14:13:21",
+      "date_modified_gmt": "2024-05-26T14:13:21",
+      "src": "https://jingojump.com/wp-content/uploads/2024/05/girl_shower_p18.jpg",
+      "name": "girl_shower_p18.jpg",
+      "alt": "",
+      "srcset": "https://jingojump.com/wp-content/uploads/2024/05/girl_shower_p18.jpg 700w, https://jingojump.com/wp-content/uploads/2024/05/girl_shower_p18-430x168.jpg 430w, https://jingojump.com/wp-content/uploads/2024/05/girl_shower_p18-150x59.jpg 150w, https://jingojump.com/wp-content/uploads/2024/05/girl_shower_p18-400x157.jpg 400w",
+      "sizes": "(max-width: 700px) 100vw, 700px",
+      "thumbnail": "https://jingojump.com/wp-content/uploads/2024/05/girl_shower_p18-430x168.jpg"
+    },
+    {
+      "id": 28433,
+      "date_created": "2024-05-23T12:40:07",
+      "date_created_gmt": "2024-05-23T12:40:07",
+      "date_modified": "2024-05-23T12:40:07",
+      "date_modified_gmt": "2024-05-23T12:40:07",
+      "src": "https://jingojump.com/wp-content/uploads/2024/05/girl_shower18.jpg",
+      "name": "girl_shower18.jpg",
+      "alt": "",
+      "srcset": "https://jingojump.com/wp-content/uploads/2024/05/girl_shower18.jpg 799w, https://jingojump.com/wp-content/uploads/2024/05/girl_shower18-430x325.jpg 430w, https://jingojump.com/wp-content/uploads/2024/05/girl_shower18-150x113.jpg 150w, https://jingojump.com/wp-content/uploads/2024/05/girl_shower18-700x529.jpg 700w, https://jingojump.com/wp-content/uploads/2024/05/girl_shower18-397x300.jpg 397w, https://jingojump.com/wp-content/uploads/2024/05/girl_shower18-768x581.jpg 768w",
+      "sizes": "(max-width: 799px) 100vw, 799px",
+      "thumbnail": "https://jingojump.com/wp-content/uploads/2024/05/girl_shower18-430x325.jpg"
+    }
+  ],
+  "attributes": [],
+  "default_attributes": [],
+  "variations": [],
+  "grouped_products": [],
+  "menu_order": 68,
+  "price_html": "<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;</span>120.00</bdi></span>",
+  "related_ids": [
+    29937,
+    29958,
+    30124,
+    30019,
+    29945
+  ],
+  "meta_data": [
+    {
+      "id": 45743,
+      "key": "_wpb_vc_js_status",
+      "value": ""
+    },
+    {
+      "id": 45744,
+      "key": "_yoast_wpseo_primary_product_cat",
+      "value": "15"
+    },
+    {
+      "id": 45745,
+      "key": "_yoast_wpseo_content_score",
+      "value": ""
+    },
+    {
+      "id": 45746,
+      "key": "_yoast_wpseo_title",
+      "value": "Baby Shower Girl - Shop | Jingo Jump, Inc - Los Angeles"
+    },
+    {
+      "id": 45747,
+      "key": "_yoast_wpseo_metadesc",
+      "value": "Shop online this Baby Shower Girl modular art from Jingo Jump, Inc."
+    },
+    {
+      "id": 45748,
+      "key": "_yoast_wpseo_metakeywords",
+      "value": "Baby Shower Girl, jumping castles, jumping castles for kids, kids jumping castles, bouncers, bouncers for kids, los angeles, USA ,jingo jumpmedium castle, bouncers, bouncers for kids, los angeles, usa"
+    },
+    {
+      "id": 45749,
+      "key": "_yoast_wpseo_focuskw_text_input",
+      "value": ""
+    },
+    {
+      "id": 45750,
+      "key": "_yoast_wpseo_focuskw",
+      "value": ""
+    },
+    {
+      "id": 45751,
+      "key": "_yoast_wpseo_linkdex",
+      "value": ""
+    },
+    {
+      "id": 45752,
+      "key": "_wp_page_template",
+      "value": "default"
+    },
+    {
+      "id": 45753,
+      "key": "_yoast_wpseo_estimated-reading-time-minutes",
+      "value": "0"
+    },
+    {
+      "id": 45754,
+      "key": "_yoast_indexnow_last_ping",
+      "value": ""
+    },
+    {
+      "id": 45755,
+      "key": "redux-metabox-section",
+      "value": ""
+    },
+    {
+      "id": 45756,
+      "key": "product-hot-flash",
+      "value": ""
+    },
+    {
+      "id": 45757,
+      "key": "product-hot-time",
+      "value": ""
+    },
+    {
+      "id": 45758,
+      "key": "cmplz_hide_cookiebanner",
+      "value": ""
+    },
+    {
+      "id": 45759,
+      "key": "_yoast_wpseo_wordproof_timestamp",
+      "value": ""
+    },
+    {
+      "id": 45760,
+      "key": "_yoast_wpseo_inclusive_language_score",
+      "value": ""
+    },
+    {
+      "id": 45761,
+      "key": "_yoast_wpseo_focuskeywords",
+      "value": ""
+    },
+    {
+      "id": 45762,
+      "key": "_yoast_wpseo_keywordsynonyms",
+      "value": ""
+    },
+    {
+      "id": 45763,
+      "key": "woo_feed_availability_date",
+      "value": ""
+    },
+    {
+      "id": 290340,
+      "key": "_wc_gla_synced_at",
+      "value": "1764373294"
+    },
+    {
+      "id": 290341,
+      "key": "_wc_gla_sync_status",
+      "value": "synced"
+    },
+    {
+      "id": 290342,
+      "key": "_wc_gla_visibility",
+      "value": "sync-and-show"
+    },
+    {
+      "id": 290343,
+      "key": "_wc_gla_google_ids",
+      "value": {
+        "US": "online:en:US:gla_30183"
+      }
+    },
+    {
+      "id": 309557,
+      "key": "_wc_gla_mc_status",
+      "value": "disapproved"
+    },
+    {
+      "id": 312225,
+      "key": "_elementor_page_assets",
+      "value": []
+    }
+  ],
+  "stock_status": "instock",
+  "has_options": false,
+  "post_password": "",
+  "global_unique_id": "",
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.5 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Baby Shower Girl - Shop | Jingo Jump, Inc - Los Angeles</title>\n<meta name=\"description\" content=\"Shop online this Baby Shower Girl modular art from Jingo Jump, Inc.\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://jingojump.com/product/baby-shower-girl/\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:locale\" content=\"en_US\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:type\" content=\"article\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:title\" content=\"Baby Shower Girl - Shop | Jingo Jump, Inc - Los Angeles\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:description\" content=\"Shop online this Baby Shower Girl modular art from Jingo Jump, Inc.\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:url\" content=\"https://jingojump.com/product/baby-shower-girl/\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:site_name\" content=\"Jingo Jump\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"article:modified_time\" content=\"2024-05-26T14:13:21+00:00\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:image\" content=\"https://jingojump.com/wp-content/uploads/2024/05/girl_shower_p18.jpg\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:width\" content=\"700\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:height\" content=\"274\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" class=\"yoast-seo-meta-tag\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://jingojump.com/product/baby-shower-girl/\",\"url\":\"https://jingojump.com/product/baby-shower-girl/\",\"name\":\"Baby Shower Girl - Shop | Jingo Jump, Inc - Los Angeles\",\"isPartOf\":{\"@id\":\"https://jingojump.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://jingojump.com/product/baby-shower-girl/#primaryimage\"},\"image\":{\"@id\":\"https://jingojump.com/product/baby-shower-girl/#primaryimage\"},\"thumbnailUrl\":\"https://jingojump.com/wp-content/uploads/2024/05/girl_shower_p18.jpg\",\"datePublished\":\"2024-05-26T14:13:18+00:00\",\"dateModified\":\"2024-05-26T14:13:21+00:00\",\"description\":\"Shop online this Baby Shower Girl modular art from Jingo Jump, Inc.\",\"breadcrumb\":{\"@id\":\"https://jingojump.com/product/baby-shower-girl/#breadcrumb\"},\"inLanguage\":\"en\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://jingojump.com/product/baby-shower-girl/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"en\",\"@id\":\"https://jingojump.com/product/baby-shower-girl/#primaryimage\",\"url\":\"https://jingojump.com/wp-content/uploads/2024/05/girl_shower_p18.jpg\",\"contentUrl\":\"https://jingojump.com/wp-content/uploads/2024/05/girl_shower_p18.jpg\",\"width\":700,\"height\":274},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://jingojump.com/product/baby-shower-girl/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://jingojump.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Shop\",\"item\":\"https://jingojump.com/shop/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Baby Shower Girl\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://jingojump.com/#website\",\"url\":\"https://jingojump.com/\",\"name\":\"Jingo Jump\",\"description\":\"Inflatable Bouncers for sale\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://jingojump.com/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+    "title": "Baby Shower Girl - Shop | Jingo Jump, Inc - Los Angeles",
+    "description": "Shop online this Baby Shower Girl modular art from Jingo Jump, Inc.",
+    "robots": {
+      "index": "index",
+      "follow": "follow",
+      "max-snippet": "max-snippet:-1",
+      "max-image-preview": "max-image-preview:large",
+      "max-video-preview": "max-video-preview:-1"
+    },
+    "canonical": "https://jingojump.com/product/baby-shower-girl/",
+    "og_locale": "en_US",
+    "og_type": "article",
+    "og_title": "Baby Shower Girl - Shop | Jingo Jump, Inc - Los Angeles",
+    "og_description": "Shop online this Baby Shower Girl modular art from Jingo Jump, Inc.",
+    "og_url": "https://jingojump.com/product/baby-shower-girl/",
+    "og_site_name": "Jingo Jump",
+    "article_modified_time": "2024-05-26T14:13:21+00:00",
+    "og_image": [
+      {
+        "width": 700,
+        "height": 274,
+        "url": "https://jingojump.com/wp-content/uploads/2024/05/girl_shower_p18.jpg",
+        "type": "image/jpeg"
+      }
+    ],
+    "twitter_card": "summary_large_image",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://jingojump.com/product/baby-shower-girl/",
+          "url": "https://jingojump.com/product/baby-shower-girl/",
+          "name": "Baby Shower Girl - Shop | Jingo Jump, Inc - Los Angeles",
+          "isPartOf": {
+            "@id": "https://jingojump.com/#website"
+          },
+          "primaryImageOfPage": {
+            "@id": "https://jingojump.com/product/baby-shower-girl/#primaryimage"
+          },
+          "image": {
+            "@id": "https://jingojump.com/product/baby-shower-girl/#primaryimage"
+          },
+          "thumbnailUrl": "https://jingojump.com/wp-content/uploads/2024/05/girl_shower_p18.jpg",
+          "datePublished": "2024-05-26T14:13:18+00:00",
+          "dateModified": "2024-05-26T14:13:21+00:00",
+          "description": "Shop online this Baby Shower Girl modular art from Jingo Jump, Inc.",
+          "breadcrumb": {
+            "@id": "https://jingojump.com/product/baby-shower-girl/#breadcrumb"
+          },
+          "inLanguage": "en",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://jingojump.com/product/baby-shower-girl/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "ImageObject",
+          "inLanguage": "en",
+          "@id": "https://jingojump.com/product/baby-shower-girl/#primaryimage",
+          "url": "https://jingojump.com/wp-content/uploads/2024/05/girl_shower_p18.jpg",
+          "contentUrl": "https://jingojump.com/wp-content/uploads/2024/05/girl_shower_p18.jpg",
+          "width": 700,
+          "height": 274
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://jingojump.com/product/baby-shower-girl/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jingojump.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shop",
+              "item": "https://jingojump.com/shop/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Baby Shower Girl"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://jingojump.com/#website",
+          "url": "https://jingojump.com/",
+          "name": "Jingo Jump",
+          "description": "Inflatable Bouncers for sale",
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://jingojump.com/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en"
+        }
+      ]
+    }
+  },
+  "google_listings_and_ads__channel_visibility": {
+    "is_visible": true,
+    "channel_visibility": "sync-and-show",
+    "sync_status": "synced",
+    "issues": []
+  },
+  "_links": {
+    "self": [
+      {
+        "href": "https://jingojump.com/wp-json/wc/v3/products/30183",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://jingojump.com/wp-json/wc/v3/products"
+      }
+    ]
+  }
+}

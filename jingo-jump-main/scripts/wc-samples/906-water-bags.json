@@ -1,0 +1,396 @@
+{
+  "id": 30313,
+  "name": "Water Bags",
+  "slug": "water-bags",
+  "permalink": "https://jingojump.com/product/water-bags/",
+  "date_created": "2024-05-26T14:13:33",
+  "date_created_gmt": "2024-05-26T14:13:33",
+  "date_modified": "2025-11-11T22:47:15",
+  "date_modified_gmt": "2025-11-11T22:47:15",
+  "type": "simple",
+  "status": "publish",
+  "featured": false,
+  "catalog_visibility": "visible",
+  "description": "",
+  "short_description": "<p>Pieces 2<br />\nEach holds up to 5 Gallons.</p>\n",
+  "sku": "906",
+  "price": "45",
+  "regular_price": "45",
+  "sale_price": "",
+  "date_on_sale_from": null,
+  "date_on_sale_from_gmt": null,
+  "date_on_sale_to": null,
+  "date_on_sale_to_gmt": null,
+  "on_sale": false,
+  "purchasable": true,
+  "total_sales": 6,
+  "virtual": false,
+  "downloadable": true,
+  "downloads": [],
+  "download_limit": -1,
+  "download_expiry": -1,
+  "external_url": "",
+  "button_text": "",
+  "tax_status": "taxable",
+  "tax_class": "",
+  "manage_stock": true,
+  "stock_quantity": 24,
+  "backorders": "no",
+  "backorders_allowed": false,
+  "backordered": false,
+  "low_stock_amount": null,
+  "sold_individually": false,
+  "weight": "1",
+  "dimensions": {
+    "length": "",
+    "width": "",
+    "height": ""
+  },
+  "shipping_required": true,
+  "shipping_taxable": true,
+  "shipping_class": "accessories",
+  "shipping_class_id": 99,
+  "reviews_allowed": false,
+  "average_rating": "0.00",
+  "rating_count": 0,
+  "upsell_ids": [],
+  "cross_sell_ids": [],
+  "parent_id": 0,
+  "purchase_note": "",
+  "categories": [
+    {
+      "id": 118,
+      "name": "ACCESSORIES",
+      "slug": "accessories"
+    }
+  ],
+  "brands": [],
+  "tags": [],
+  "images": [
+    {
+      "id": 28621,
+      "date_created": "2024-05-23T12:40:46",
+      "date_created_gmt": "2024-05-23T12:40:46",
+      "date_modified": "2024-05-26T14:13:37",
+      "date_modified_gmt": "2024-05-26T14:13:37",
+      "src": "https://jingojump.com/wp-content/uploads/2024/05/a07_commercial_inflatables18.jpg",
+      "name": "a07_commercial_inflatables18.jpg",
+      "alt": "",
+      "srcset": "https://jingojump.com/wp-content/uploads/2024/05/a07_commercial_inflatables18.jpg 700w, https://jingojump.com/wp-content/uploads/2024/05/a07_commercial_inflatables18-430x325.jpg 430w, https://jingojump.com/wp-content/uploads/2024/05/a07_commercial_inflatables18-150x113.jpg 150w, https://jingojump.com/wp-content/uploads/2024/05/a07_commercial_inflatables18-397x300.jpg 397w",
+      "sizes": "(max-width: 700px) 100vw, 700px",
+      "thumbnail": "https://jingojump.com/wp-content/uploads/2024/05/a07_commercial_inflatables18-430x325.jpg"
+    }
+  ],
+  "attributes": [],
+  "default_attributes": [],
+  "variations": [],
+  "grouped_products": [],
+  "menu_order": 311,
+  "price_html": "<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;</span>45.00</bdi></span>",
+  "related_ids": [
+    30482,
+    30319,
+    30310,
+    30314,
+    30545
+  ],
+  "meta_data": [
+    {
+      "id": 48659,
+      "key": "_wpb_vc_js_status",
+      "value": ""
+    },
+    {
+      "id": 48660,
+      "key": "_yoast_wpseo_primary_product_cat",
+      "value": "62"
+    },
+    {
+      "id": 48661,
+      "key": "_yoast_wpseo_content_score",
+      "value": "60"
+    },
+    {
+      "id": 48662,
+      "key": "_yoast_wpseo_title",
+      "value": "Water Bags - Accessories | Jingo Jump, Inc - Los Angeles"
+    },
+    {
+      "id": 48663,
+      "key": "_yoast_wpseo_metadesc",
+      "value": "Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller."
+    },
+    {
+      "id": 48664,
+      "key": "_yoast_wpseo_metakeywords",
+      "value": "Water Bags, jumping castles, jumping castles for kids, kids jumping castles, bouncers, bouncers for kids, los angeles, USA ,jingo jumpmedium castle, bouncers, bouncers for kids, los angeles, usa"
+    },
+    {
+      "id": 48665,
+      "key": "_yoast_wpseo_focuskw_text_input",
+      "value": ""
+    },
+    {
+      "id": 48666,
+      "key": "_yoast_wpseo_focuskw",
+      "value": ""
+    },
+    {
+      "id": 48667,
+      "key": "_yoast_wpseo_linkdex",
+      "value": ""
+    },
+    {
+      "id": 48668,
+      "key": "_wp_page_template",
+      "value": "default"
+    },
+    {
+      "id": 48669,
+      "key": "_yoast_wpseo_estimated-reading-time-minutes",
+      "value": ""
+    },
+    {
+      "id": 48670,
+      "key": "_yoast_indexnow_last_ping",
+      "value": ""
+    },
+    {
+      "id": 48671,
+      "key": "redux-metabox-section",
+      "value": ""
+    },
+    {
+      "id": 48672,
+      "key": "product-hot-flash",
+      "value": ""
+    },
+    {
+      "id": 48673,
+      "key": "product-hot-time",
+      "value": ""
+    },
+    {
+      "id": 48674,
+      "key": "cmplz_hide_cookiebanner",
+      "value": ""
+    },
+    {
+      "id": 48675,
+      "key": "_yoast_wpseo_wordproof_timestamp",
+      "value": ""
+    },
+    {
+      "id": 48676,
+      "key": "_yoast_wpseo_inclusive_language_score",
+      "value": ""
+    },
+    {
+      "id": 48677,
+      "key": "_yoast_wpseo_focuskeywords",
+      "value": ""
+    },
+    {
+      "id": 48678,
+      "key": "_yoast_wpseo_keywordsynonyms",
+      "value": ""
+    },
+    {
+      "id": 48679,
+      "key": "woo_feed_availability_date",
+      "value": ""
+    },
+    {
+      "id": 48680,
+      "key": "_oembed_cfd45353b04886d4cd7e1efa19930544",
+      "value": ""
+    },
+    {
+      "id": 48681,
+      "key": "_oembed_time_cfd45353b04886d4cd7e1efa19930544",
+      "value": ""
+    },
+    {
+      "id": 290623,
+      "key": "_wc_gla_synced_at",
+      "value": "1764373297"
+    },
+    {
+      "id": 290624,
+      "key": "_wc_gla_sync_status",
+      "value": "synced"
+    },
+    {
+      "id": 290625,
+      "key": "_wc_gla_visibility",
+      "value": "sync-and-show"
+    },
+    {
+      "id": 290626,
+      "key": "_wc_gla_google_ids",
+      "value": {
+        "US": "online:en:US:gla_30313"
+      }
+    },
+    {
+      "id": 293503,
+      "key": "_wc_gla_notification_status",
+      "value": "updated"
+    },
+    {
+      "id": 309627,
+      "key": "_wc_gla_mc_status",
+      "value": "disapproved"
+    }
+  ],
+  "stock_status": "instock",
+  "has_options": false,
+  "post_password": "",
+  "global_unique_id": "",
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.5 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Water Bags - Accessories | Jingo Jump, Inc - Los Angeles</title>\n<meta name=\"description\" content=\"Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller.\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://jingojump.com/product/water-bags/\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:locale\" content=\"en_US\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:type\" content=\"article\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:title\" content=\"Water Bags - Accessories | Jingo Jump, Inc - Los Angeles\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:description\" content=\"Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller.\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:url\" content=\"https://jingojump.com/product/water-bags/\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:site_name\" content=\"Jingo Jump\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"article:modified_time\" content=\"2025-11-11T22:47:15+00:00\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:image\" content=\"https://jingojump.com/wp-content/uploads/2024/05/a07_commercial_inflatables18.jpg\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:width\" content=\"700\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:height\" content=\"529\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" class=\"yoast-seo-meta-tag\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://jingojump.com/product/water-bags/\",\"url\":\"https://jingojump.com/product/water-bags/\",\"name\":\"Water Bags - Accessories | Jingo Jump, Inc - Los Angeles\",\"isPartOf\":{\"@id\":\"https://jingojump.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://jingojump.com/product/water-bags/#primaryimage\"},\"image\":{\"@id\":\"https://jingojump.com/product/water-bags/#primaryimage\"},\"thumbnailUrl\":\"https://jingojump.com/wp-content/uploads/2024/05/a07_commercial_inflatables18.jpg\",\"datePublished\":\"2024-05-26T14:13:33+00:00\",\"dateModified\":\"2025-11-11T22:47:15+00:00\",\"description\":\"Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller.\",\"breadcrumb\":{\"@id\":\"https://jingojump.com/product/water-bags/#breadcrumb\"},\"inLanguage\":\"en\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://jingojump.com/product/water-bags/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"en\",\"@id\":\"https://jingojump.com/product/water-bags/#primaryimage\",\"url\":\"https://jingojump.com/wp-content/uploads/2024/05/a07_commercial_inflatables18.jpg\",\"contentUrl\":\"https://jingojump.com/wp-content/uploads/2024/05/a07_commercial_inflatables18.jpg\",\"width\":700,\"height\":529},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://jingojump.com/product/water-bags/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://jingojump.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Shop\",\"item\":\"https://jingojump.com/shop/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Water Bags\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://jingojump.com/#website\",\"url\":\"https://jingojump.com/\",\"name\":\"Jingo Jump\",\"description\":\"Inflatable Bouncers for sale\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://jingojump.com/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+    "title": "Water Bags - Accessories | Jingo Jump, Inc - Los Angeles",
+    "description": "Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller.",
+    "robots": {
+      "index": "index",
+      "follow": "follow",
+      "max-snippet": "max-snippet:-1",
+      "max-image-preview": "max-image-preview:large",
+      "max-video-preview": "max-video-preview:-1"
+    },
+    "canonical": "https://jingojump.com/product/water-bags/",
+    "og_locale": "en_US",
+    "og_type": "article",
+    "og_title": "Water Bags - Accessories | Jingo Jump, Inc - Los Angeles",
+    "og_description": "Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller.",
+    "og_url": "https://jingojump.com/product/water-bags/",
+    "og_site_name": "Jingo Jump",
+    "article_modified_time": "2025-11-11T22:47:15+00:00",
+    "og_image": [
+      {
+        "width": 700,
+        "height": 529,
+        "url": "https://jingojump.com/wp-content/uploads/2024/05/a07_commercial_inflatables18.jpg",
+        "type": "image/jpeg"
+      }
+    ],
+    "twitter_card": "summary_large_image",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://jingojump.com/product/water-bags/",
+          "url": "https://jingojump.com/product/water-bags/",
+          "name": "Water Bags - Accessories | Jingo Jump, Inc - Los Angeles",
+          "isPartOf": {
+            "@id": "https://jingojump.com/#website"
+          },
+          "primaryImageOfPage": {
+            "@id": "https://jingojump.com/product/water-bags/#primaryimage"
+          },
+          "image": {
+            "@id": "https://jingojump.com/product/water-bags/#primaryimage"
+          },
+          "thumbnailUrl": "https://jingojump.com/wp-content/uploads/2024/05/a07_commercial_inflatables18.jpg",
+          "datePublished": "2024-05-26T14:13:33+00:00",
+          "dateModified": "2025-11-11T22:47:15+00:00",
+          "description": "Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller.",
+          "breadcrumb": {
+            "@id": "https://jingojump.com/product/water-bags/#breadcrumb"
+          },
+          "inLanguage": "en",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://jingojump.com/product/water-bags/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "ImageObject",
+          "inLanguage": "en",
+          "@id": "https://jingojump.com/product/water-bags/#primaryimage",
+          "url": "https://jingojump.com/wp-content/uploads/2024/05/a07_commercial_inflatables18.jpg",
+          "contentUrl": "https://jingojump.com/wp-content/uploads/2024/05/a07_commercial_inflatables18.jpg",
+          "width": 700,
+          "height": 529
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://jingojump.com/product/water-bags/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jingojump.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shop",
+              "item": "https://jingojump.com/shop/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Water Bags"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://jingojump.com/#website",
+          "url": "https://jingojump.com/",
+          "name": "Jingo Jump",
+          "description": "Inflatable Bouncers for sale",
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://jingojump.com/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en"
+        }
+      ]
+    }
+  },
+  "google_listings_and_ads__channel_visibility": {
+    "is_visible": true,
+    "channel_visibility": "sync-and-show",
+    "sync_status": "synced",
+    "issues": []
+  },
+  "_links": {
+    "self": [
+      {
+        "href": "https://jingojump.com/wp-json/wc/v3/products/30313",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://jingojump.com/wp-json/wc/v3/products"
+      }
+    ]
+  }
+}

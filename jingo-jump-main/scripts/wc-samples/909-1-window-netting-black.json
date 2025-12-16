@@ -1,0 +1,417 @@
+{
+  "id": 30544,
+  "name": "Window Netting Black",
+  "slug": "window-netting-black",
+  "permalink": "https://jingojump.com/product/window-netting-black/",
+  "date_created": "2024-05-26T14:14:05",
+  "date_created_gmt": "2024-05-26T14:14:05",
+  "date_modified": "2025-11-28T23:39:19",
+  "date_modified_gmt": "2025-11-28T23:39:19",
+  "type": "simple",
+  "status": "publish",
+  "featured": false,
+  "catalog_visibility": "visible",
+  "description": "<p>Window Netting Black</p>\n",
+  "short_description": "",
+  "sku": "909-1",
+  "price": "95",
+  "regular_price": "95",
+  "sale_price": "",
+  "date_on_sale_from": null,
+  "date_on_sale_from_gmt": null,
+  "date_on_sale_to": null,
+  "date_on_sale_to_gmt": null,
+  "on_sale": false,
+  "purchasable": true,
+  "total_sales": 1,
+  "virtual": false,
+  "downloadable": true,
+  "downloads": [],
+  "download_limit": -1,
+  "download_expiry": -1,
+  "external_url": "",
+  "button_text": "",
+  "tax_status": "taxable",
+  "tax_class": "",
+  "manage_stock": false,
+  "stock_quantity": null,
+  "backorders": "no",
+  "backorders_allowed": false,
+  "backordered": false,
+  "low_stock_amount": null,
+  "sold_individually": false,
+  "weight": "20",
+  "dimensions": {
+    "length": "",
+    "width": "",
+    "height": ""
+  },
+  "shipping_required": true,
+  "shipping_taxable": true,
+  "shipping_class": "",
+  "shipping_class_id": 0,
+  "reviews_allowed": false,
+  "average_rating": "0.00",
+  "rating_count": 0,
+  "upsell_ids": [],
+  "cross_sell_ids": [],
+  "parent_id": 0,
+  "purchase_note": "",
+  "categories": [
+    {
+      "id": 118,
+      "name": "ACCESSORIES",
+      "slug": "accessories"
+    }
+  ],
+  "brands": [],
+  "tags": [],
+  "images": [
+    {
+      "id": 29014,
+      "date_created": "2024-05-23T12:42:41",
+      "date_created_gmt": "2024-05-23T12:42:41",
+      "date_modified": "2024-05-26T14:14:07",
+      "date_modified_gmt": "2024-05-26T14:14:07",
+      "src": "https://jingojump.com/wp-content/uploads/2024/05/w-nett_blck.jpg",
+      "name": "w-nett_blck.jpg",
+      "alt": "",
+      "srcset": "https://jingojump.com/wp-content/uploads/2024/05/w-nett_blck.jpg 700w, https://jingojump.com/wp-content/uploads/2024/05/w-nett_blck-430x325.jpg 430w, https://jingojump.com/wp-content/uploads/2024/05/w-nett_blck-150x113.jpg 150w, https://jingojump.com/wp-content/uploads/2024/05/w-nett_blck-397x300.jpg 397w",
+      "sizes": "(max-width: 700px) 100vw, 700px",
+      "thumbnail": "https://jingojump.com/wp-content/uploads/2024/05/w-nett_blck-430x325.jpg"
+    },
+    {
+      "id": 29016,
+      "date_created": "2024-05-23T12:42:41",
+      "date_created_gmt": "2024-05-23T12:42:41",
+      "date_modified": "2024-05-23T12:42:41",
+      "date_modified_gmt": "2024-05-23T12:42:41",
+      "src": "https://jingojump.com/wp-content/uploads/2024/05/w-nett_blck2.jpg",
+      "name": "w-nett_blck2.jpg",
+      "alt": "",
+      "srcset": "https://jingojump.com/wp-content/uploads/2024/05/w-nett_blck2.jpg 700w, https://jingojump.com/wp-content/uploads/2024/05/w-nett_blck2-430x325.jpg 430w, https://jingojump.com/wp-content/uploads/2024/05/w-nett_blck2-150x113.jpg 150w, https://jingojump.com/wp-content/uploads/2024/05/w-nett_blck2-397x300.jpg 397w",
+      "sizes": "(max-width: 700px) 100vw, 700px",
+      "thumbnail": "https://jingojump.com/wp-content/uploads/2024/05/w-nett_blck2-430x325.jpg"
+    }
+  ],
+  "attributes": [],
+  "default_attributes": [],
+  "variations": [],
+  "grouped_products": [],
+  "menu_order": 293,
+  "price_html": "<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;</span>95.00</bdi></span>",
+  "related_ids": [
+    30482,
+    30426,
+    30422,
+    30310,
+    30313
+  ],
+  "meta_data": [
+    {
+      "id": 53795,
+      "key": "_wpb_vc_js_status",
+      "value": ""
+    },
+    {
+      "id": 53796,
+      "key": "_yoast_wpseo_primary_product_cat",
+      "value": ""
+    },
+    {
+      "id": 53797,
+      "key": "_yoast_wpseo_content_score",
+      "value": "60"
+    },
+    {
+      "id": 53798,
+      "key": "_yoast_wpseo_title",
+      "value": "Black Netting - Accessories | Jingo Jump, Inc - Los Angeles"
+    },
+    {
+      "id": 53799,
+      "key": "_yoast_wpseo_metadesc",
+      "value": "Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller."
+    },
+    {
+      "id": 53800,
+      "key": "_yoast_wpseo_metakeywords",
+      "value": "Tarp 30×16, jumping castles, jumping castles for kids, kids jumping castles, bouncers, bouncers for kids, los angeles, USA ,jingo jumpmedium castle, bouncers, bouncers for kids, los angeles, usa"
+    },
+    {
+      "id": 53801,
+      "key": "_yoast_wpseo_focuskw_text_input",
+      "value": ""
+    },
+    {
+      "id": 53804,
+      "key": "_wp_page_template",
+      "value": "default"
+    },
+    {
+      "id": 53805,
+      "key": "_yoast_wpseo_estimated-reading-time-minutes",
+      "value": "1"
+    },
+    {
+      "id": 53806,
+      "key": "_yoast_indexnow_last_ping",
+      "value": "1711822322"
+    },
+    {
+      "id": 53807,
+      "key": "redux-metabox-section",
+      "value": ""
+    },
+    {
+      "id": 53808,
+      "key": "product-hot-flash",
+      "value": ""
+    },
+    {
+      "id": 53809,
+      "key": "product-hot-time",
+      "value": ""
+    },
+    {
+      "id": 53810,
+      "key": "cmplz_hide_cookiebanner",
+      "value": ""
+    },
+    {
+      "id": 53811,
+      "key": "_yoast_wpseo_wordproof_timestamp",
+      "value": ""
+    },
+    {
+      "id": 53813,
+      "key": "_yoast_wpseo_focuskeywords",
+      "value": "[]"
+    },
+    {
+      "id": 53814,
+      "key": "_yoast_wpseo_keywordsynonyms",
+      "value": "[\"\"]"
+    },
+    {
+      "id": 53815,
+      "key": "woo_feed_availability_date",
+      "value": ""
+    },
+    {
+      "id": 53816,
+      "key": "_oembed_cfd45353b04886d4cd7e1efa19930544",
+      "value": ""
+    },
+    {
+      "id": 53817,
+      "key": "_oembed_time_cfd45353b04886d4cd7e1efa19930544",
+      "value": ""
+    },
+    {
+      "id": 291020,
+      "key": "_wc_gla_sync_status",
+      "value": "synced"
+    },
+    {
+      "id": 291021,
+      "key": "_wc_gla_visibility",
+      "value": "sync-and-show"
+    },
+    {
+      "id": 305104,
+      "key": "_ppcp_button_position",
+      "value": "bottom"
+    },
+    {
+      "id": 305105,
+      "key": "_wc_gla_notification_status",
+      "value": "created"
+    },
+    {
+      "id": 305106,
+      "key": "_woodmart_product-background",
+      "value": ""
+    },
+    {
+      "id": 305107,
+      "key": "_yoast_wpseo_primary_product_brand",
+      "value": ""
+    },
+    {
+      "id": 305108,
+      "key": "_wc_gla_synced_at",
+      "value": "1764373300"
+    },
+    {
+      "id": 305109,
+      "key": "_wc_gla_google_ids",
+      "value": {
+        "US": "online:en:US:gla_30544"
+      }
+    },
+    {
+      "id": 309735,
+      "key": "_wc_gla_mc_status",
+      "value": "disapproved"
+    },
+    {
+      "id": 312085,
+      "key": "_elementor_page_assets",
+      "value": []
+    }
+  ],
+  "stock_status": "instock",
+  "has_options": false,
+  "post_password": "",
+  "global_unique_id": "",
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.5 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Black Netting - Accessories | Jingo Jump, Inc - Los Angeles</title>\n<meta name=\"description\" content=\"Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller.\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://jingojump.com/product/window-netting-black/\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:locale\" content=\"en_US\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:type\" content=\"article\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:title\" content=\"Black Netting - Accessories | Jingo Jump, Inc - Los Angeles\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:description\" content=\"Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller.\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:url\" content=\"https://jingojump.com/product/window-netting-black/\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:site_name\" content=\"Jingo Jump\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"article:modified_time\" content=\"2025-11-28T23:39:19+00:00\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:image\" content=\"https://jingojump.com/wp-content/uploads/2024/05/w-nett_blck.jpg\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:width\" content=\"700\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:height\" content=\"529\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" class=\"yoast-seo-meta-tag\" />\n\t<meta name=\"twitter:data1\" content=\"1 minute\" class=\"yoast-seo-meta-tag\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://jingojump.com/product/window-netting-black/\",\"url\":\"https://jingojump.com/product/window-netting-black/\",\"name\":\"Black Netting - Accessories | Jingo Jump, Inc - Los Angeles\",\"isPartOf\":{\"@id\":\"https://jingojump.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://jingojump.com/product/window-netting-black/#primaryimage\"},\"image\":{\"@id\":\"https://jingojump.com/product/window-netting-black/#primaryimage\"},\"thumbnailUrl\":\"https://jingojump.com/wp-content/uploads/2024/05/w-nett_blck.jpg\",\"datePublished\":\"2024-05-26T14:14:05+00:00\",\"dateModified\":\"2025-11-28T23:39:19+00:00\",\"description\":\"Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller.\",\"breadcrumb\":{\"@id\":\"https://jingojump.com/product/window-netting-black/#breadcrumb\"},\"inLanguage\":\"en\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://jingojump.com/product/window-netting-black/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"en\",\"@id\":\"https://jingojump.com/product/window-netting-black/#primaryimage\",\"url\":\"https://jingojump.com/wp-content/uploads/2024/05/w-nett_blck.jpg\",\"contentUrl\":\"https://jingojump.com/wp-content/uploads/2024/05/w-nett_blck.jpg\",\"width\":700,\"height\":529},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://jingojump.com/product/window-netting-black/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://jingojump.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Shop\",\"item\":\"https://jingojump.com/shop/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Window Netting Black\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://jingojump.com/#website\",\"url\":\"https://jingojump.com/\",\"name\":\"Jingo Jump\",\"description\":\"Inflatable Bouncers for sale\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://jingojump.com/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+    "title": "Black Netting - Accessories | Jingo Jump, Inc - Los Angeles",
+    "description": "Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller.",
+    "robots": {
+      "index": "index",
+      "follow": "follow",
+      "max-snippet": "max-snippet:-1",
+      "max-image-preview": "max-image-preview:large",
+      "max-video-preview": "max-video-preview:-1"
+    },
+    "canonical": "https://jingojump.com/product/window-netting-black/",
+    "og_locale": "en_US",
+    "og_type": "article",
+    "og_title": "Black Netting - Accessories | Jingo Jump, Inc - Los Angeles",
+    "og_description": "Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller.",
+    "og_url": "https://jingojump.com/product/window-netting-black/",
+    "og_site_name": "Jingo Jump",
+    "article_modified_time": "2025-11-28T23:39:19+00:00",
+    "og_image": [
+      {
+        "width": 700,
+        "height": 529,
+        "url": "https://jingojump.com/wp-content/uploads/2024/05/w-nett_blck.jpg",
+        "type": "image/jpeg"
+      }
+    ],
+    "twitter_card": "summary_large_image",
+    "twitter_misc": {
+      "Est. reading time": "1 minute"
+    },
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://jingojump.com/product/window-netting-black/",
+          "url": "https://jingojump.com/product/window-netting-black/",
+          "name": "Black Netting - Accessories | Jingo Jump, Inc - Los Angeles",
+          "isPartOf": {
+            "@id": "https://jingojump.com/#website"
+          },
+          "primaryImageOfPage": {
+            "@id": "https://jingojump.com/product/window-netting-black/#primaryimage"
+          },
+          "image": {
+            "@id": "https://jingojump.com/product/window-netting-black/#primaryimage"
+          },
+          "thumbnailUrl": "https://jingojump.com/wp-content/uploads/2024/05/w-nett_blck.jpg",
+          "datePublished": "2024-05-26T14:14:05+00:00",
+          "dateModified": "2025-11-28T23:39:19+00:00",
+          "description": "Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller.",
+          "breadcrumb": {
+            "@id": "https://jingojump.com/product/window-netting-black/#breadcrumb"
+          },
+          "inLanguage": "en",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://jingojump.com/product/window-netting-black/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "ImageObject",
+          "inLanguage": "en",
+          "@id": "https://jingojump.com/product/window-netting-black/#primaryimage",
+          "url": "https://jingojump.com/wp-content/uploads/2024/05/w-nett_blck.jpg",
+          "contentUrl": "https://jingojump.com/wp-content/uploads/2024/05/w-nett_blck.jpg",
+          "width": 700,
+          "height": 529
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://jingojump.com/product/window-netting-black/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jingojump.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shop",
+              "item": "https://jingojump.com/shop/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Window Netting Black"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://jingojump.com/#website",
+          "url": "https://jingojump.com/",
+          "name": "Jingo Jump",
+          "description": "Inflatable Bouncers for sale",
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://jingojump.com/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en"
+        }
+      ]
+    }
+  },
+  "google_listings_and_ads__channel_visibility": {
+    "is_visible": true,
+    "channel_visibility": "sync-and-show",
+    "sync_status": "synced",
+    "issues": []
+  },
+  "_links": {
+    "self": [
+      {
+        "href": "https://jingojump.com/wp-json/wc/v3/products/30544",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://jingojump.com/wp-json/wc/v3/products"
+      }
+    ]
+  }
+}

@@ -1,135 +1,126 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { ShopContent } from "~/app/shop/_components/ShopContent";
-import { mockProducts, filterOptions } from "~/data/mockProducts";
-
-// Map URL category params to product categories
-const categoryMap: Record<string, string> = {
-  "bouncers-15x15": "Bouncers 15x15",
-  "water-slides": "Water Slide",
-  "combo-units": "Combo Unit",
-  "standard-bouncers": "Standard Bouncer",
-  "obstacle-courses": "Obstacle Course",
-  "interactive-games": "Interactive Game",
-  "commercial-units": "Commercial Unit",
-  "light-commercial": "Light Commercial",
-  "open-box": "Open Box",
-  "clearance": "Clearance",
-  "bouncers-13x13": "Bouncers 13x13",
-  "package-deals": "Package Deal",
-  "art-panels": "Art Panel",
-  "accessories": "Accessories",
-};
-
-// Format category name for display
-const formatCategoryName = (category: string | null): string => {
-  if (!category) return "All Products";
-  const mapped = categoryMap[category];
-  if (mapped) return mapped;
-  return category
-    .split("-")
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
-};
+import { api } from "~/trpc/server";
+import { mockProducts, filterOptions as mockFilterOptions } from "~/data/mockProducts";
+import { parseBadge, type Product } from "~/types/product";
 
 interface ShopPageProps {
-  searchParams: Promise<{ category?: string }>;
+  searchParams: Promise<{ search?: string; page?: string }>;
 }
 
-export async function generateMetadata({
-  searchParams,
-}: ShopPageProps): Promise<Metadata> {
-  const params = await searchParams;
-  const category = params.category ?? null;
-  const categoryName = formatCategoryName(category);
-
-  const title = category
-    ? `${categoryName} Bounce Houses & Inflatables`
-    : "Shop Commercial Inflatables";
-
-  const description = category
-    ? `Browse our premium selection of ${categoryName.toLowerCase()}. Commercial-grade inflatables built for rental businesses and events. Shop now at Jingo Jump.`
-    : "Shop premium commercial bounce houses, water slides, combo units & inflatables. Durable designs for rental businesses & events. Browse our full catalog.";
-
-  const canonicalUrl = category
-    ? `https://jingojump.com/shop?category=${category}`
-    : "https://jingojump.com/shop";
-
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: canonicalUrl,
-    },
-    openGraph: {
-      title: `${title} | Jingo Jump`,
-      description,
-      url: canonicalUrl,
-      type: "website",
-      siteName: "Jingo Jump",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: `${title} | Jingo Jump`,
-      description,
-    },
-  };
-}
+export const metadata: Metadata = {
+  title: "Shop Commercial Inflatables",
+  description:
+    "Shop premium commercial bounce houses, water slides, combo units & inflatables. Durable designs for rental businesses & events. Browse our full catalog.",
+  alternates: {
+    canonical: "https://jingojump.com/shop",
+  },
+  openGraph: {
+    title: "Shop Commercial Inflatables | Jingo Jump",
+    description:
+      "Shop premium commercial bounce houses, water slides, combo units & inflatables. Durable designs for rental businesses & events.",
+    url: "https://jingojump.com/shop",
+    type: "website",
+    siteName: "Jingo Jump",
+  },
+};
 
 export default async function ShopPage({ searchParams }: ShopPageProps) {
   const params = await searchParams;
-  const categoryParam = params.category ?? null;
+  const searchQuery = params.search ?? undefined;
 
-  // Filter products based on category (server-side)
-  const filteredProducts = categoryParam
-    ? (() => {
-        const categoryName = categoryMap[categoryParam];
-        if (!categoryName) return mockProducts;
-        return mockProducts.filter(
-          (product) => product.category === categoryName
-        );
-      })()
-    : mockProducts;
+  // Try to fetch from database
+  let products: Product[] = [];
+  let filterOptions = mockFilterOptions;
+  let useDatabase = false;
 
-  const categoryDisplayName = formatCategoryName(categoryParam);
+  try {
+    // Fetch products from database
+    const dbResult = await api.products.list({
+      page: 1,
+      limit: 100,
+      search: searchQuery,
+      sortBy: "featured",
+    });
+
+    if (dbResult.products.length > 0) {
+      useDatabase = true;
+      // Convert DB products to Product type
+      products = dbResult.products.map((p) => ({
+        id: p.id,
+        name: p.name,
+        category: p.categoryRelation?.name ?? "",
+        description: p.description ?? "",
+        price: p.price,
+        image: p.images[0]?.url,
+        gradient: p.gradient,
+        badge: parseBadge(p.badge),
+        size: p.size,
+        ageRange: p.ageRange,
+        slug: p.slug,
+        salePrice: p.salePrice,
+      }));
+
+      // Fetch filter options from database
+      const [dbCategories, dbFilterOptions] = await Promise.all([
+        api.products.getCategories(),
+        api.products.getFilterOptions(),
+      ]);
+
+      filterOptions = {
+        categories: dbCategories.map((c) => ({
+          id: c.slug,
+          label: c.name,
+          count: c.count,
+        })),
+        sizes: dbFilterOptions.sizes.map((s) => ({
+          id: s.name.toLowerCase().replace(/[()]/g, "").replace(/\s+/g, "-"),
+          label: s.name,
+          count: s.count,
+        })),
+        ageRanges: dbFilterOptions.ageRanges.map((a) => ({
+          id: a.name.toLowerCase().replace(/[()]/g, "").replace(/\s+/g, "-"),
+          label: a.name,
+          count: a.count,
+        })),
+        priceRange: dbFilterOptions.priceRange,
+      };
+    }
+  } catch (error) {
+    console.error("Failed to fetch products from database:", error);
+  }
+
+  // Fallback to mock data if database is empty or errored
+  if (!useDatabase) {
+    products = mockProducts;
+  }
 
   return (
     <div className="min-h-screen bg-linear-to-b from-white to-slate-50">
-      <div className="mx-auto max-w-[1600px] px-4 pt-[20px] pb-12 sm:px-6 lg:px-8 xl:px-12 mt-[140px]">
+      <div className="mx-auto max-w-[1600px] px-4 pt-5 pb-12 sm:px-6 lg:px-8 xl:px-12 mt-[140px]">
         {/* Breadcrumb */}
         <nav className="mb-8 flex items-center gap-2 text-sm font-semibold text-slate-500">
-          <a href="/" className="transition-colors hover:text-primary-500">
+          <Link href="/" className="transition-colors hover:text-primary-500">
             Home
-          </a>
+          </Link>
           <ChevronRight className="h-4 w-4" />
-          <a href="/shop" className="transition-colors hover:text-primary-500">
-            Shop
-          </a>
-          {categoryParam && (
-            <>
-              <ChevronRight className="h-4 w-4" />
-              <span className="text-slate-900">{categoryDisplayName}</span>
-            </>
-          )}
+          <span className="text-slate-900">Shop</span>
         </nav>
 
         {/* Page Header */}
         <div className="mb-12">
           <h1 className="mb-3 text-5xl font-black text-slate-900">
-            {categoryDisplayName}
+            All Products
           </h1>
           <p className="text-xl text-slate-600">
-            {categoryParam
-              ? `Browse our selection of ${categoryDisplayName.toLowerCase()}`
-              : "Premium inflatable products for any celebration"}
+            Premium inflatable products for any celebration
           </p>
         </div>
 
         {/* Main Layout - Client Component handles interactivity */}
-        <ShopContent
-          products={filteredProducts}
-          filterOptions={filterOptions}
-        />
+        <ShopContent products={products} filterOptions={filterOptions} />
       </div>
     </div>
   );

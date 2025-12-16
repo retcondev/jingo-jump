@@ -1,6 +1,6 @@
 "use client";
 
-import { Settings, Store, Mail, Bell, Shield, Database } from "lucide-react";
+import { Store, Mail, Bell, Shield } from "lucide-react";
 
 export default function SettingsPage() {
   return (
@@ -76,7 +76,7 @@ export default function SettingsPage() {
               </div>
               <label className="relative inline-flex cursor-pointer items-center">
                 <input type="checkbox" defaultChecked className="peer sr-only" />
-                <div className="peer h-6 w-11 rounded-full bg-slate-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-slate-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary-500 peer-checked:after:translate-x-full peer-checked:after:border-white"></div>
+                <div className="peer h-6 w-11 rounded-full bg-slate-200 after:absolute after:left-0.5 after:top-0.5 after:h-5 after:w-5 after:rounded-full after:border after:border-slate-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary-500 peer-checked:after:translate-x-full peer-checked:after:border-white"></div>
               </label>
             </div>
             <div className="flex items-center justify-between">
@@ -86,7 +86,7 @@ export default function SettingsPage() {
               </div>
               <label className="relative inline-flex cursor-pointer items-center">
                 <input type="checkbox" defaultChecked className="peer sr-only" />
-                <div className="peer h-6 w-11 rounded-full bg-slate-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-slate-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary-500 peer-checked:after:translate-x-full peer-checked:after:border-white"></div>
+                <div className="peer h-6 w-11 rounded-full bg-slate-200 after:absolute after:left-0.5 after:top-0.5 after:h-5 after:w-5 after:rounded-full after:border after:border-slate-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary-500 peer-checked:after:translate-x-full peer-checked:after:border-white"></div>
               </label>
             </div>
             <div className="flex items-center justify-between">
@@ -96,7 +96,7 @@ export default function SettingsPage() {
               </div>
               <label className="relative inline-flex cursor-pointer items-center">
                 <input type="checkbox" className="peer sr-only" />
-                <div className="peer h-6 w-11 rounded-full bg-slate-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-slate-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary-500 peer-checked:after:translate-x-full peer-checked:after:border-white"></div>
+                <div className="peer h-6 w-11 rounded-full bg-slate-200 after:absolute after:left-0.5 after:top-0.5 after:h-5 after:w-5 after:rounded-full after:border after:border-slate-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary-500 peer-checked:after:translate-x-full peer-checked:after:border-white"></div>
               </label>
             </div>
           </div>
@@ -118,7 +118,7 @@ export default function SettingsPage() {
               </div>
               <label className="relative inline-flex cursor-pointer items-center">
                 <input type="checkbox" defaultChecked className="peer sr-only" />
-                <div className="peer h-6 w-11 rounded-full bg-slate-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-slate-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary-500 peer-checked:after:translate-x-full peer-checked:after:border-white"></div>
+                <div className="peer h-6 w-11 rounded-full bg-slate-200 after:absolute after:left-0.5 after:top-0.5 after:h-5 after:w-5 after:rounded-full after:border after:border-slate-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary-500 peer-checked:after:translate-x-full peer-checked:after:border-white"></div>
               </label>
             </div>
             <div className="flex items-center justify-between">
@@ -128,7 +128,7 @@ export default function SettingsPage() {
               </div>
               <label className="relative inline-flex cursor-pointer items-center">
                 <input type="checkbox" defaultChecked className="peer sr-only" />
-                <div className="peer h-6 w-11 rounded-full bg-slate-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-slate-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary-500 peer-checked:after:translate-x-full peer-checked:after:border-white"></div>
+                <div className="peer h-6 w-11 rounded-full bg-slate-200 after:absolute after:left-0.5 after:top-0.5 after:h-5 after:w-5 after:rounded-full after:border after:border-slate-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary-500 peer-checked:after:translate-x-full peer-checked:after:border-white"></div>
               </label>
             </div>
             <div className="flex items-center justify-between">
@@ -138,7 +138,7 @@ export default function SettingsPage() {
               </div>
               <label className="relative inline-flex cursor-pointer items-center">
                 <input type="checkbox" className="peer sr-only" />
-                <div className="peer h-6 w-11 rounded-full bg-slate-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-slate-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary-500 peer-checked:after:translate-x-full peer-checked:after:border-white"></div>
+                <div className="peer h-6 w-11 rounded-full bg-slate-200 after:absolute after:left-0.5 after:top-0.5 after:h-5 after:w-5 after:rounded-full after:border after:border-slate-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary-500 peer-checked:after:translate-x-full peer-checked:after:border-white"></div>
               </label>
             </div>
           </div>

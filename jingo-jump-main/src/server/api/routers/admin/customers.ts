@@ -5,7 +5,7 @@ import {
   adminProcedure,
   staffProcedure,
 } from "~/server/api/trpc";
-import { AddressType } from "../../../../../generated/prisma";
+import { adminAddressSchema } from "~/lib/validations/address";
 
 const customerListSchema = z.object({
   page: z.number().int().min(1).default(1),
@@ -29,22 +29,6 @@ const customerCreateSchema = z.object({
 
 const customerUpdateSchema = customerCreateSchema.partial().extend({
   id: z.string(),
-});
-
-const addressSchema = z.object({
-  customerId: z.string(),
-  type: z.nativeEnum(AddressType).default(AddressType.SHIPPING),
-  isDefault: z.boolean().default(false),
-  firstName: z.string().min(1),
-  lastName: z.string().min(1),
-  company: z.string().optional().nullable(),
-  address1: z.string().min(1),
-  address2: z.string().optional().nullable(),
-  city: z.string().min(1),
-  state: z.string().min(1),
-  postalCode: z.string().min(1),
-  country: z.string().default("US"),
-  phone: z.string().optional().nullable(),
 });
 
 export const adminCustomersRouter = createTRPCRouter({
@@ -304,7 +288,7 @@ export const adminCustomersRouter = createTRPCRouter({
 
   // Add address
   addAddress: adminProcedure
-    .input(addressSchema)
+    .input(adminAddressSchema)
     .mutation(async ({ ctx, input }) => {
       // If setting as default, unset other defaults of same type
       if (input.isDefault) {
@@ -326,7 +310,7 @@ export const adminCustomersRouter = createTRPCRouter({
 
   // Update address
   updateAddress: adminProcedure
-    .input(addressSchema.partial().extend({ id: z.string() }))
+    .input(adminAddressSchema.partial().extend({ id: z.string() }))
     .mutation(async ({ ctx, input }) => {
       const { id, ...data } = input;
 

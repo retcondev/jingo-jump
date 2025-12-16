@@ -2,11 +2,11 @@
 
 import { use } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowLeft,
   Package,
   Mail,
-  MapPin,
   Truck,
   CreditCard,
   Clock,
@@ -90,8 +90,8 @@ export default function OrderDetailPage({ params }: { params: Promise<{ id: stri
     phone?: string;
   };
 
-  const orderStatus = statusConfig[order.status] ?? statusConfig.PENDING;
-  const paymentStatus = paymentStatusConfig[order.paymentStatus] ?? paymentStatusConfig.PENDING;
+  const orderStatus = statusConfig[order.status] ?? statusConfig.PENDING!;
+  const paymentStatus = paymentStatusConfig[order.paymentStatus] ?? paymentStatusConfig.PENDING!
 
   return (
     <div className="space-y-6">
@@ -166,12 +166,13 @@ export default function OrderDetailPage({ params }: { params: Promise<{ id: stri
         <div className="divide-y divide-slate-100">
           {order.items.map((item) => (
             <div key={item.id} className="p-4 flex items-center gap-4">
-              <div className="w-16 h-16 bg-slate-100 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="relative w-16 h-16 bg-slate-100 rounded-lg flex items-center justify-center shrink-0">
                 {item.product?.images?.[0]?.url ? (
-                  <img
+                  <Image
                     src={item.product.images[0].url}
                     alt={item.name}
-                    className="w-full h-full object-contain p-1 rounded-lg"
+                    fill
+                    className="object-contain p-1 rounded-lg"
                   />
                 ) : (
                   <Package className="w-6 h-6 text-slate-400" />

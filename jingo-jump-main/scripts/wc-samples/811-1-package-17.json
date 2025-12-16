@@ -1,0 +1,566 @@
+{
+  "id": 30478,
+  "name": "Package 17",
+  "slug": "package-17",
+  "permalink": "https://jingojump.com/product/package-17/",
+  "date_created": "2024-05-26T14:13:55",
+  "date_created_gmt": "2024-05-26T14:13:55",
+  "date_modified": "2025-11-28T23:38:54",
+  "date_modified_gmt": "2025-11-28T23:38:54",
+  "type": "simple",
+  "status": "publish",
+  "featured": false,
+  "catalog_visibility": "visible",
+  "description": "<p>Commercial grade inflatable bouncer unit made from 18 oz commercial vinyl.</p>\n",
+  "short_description": "<p><strong><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: medium;\">Each unit comes with the following accessories </span></strong></p>\n<p><img class=\"alignnone wp-image-1138 size-medium\" src=\"https://www.jingojump.com/wp-content/uploads/2018/09/acess-01-300x54.jpg\" alt=\"\" width=\"300\" height=\"54\" /><br />\n<a href=\"https://jingojump.com/commercial-bouncer-video/\"><img class=\"alignnone size-full wp-image-7758\" src=\"https://www.jingojump.com/wp-content/uploads/2021/03/video_product21.jpg\" alt=\"\" width=\"120\" height=\"69\" /></a><br />\n<span style=\"color: black; font-family: Arial,Helvetica,sans-serif; font-size: xx-small;\">Note: Due to constant product development and improvement, artwork, shape, color, size, description and schematic that appear on the web site may not reflect the latest changes.<br />\n</span></p>\n",
+  "sku": "811-1",
+  "price": "3295",
+  "regular_price": "4200",
+  "sale_price": "3295",
+  "date_on_sale_from": null,
+  "date_on_sale_from_gmt": null,
+  "date_on_sale_to": null,
+  "date_on_sale_to_gmt": null,
+  "on_sale": true,
+  "purchasable": true,
+  "total_sales": 3,
+  "virtual": false,
+  "downloadable": false,
+  "downloads": [],
+  "download_limit": 0,
+  "download_expiry": 0,
+  "external_url": "",
+  "button_text": "",
+  "tax_status": "taxable",
+  "tax_class": "",
+  "manage_stock": true,
+  "stock_quantity": 2,
+  "backorders": "no",
+  "backorders_allowed": false,
+  "backordered": false,
+  "low_stock_amount": null,
+  "sold_individually": false,
+  "weight": "1000",
+  "dimensions": {
+    "length": "",
+    "width": "",
+    "height": ""
+  },
+  "shipping_required": true,
+  "shipping_taxable": true,
+  "shipping_class": "bouncers",
+  "shipping_class_id": 87,
+  "reviews_allowed": false,
+  "average_rating": "0.00",
+  "rating_count": 0,
+  "upsell_ids": [],
+  "cross_sell_ids": [],
+  "parent_id": 0,
+  "purchase_note": "",
+  "categories": [
+    {
+      "id": 102,
+      "name": "IN STOCK",
+      "slug": "in-stock"
+    },
+    {
+      "id": 117,
+      "name": "Package Deals",
+      "slug": "package-deals"
+    }
+  ],
+  "brands": [],
+  "tags": [],
+  "images": [
+    {
+      "id": 28897,
+      "date_created": "2024-05-23T12:42:05",
+      "date_created_gmt": "2024-05-23T12:42:05",
+      "date_modified": "2024-05-26T14:13:58",
+      "date_modified_gmt": "2024-05-26T14:13:58",
+      "src": "https://jingojump.com/wp-content/uploads/2024/05/23_package17_inflatable_for_sale.jpg",
+      "name": "23_package17_inflatable_for_sale.jpg",
+      "alt": "",
+      "srcset": "https://jingojump.com/wp-content/uploads/2024/05/23_package17_inflatable_for_sale.jpg 799w, https://jingojump.com/wp-content/uploads/2024/05/23_package17_inflatable_for_sale-430x325.jpg 430w, https://jingojump.com/wp-content/uploads/2024/05/23_package17_inflatable_for_sale-150x113.jpg 150w, https://jingojump.com/wp-content/uploads/2024/05/23_package17_inflatable_for_sale-700x529.jpg 700w, https://jingojump.com/wp-content/uploads/2024/05/23_package17_inflatable_for_sale-397x300.jpg 397w, https://jingojump.com/wp-content/uploads/2024/05/23_package17_inflatable_for_sale-768x581.jpg 768w",
+      "sizes": "(max-width: 799px) 100vw, 799px",
+      "thumbnail": "https://jingojump.com/wp-content/uploads/2024/05/23_package17_inflatable_for_sale-430x325.jpg"
+    }
+  ],
+  "attributes": [],
+  "default_attributes": [],
+  "variations": [],
+  "grouped_products": [],
+  "menu_order": 214,
+  "price_html": "<del aria-hidden=\"true\"><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;</span>4,200.00</bdi></span></del> <span class=\"screen-reader-text\">Original price was: &#036;4,200.00.</span><ins aria-hidden=\"true\"><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;</span>3,295.00</bdi></span></ins><span class=\"screen-reader-text\">Current price is: &#036;3,295.00.</span>",
+  "related_ids": [
+    30006,
+    30002,
+    30013,
+    30011,
+    29949
+  ],
+  "meta_data": [
+    {
+      "id": 52402,
+      "key": "_wpb_vc_js_status",
+      "value": ""
+    },
+    {
+      "id": 52403,
+      "key": "_yoast_wpseo_primary_product_cat",
+      "value": ""
+    },
+    {
+      "id": 52404,
+      "key": "_yoast_wpseo_content_score",
+      "value": "90"
+    },
+    {
+      "id": 52405,
+      "key": "_yoast_wpseo_title",
+      "value": "Package 17 - Package Deals | Jingo Jump, Inc - USA"
+    },
+    {
+      "id": 52406,
+      "key": "_yoast_wpseo_metadesc",
+      "value": "We are offering commercial grade bouncer package online at best price in USA."
+    },
+    {
+      "id": 52407,
+      "key": "_yoast_wpseo_metakeywords",
+      "value": "water slides for sale, inflatable water slides, commercial bouncer manufacturer, commercial bounce house for sale, commercial Inflatable manufacturer, bounce houses wholesale, jumpers for sale, commercial grade bounce house, inflatable bouncers for sale, jumper for sale commercial inflatables for sale, commercial jumpers for sale, inflatable jumpers for sale"
+    },
+    {
+      "id": 52408,
+      "key": "_yoast_wpseo_focuskw_text_input",
+      "value": ""
+    },
+    {
+      "id": 52409,
+      "key": "_yoast_wpseo_focuskw",
+      "value": "jumpers for sale"
+    },
+    {
+      "id": 52410,
+      "key": "_yoast_wpseo_linkdex",
+      "value": "28"
+    },
+    {
+      "id": 52411,
+      "key": "_wp_page_template",
+      "value": "default"
+    },
+    {
+      "id": 52412,
+      "key": "_yoast_wpseo_estimated-reading-time-minutes",
+      "value": "1"
+    },
+    {
+      "id": 52413,
+      "key": "_yoast_indexnow_last_ping",
+      "value": "1713139948"
+    },
+    {
+      "id": 52414,
+      "key": "redux-metabox-section",
+      "value": ""
+    },
+    {
+      "id": 52415,
+      "key": "product-hot-flash",
+      "value": ""
+    },
+    {
+      "id": 52416,
+      "key": "product-hot-time",
+      "value": ""
+    },
+    {
+      "id": 52417,
+      "key": "cmplz_hide_cookiebanner",
+      "value": ""
+    },
+    {
+      "id": 52418,
+      "key": "_yoast_wpseo_wordproof_timestamp",
+      "value": ""
+    },
+    {
+      "id": 52420,
+      "key": "_yoast_wpseo_focuskeywords",
+      "value": ""
+    },
+    {
+      "id": 52421,
+      "key": "_yoast_wpseo_keywordsynonyms",
+      "value": ""
+    },
+    {
+      "id": 52422,
+      "key": "woo_feed_availability_date",
+      "value": ""
+    },
+    {
+      "id": 52423,
+      "key": "_oembed_cfd45353b04886d4cd7e1efa19930544",
+      "value": ""
+    },
+    {
+      "id": 52424,
+      "key": "_oembed_time_cfd45353b04886d4cd7e1efa19930544",
+      "value": ""
+    },
+    {
+      "id": 249237,
+      "key": "woodmart_price_unit_of_measure",
+      "value": ""
+    },
+    {
+      "id": 249238,
+      "key": "woodmart_fbt_bundles_id",
+      "value": [
+        ""
+      ]
+    },
+    {
+      "id": 249239,
+      "key": "_ppcp_button_position",
+      "value": "bottom"
+    },
+    {
+      "id": 249240,
+      "key": "woodmart_total_stock_quantity",
+      "value": ""
+    },
+    {
+      "id": 249241,
+      "key": "_product_360_image_gallery",
+      "value": ""
+    },
+    {
+      "id": 249242,
+      "key": "_woodmart_whb_header",
+      "value": "none"
+    },
+    {
+      "id": 249243,
+      "key": "_woodmart_main_layout",
+      "value": "default"
+    },
+    {
+      "id": 249244,
+      "key": "_woodmart_sidebar_width",
+      "value": "default"
+    },
+    {
+      "id": 249245,
+      "key": "_woodmart_custom_sidebar",
+      "value": "none"
+    },
+    {
+      "id": 249246,
+      "key": "_woodmart_new_label",
+      "value": ""
+    },
+    {
+      "id": 249247,
+      "key": "_woodmart_new_label_date",
+      "value": ""
+    },
+    {
+      "id": 249248,
+      "key": "_woodmart_swatches_attribute",
+      "value": ""
+    },
+    {
+      "id": 249249,
+      "key": "_woodmart_related_off",
+      "value": ""
+    },
+    {
+      "id": 249250,
+      "key": "_woodmart_exclude_show_single_variation",
+      "value": ""
+    },
+    {
+      "id": 249251,
+      "key": "_woodmart_product_video",
+      "value": ""
+    },
+    {
+      "id": 249252,
+      "key": "_woodmart_product_hashtag",
+      "value": ""
+    },
+    {
+      "id": 249253,
+      "key": "_woodmart_single_product_style",
+      "value": "inherit"
+    },
+    {
+      "id": 249254,
+      "key": "_woodmart_thums_position",
+      "value": "inherit"
+    },
+    {
+      "id": 249255,
+      "key": "_woodmart_extra_content",
+      "value": ""
+    },
+    {
+      "id": 249256,
+      "key": "_woodmart_extra_position",
+      "value": "after"
+    },
+    {
+      "id": 249257,
+      "key": "_woodmart_product_design",
+      "value": "inherit"
+    },
+    {
+      "id": 249258,
+      "key": "_woodmart_product-background",
+      "value": ""
+    },
+    {
+      "id": 249259,
+      "key": "_woodmart_hide_tabs_titles",
+      "value": ""
+    },
+    {
+      "id": 249260,
+      "key": "_woodmart_product_custom_tab_title",
+      "value": ""
+    },
+    {
+      "id": 249261,
+      "key": "_woodmart_product_custom_tab_content_type",
+      "value": "text"
+    },
+    {
+      "id": 249262,
+      "key": "_woodmart_product_custom_tab_content",
+      "value": ""
+    },
+    {
+      "id": 249263,
+      "key": "_woodmart_product_custom_tab_html_block",
+      "value": ""
+    },
+    {
+      "id": 249264,
+      "key": "_woodmart_product_custom_tab_title_2",
+      "value": ""
+    },
+    {
+      "id": 249265,
+      "key": "_woodmart_product_custom_tab_content_type_2",
+      "value": "text"
+    },
+    {
+      "id": 249266,
+      "key": "_woodmart_product_custom_tab_content_2",
+      "value": ""
+    },
+    {
+      "id": 249267,
+      "key": "_woodmart_product_custom_tab_html_block_2",
+      "value": ""
+    },
+    {
+      "id": 249268,
+      "key": "_yoast_wpseo_primary_product_brand",
+      "value": ""
+    },
+    {
+      "id": 290911,
+      "key": "_wc_gla_synced_at",
+      "value": "1764373297"
+    },
+    {
+      "id": 290912,
+      "key": "_wc_gla_sync_status",
+      "value": "synced"
+    },
+    {
+      "id": 290913,
+      "key": "_wc_gla_visibility",
+      "value": "sync-and-show"
+    },
+    {
+      "id": 290914,
+      "key": "_wc_gla_google_ids",
+      "value": {
+        "US": "online:en:US:gla_30478"
+      }
+    },
+    {
+      "id": 292888,
+      "key": "_wc_gla_notification_status",
+      "value": "updated"
+    },
+    {
+      "id": 309700,
+      "key": "_wc_gla_mc_status",
+      "value": "disapproved"
+    },
+    {
+      "id": 312190,
+      "key": "_elementor_page_assets",
+      "value": []
+    }
+  ],
+  "stock_status": "instock",
+  "has_options": false,
+  "post_password": "",
+  "global_unique_id": "",
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.5 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Package 17 - Package Deals | Jingo Jump, Inc - USA</title>\n<meta name=\"description\" content=\"We are offering commercial grade bouncer package online at best price in USA.\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://jingojump.com/product/package-17/\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:locale\" content=\"en_US\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:type\" content=\"article\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:title\" content=\"Package 17 - Package Deals | Jingo Jump, Inc - USA\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:description\" content=\"We are offering commercial grade bouncer package online at best price in USA.\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:url\" content=\"https://jingojump.com/product/package-17/\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:site_name\" content=\"Jingo Jump\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"article:modified_time\" content=\"2025-11-28T23:38:54+00:00\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:image\" content=\"https://jingojump.com/wp-content/uploads/2024/05/23_package17_inflatable_for_sale.jpg\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:width\" content=\"799\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:height\" content=\"604\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" class=\"yoast-seo-meta-tag\" />\n\t<meta name=\"twitter:data1\" content=\"1 minute\" class=\"yoast-seo-meta-tag\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://jingojump.com/product/package-17/\",\"url\":\"https://jingojump.com/product/package-17/\",\"name\":\"Package 17 - Package Deals | Jingo Jump, Inc - USA\",\"isPartOf\":{\"@id\":\"https://jingojump.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://jingojump.com/product/package-17/#primaryimage\"},\"image\":{\"@id\":\"https://jingojump.com/product/package-17/#primaryimage\"},\"thumbnailUrl\":\"https://jingojump.com/wp-content/uploads/2024/05/23_package17_inflatable_for_sale.jpg\",\"datePublished\":\"2024-05-26T14:13:55+00:00\",\"dateModified\":\"2025-11-28T23:38:54+00:00\",\"description\":\"We are offering commercial grade bouncer package online at best price in USA.\",\"breadcrumb\":{\"@id\":\"https://jingojump.com/product/package-17/#breadcrumb\"},\"inLanguage\":\"en\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://jingojump.com/product/package-17/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"en\",\"@id\":\"https://jingojump.com/product/package-17/#primaryimage\",\"url\":\"https://jingojump.com/wp-content/uploads/2024/05/23_package17_inflatable_for_sale.jpg\",\"contentUrl\":\"https://jingojump.com/wp-content/uploads/2024/05/23_package17_inflatable_for_sale.jpg\",\"width\":799,\"height\":604},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://jingojump.com/product/package-17/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://jingojump.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Shop\",\"item\":\"https://jingojump.com/shop/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Package 17\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://jingojump.com/#website\",\"url\":\"https://jingojump.com/\",\"name\":\"Jingo Jump\",\"description\":\"Inflatable Bouncers for sale\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://jingojump.com/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+    "title": "Package 17 - Package Deals | Jingo Jump, Inc - USA",
+    "description": "We are offering commercial grade bouncer package online at best price in USA.",
+    "robots": {
+      "index": "index",
+      "follow": "follow",
+      "max-snippet": "max-snippet:-1",
+      "max-image-preview": "max-image-preview:large",
+      "max-video-preview": "max-video-preview:-1"
+    },
+    "canonical": "https://jingojump.com/product/package-17/",
+    "og_locale": "en_US",
+    "og_type": "article",
+    "og_title": "Package 17 - Package Deals | Jingo Jump, Inc - USA",
+    "og_description": "We are offering commercial grade bouncer package online at best price in USA.",
+    "og_url": "https://jingojump.com/product/package-17/",
+    "og_site_name": "Jingo Jump",
+    "article_modified_time": "2025-11-28T23:38:54+00:00",
+    "og_image": [
+      {
+        "width": 799,
+        "height": 604,
+        "url": "https://jingojump.com/wp-content/uploads/2024/05/23_package17_inflatable_for_sale.jpg",
+        "type": "image/jpeg"
+      }
+    ],
+    "twitter_card": "summary_large_image",
+    "twitter_misc": {
+      "Est. reading time": "1 minute"
+    },
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://jingojump.com/product/package-17/",
+          "url": "https://jingojump.com/product/package-17/",
+          "name": "Package 17 - Package Deals | Jingo Jump, Inc - USA",
+          "isPartOf": {
+            "@id": "https://jingojump.com/#website"
+          },
+          "primaryImageOfPage": {
+            "@id": "https://jingojump.com/product/package-17/#primaryimage"
+          },
+          "image": {
+            "@id": "https://jingojump.com/product/package-17/#primaryimage"
+          },
+          "thumbnailUrl": "https://jingojump.com/wp-content/uploads/2024/05/23_package17_inflatable_for_sale.jpg",
+          "datePublished": "2024-05-26T14:13:55+00:00",
+          "dateModified": "2025-11-28T23:38:54+00:00",
+          "description": "We are offering commercial grade bouncer package online at best price in USA.",
+          "breadcrumb": {
+            "@id": "https://jingojump.com/product/package-17/#breadcrumb"
+          },
+          "inLanguage": "en",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://jingojump.com/product/package-17/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "ImageObject",
+          "inLanguage": "en",
+          "@id": "https://jingojump.com/product/package-17/#primaryimage",
+          "url": "https://jingojump.com/wp-content/uploads/2024/05/23_package17_inflatable_for_sale.jpg",
+          "contentUrl": "https://jingojump.com/wp-content/uploads/2024/05/23_package17_inflatable_for_sale.jpg",
+          "width": 799,
+          "height": 604
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://jingojump.com/product/package-17/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jingojump.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shop",
+              "item": "https://jingojump.com/shop/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Package 17"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://jingojump.com/#website",
+          "url": "https://jingojump.com/",
+          "name": "Jingo Jump",
+          "description": "Inflatable Bouncers for sale",
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://jingojump.com/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en"
+        }
+      ]
+    }
+  },
+  "google_listings_and_ads__channel_visibility": {
+    "is_visible": true,
+    "channel_visibility": "sync-and-show",
+    "sync_status": "synced",
+    "issues": []
+  },
+  "_links": {
+    "self": [
+      {
+        "href": "https://jingojump.com/wp-json/wc/v3/products/30478",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://jingojump.com/wp-json/wc/v3/products"
+      }
+    ]
+  }
+}

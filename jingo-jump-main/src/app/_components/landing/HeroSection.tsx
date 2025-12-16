@@ -97,7 +97,7 @@ export function HeroSection() {
                   Browse Wholesale Inventory
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" strokeWidth={2.5} />
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-primary-500/20 via-primary-400/20 to-primary-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-linear-to-r from-primary-500/20 via-primary-400/20 to-primary-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </Link>
 
               <button className="group px-8 py-4 bg-white/5 backdrop-blur-sm text-white border border-white/20 rounded-full font-semibold text-base transition-all duration-300 hover:bg-white/10 hover:border-white/30 hover:scale-105">

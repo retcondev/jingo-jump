@@ -1,9 +1,38 @@
 "use client";
 
 import { createContext, useContext, useState, useCallback, useEffect, type ReactNode } from "react";
+import { z } from "zod";
 import type { Product } from "~/types/product";
 
 const CART_STORAGE_KEY = "jingo-jump-cart";
+
+// Zod schema for validating cart items from localStorage
+const ProductSchema = z.object({
+  id: z.union([z.number(), z.string()]),
+  name: z.string(),
+  category: z.string(),
+  description: z.string(),
+  price: z.number(),
+  image: z.string().optional(),
+  gradient: z.string().nullable().optional(),
+  badge: z.enum(["NEW", "POPULAR", "SALE"]).nullable().optional(),
+  size: z.string().nullable().optional(),
+  ageRange: z.string().nullable().optional(),
+  slug: z.string().optional(),
+  salePrice: z.number().nullable().optional(),
+  images: z.array(z.object({
+    id: z.string(),
+    url: z.string(),
+    alt: z.string().nullable().optional(),
+  })).optional(),
+});
+
+const CartItemSchema = z.object({
+  product: ProductSchema,
+  quantity: z.number().int().positive(),
+});
+
+const CartItemsSchema = z.array(CartItemSchema);
 
 export interface CartItem {
   product: Product;
@@ -13,8 +42,8 @@ export interface CartItem {
 interface CartContextType {
   items: CartItem[];
   addToCart: (product: Product, quantity?: number) => void;
-  removeFromCart: (productId: number) => void;
-  updateQuantity: (productId: number, quantity: number) => void;
+  removeFromCart: (productId: string | number) => void;
+  updateQuantity: (productId: string | number, quantity: number) => void;
   clearCart: () => void;
   isOpen: boolean;
   openCart: () => void;
@@ -26,23 +55,15 @@ interface CartContextType {
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
-// Helper to safely parse cart from localStorage
+// Helper to safely parse and validate cart from localStorage using Zod
 function loadCartFromStorage(): CartItem[] {
   if (typeof window === "undefined") return [];
   try {
     const stored = localStorage.getItem(CART_STORAGE_KEY);
     if (!stored) return [];
-    const parsed = JSON.parse(stored) as unknown;
-    // Validate the parsed data structure
-    if (!Array.isArray(parsed)) return [];
-    return parsed.filter(
-      (item): item is CartItem =>
-        typeof item === "object" &&
-        item !== null &&
-        "product" in item &&
-        "quantity" in item &&
-        typeof item.quantity === "number"
-    );
+    const parsed: unknown = JSON.parse(stored);
+    const result = CartItemsSchema.safeParse(parsed);
+    return result.success ? result.data : [];
   } catch {
     return [];
   }
@@ -92,11 +113,11 @@ export function CartProvider({ children }: { children: ReactNode }) {
     setIsOpen(true); // Open cart drawer when item is added
   }, []);
 
-  const removeFromCart = useCallback((productId: number) => {
+  const removeFromCart = useCallback((productId: string | number) => {
     setItems((prev) => prev.filter((item) => item.product.id !== productId));
   }, []);
 
-  const updateQuantity = useCallback((productId: number, quantity: number) => {
+  const updateQuantity = useCallback((productId: string | number, quantity: number) => {
     if (quantity <= 0) {
       removeFromCart(productId);
       return;

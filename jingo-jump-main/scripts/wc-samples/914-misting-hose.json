@@ -1,0 +1,399 @@
+{
+  "id": 30321,
+  "name": "Misting Hose",
+  "slug": "misting-hose",
+  "permalink": "https://jingojump.com/product/misting-hose/",
+  "date_created": "2024-05-26T14:13:34",
+  "date_created_gmt": "2024-05-26T14:13:34",
+  "date_modified": "2025-11-28T23:28:14",
+  "date_modified_gmt": "2025-11-28T23:28:14",
+  "type": "simple",
+  "status": "publish",
+  "featured": false,
+  "catalog_visibility": "visible",
+  "description": "",
+  "short_description": "<p>Misting Hose</p>\n",
+  "sku": "914",
+  "price": "30",
+  "regular_price": "30",
+  "sale_price": "",
+  "date_on_sale_from": null,
+  "date_on_sale_from_gmt": null,
+  "date_on_sale_to": null,
+  "date_on_sale_to_gmt": null,
+  "on_sale": false,
+  "purchasable": true,
+  "total_sales": 30,
+  "virtual": false,
+  "downloadable": true,
+  "downloads": [],
+  "download_limit": -1,
+  "download_expiry": -1,
+  "external_url": "",
+  "button_text": "",
+  "tax_status": "taxable",
+  "tax_class": "",
+  "manage_stock": false,
+  "stock_quantity": null,
+  "backorders": "no",
+  "backorders_allowed": false,
+  "backordered": false,
+  "low_stock_amount": null,
+  "sold_individually": false,
+  "weight": "1",
+  "dimensions": {
+    "length": "",
+    "width": "",
+    "height": ""
+  },
+  "shipping_required": true,
+  "shipping_taxable": true,
+  "shipping_class": "accessories",
+  "shipping_class_id": 99,
+  "reviews_allowed": false,
+  "average_rating": "0.00",
+  "rating_count": 0,
+  "upsell_ids": [],
+  "cross_sell_ids": [],
+  "parent_id": 0,
+  "purchase_note": "",
+  "categories": [
+    {
+      "id": 118,
+      "name": "ACCESSORIES",
+      "slug": "accessories"
+    }
+  ],
+  "brands": [],
+  "tags": [],
+  "images": [
+    {
+      "id": 28662,
+      "date_created": "2024-05-23T12:40:52",
+      "date_created_gmt": "2024-05-23T12:40:52",
+      "date_modified": "2024-05-26T14:13:38",
+      "date_modified_gmt": "2024-05-26T14:13:38",
+      "src": "https://jingojump.com/wp-content/uploads/2024/05/22_commercial_inflatables-sprinkler.jpg",
+      "name": "22_commercial_inflatables-sprinkler.jpg",
+      "alt": "",
+      "srcset": "https://jingojump.com/wp-content/uploads/2024/05/22_commercial_inflatables-sprinkler.jpg 799w, https://jingojump.com/wp-content/uploads/2024/05/22_commercial_inflatables-sprinkler-430x325.jpg 430w, https://jingojump.com/wp-content/uploads/2024/05/22_commercial_inflatables-sprinkler-150x113.jpg 150w, https://jingojump.com/wp-content/uploads/2024/05/22_commercial_inflatables-sprinkler-700x529.jpg 700w, https://jingojump.com/wp-content/uploads/2024/05/22_commercial_inflatables-sprinkler-397x300.jpg 397w, https://jingojump.com/wp-content/uploads/2024/05/22_commercial_inflatables-sprinkler-768x581.jpg 768w",
+      "sizes": "(max-width: 799px) 100vw, 799px",
+      "thumbnail": "https://jingojump.com/wp-content/uploads/2024/05/22_commercial_inflatables-sprinkler-430x325.jpg"
+    }
+  ],
+  "attributes": [],
+  "default_attributes": [],
+  "variations": [],
+  "grouped_products": [],
+  "menu_order": 198,
+  "price_html": "<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;</span>30.00</bdi></span>",
+  "related_ids": [
+    30311,
+    30482,
+    30315,
+    30544,
+    30320
+  ],
+  "meta_data": [
+    {
+      "id": 48883,
+      "key": "_wpb_vc_js_status",
+      "value": ""
+    },
+    {
+      "id": 48884,
+      "key": "_yoast_wpseo_primary_product_cat",
+      "value": ""
+    },
+    {
+      "id": 48885,
+      "key": "_yoast_wpseo_content_score",
+      "value": "60"
+    },
+    {
+      "id": 48886,
+      "key": "_yoast_wpseo_title",
+      "value": "Misting Hose - Accessories | Jingo Jump, Inc - Los Angeles"
+    },
+    {
+      "id": 48887,
+      "key": "_yoast_wpseo_metadesc",
+      "value": "Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller."
+    },
+    {
+      "id": 48888,
+      "key": "_yoast_wpseo_metakeywords",
+      "value": "Misting Hose, jumping castles, jumping castles for kids, kids jumping castles, bouncers, bouncers for kids, los angeles, USA ,jingo jumpmedium castle, bouncers, bouncers for kids, los angeles, usa"
+    },
+    {
+      "id": 48889,
+      "key": "_yoast_wpseo_focuskw_text_input",
+      "value": ""
+    },
+    {
+      "id": 48892,
+      "key": "_wp_page_template",
+      "value": "default"
+    },
+    {
+      "id": 48893,
+      "key": "_yoast_wpseo_estimated-reading-time-minutes",
+      "value": "1"
+    },
+    {
+      "id": 48894,
+      "key": "_yoast_indexnow_last_ping",
+      "value": ""
+    },
+    {
+      "id": 48895,
+      "key": "redux-metabox-section",
+      "value": ""
+    },
+    {
+      "id": 48896,
+      "key": "product-hot-flash",
+      "value": ""
+    },
+    {
+      "id": 48897,
+      "key": "product-hot-time",
+      "value": ""
+    },
+    {
+      "id": 48898,
+      "key": "cmplz_hide_cookiebanner",
+      "value": ""
+    },
+    {
+      "id": 48899,
+      "key": "_yoast_wpseo_wordproof_timestamp",
+      "value": ""
+    },
+    {
+      "id": 48901,
+      "key": "_yoast_wpseo_focuskeywords",
+      "value": ""
+    },
+    {
+      "id": 48902,
+      "key": "_yoast_wpseo_keywordsynonyms",
+      "value": ""
+    },
+    {
+      "id": 48903,
+      "key": "woo_feed_availability_date",
+      "value": ""
+    },
+    {
+      "id": 48904,
+      "key": "_oembed_cfd45353b04886d4cd7e1efa19930544",
+      "value": ""
+    },
+    {
+      "id": 48905,
+      "key": "_oembed_time_cfd45353b04886d4cd7e1efa19930544",
+      "value": ""
+    },
+    {
+      "id": 290621,
+      "key": "_wc_gla_sync_status",
+      "value": "synced"
+    },
+    {
+      "id": 290622,
+      "key": "_wc_gla_visibility",
+      "value": "sync-and-show"
+    },
+    {
+      "id": 293498,
+      "key": "_wc_gla_notification_status",
+      "value": "updated"
+    },
+    {
+      "id": 293500,
+      "key": "_wc_gla_synced_at",
+      "value": "1764373297"
+    },
+    {
+      "id": 302615,
+      "key": "_ppcp_button_position",
+      "value": "bottom"
+    },
+    {
+      "id": 302616,
+      "key": "_woodmart_product-background",
+      "value": ""
+    },
+    {
+      "id": 302617,
+      "key": "_yoast_wpseo_primary_product_brand",
+      "value": ""
+    },
+    {
+      "id": 302618,
+      "key": "_wc_gla_google_ids",
+      "value": {
+        "US": "online:en:US:gla_30321"
+      }
+    },
+    {
+      "id": 309635,
+      "key": "_wc_gla_mc_status",
+      "value": "disapproved"
+    }
+  ],
+  "stock_status": "instock",
+  "has_options": false,
+  "post_password": "",
+  "global_unique_id": "",
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.5 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Misting Hose - Accessories | Jingo Jump, Inc - Los Angeles</title>\n<meta name=\"description\" content=\"Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller.\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://jingojump.com/product/misting-hose/\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:locale\" content=\"en_US\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:type\" content=\"article\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:title\" content=\"Misting Hose - Accessories | Jingo Jump, Inc - Los Angeles\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:description\" content=\"Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller.\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:url\" content=\"https://jingojump.com/product/misting-hose/\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:site_name\" content=\"Jingo Jump\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"article:modified_time\" content=\"2025-11-28T23:28:14+00:00\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:image\" content=\"https://jingojump.com/wp-content/uploads/2024/05/22_commercial_inflatables-sprinkler.jpg\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:width\" content=\"799\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:height\" content=\"604\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" class=\"yoast-seo-meta-tag\" />\n\t<meta name=\"twitter:data1\" content=\"1 minute\" class=\"yoast-seo-meta-tag\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://jingojump.com/product/misting-hose/\",\"url\":\"https://jingojump.com/product/misting-hose/\",\"name\":\"Misting Hose - Accessories | Jingo Jump, Inc - Los Angeles\",\"isPartOf\":{\"@id\":\"https://jingojump.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://jingojump.com/product/misting-hose/#primaryimage\"},\"image\":{\"@id\":\"https://jingojump.com/product/misting-hose/#primaryimage\"},\"thumbnailUrl\":\"https://jingojump.com/wp-content/uploads/2024/05/22_commercial_inflatables-sprinkler.jpg\",\"datePublished\":\"2024-05-26T14:13:34+00:00\",\"dateModified\":\"2025-11-28T23:28:14+00:00\",\"description\":\"Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller.\",\"breadcrumb\":{\"@id\":\"https://jingojump.com/product/misting-hose/#breadcrumb\"},\"inLanguage\":\"en\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://jingojump.com/product/misting-hose/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"en\",\"@id\":\"https://jingojump.com/product/misting-hose/#primaryimage\",\"url\":\"https://jingojump.com/wp-content/uploads/2024/05/22_commercial_inflatables-sprinkler.jpg\",\"contentUrl\":\"https://jingojump.com/wp-content/uploads/2024/05/22_commercial_inflatables-sprinkler.jpg\",\"width\":799,\"height\":604},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://jingojump.com/product/misting-hose/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://jingojump.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Shop\",\"item\":\"https://jingojump.com/shop/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Misting Hose\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://jingojump.com/#website\",\"url\":\"https://jingojump.com/\",\"name\":\"Jingo Jump\",\"description\":\"Inflatable Bouncers for sale\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://jingojump.com/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+    "title": "Misting Hose - Accessories | Jingo Jump, Inc - Los Angeles",
+    "description": "Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller.",
+    "robots": {
+      "index": "index",
+      "follow": "follow",
+      "max-snippet": "max-snippet:-1",
+      "max-image-preview": "max-image-preview:large",
+      "max-video-preview": "max-video-preview:-1"
+    },
+    "canonical": "https://jingojump.com/product/misting-hose/",
+    "og_locale": "en_US",
+    "og_type": "article",
+    "og_title": "Misting Hose - Accessories | Jingo Jump, Inc - Los Angeles",
+    "og_description": "Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller.",
+    "og_url": "https://jingojump.com/product/misting-hose/",
+    "og_site_name": "Jingo Jump",
+    "article_modified_time": "2025-11-28T23:28:14+00:00",
+    "og_image": [
+      {
+        "width": 799,
+        "height": 604,
+        "url": "https://jingojump.com/wp-content/uploads/2024/05/22_commercial_inflatables-sprinkler.jpg",
+        "type": "image/jpeg"
+      }
+    ],
+    "twitter_card": "summary_large_image",
+    "twitter_misc": {
+      "Est. reading time": "1 minute"
+    },
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://jingojump.com/product/misting-hose/",
+          "url": "https://jingojump.com/product/misting-hose/",
+          "name": "Misting Hose - Accessories | Jingo Jump, Inc - Los Angeles",
+          "isPartOf": {
+            "@id": "https://jingojump.com/#website"
+          },
+          "primaryImageOfPage": {
+            "@id": "https://jingojump.com/product/misting-hose/#primaryimage"
+          },
+          "image": {
+            "@id": "https://jingojump.com/product/misting-hose/#primaryimage"
+          },
+          "thumbnailUrl": "https://jingojump.com/wp-content/uploads/2024/05/22_commercial_inflatables-sprinkler.jpg",
+          "datePublished": "2024-05-26T14:13:34+00:00",
+          "dateModified": "2025-11-28T23:28:14+00:00",
+          "description": "Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller.",
+          "breadcrumb": {
+            "@id": "https://jingojump.com/product/misting-hose/#breadcrumb"
+          },
+          "inLanguage": "en",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://jingojump.com/product/misting-hose/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "ImageObject",
+          "inLanguage": "en",
+          "@id": "https://jingojump.com/product/misting-hose/#primaryimage",
+          "url": "https://jingojump.com/wp-content/uploads/2024/05/22_commercial_inflatables-sprinkler.jpg",
+          "contentUrl": "https://jingojump.com/wp-content/uploads/2024/05/22_commercial_inflatables-sprinkler.jpg",
+          "width": 799,
+          "height": 604
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://jingojump.com/product/misting-hose/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jingojump.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shop",
+              "item": "https://jingojump.com/shop/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Misting Hose"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://jingojump.com/#website",
+          "url": "https://jingojump.com/",
+          "name": "Jingo Jump",
+          "description": "Inflatable Bouncers for sale",
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://jingojump.com/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en"
+        }
+      ]
+    }
+  },
+  "google_listings_and_ads__channel_visibility": {
+    "is_visible": true,
+    "channel_visibility": "sync-and-show",
+    "sync_status": "synced",
+    "issues": []
+  },
+  "_links": {
+    "self": [
+      {
+        "href": "https://jingojump.com/wp-json/wc/v3/products/30321",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://jingojump.com/wp-json/wc/v3/products"
+      }
+    ]
+  }
+}

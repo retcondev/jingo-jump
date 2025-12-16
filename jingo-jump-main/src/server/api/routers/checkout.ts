@@ -1,7 +1,8 @@
 import { z } from "zod";
 import { TRPCError } from "@trpc/server";
 import { customAlphabet } from "nanoid";
-import { createTRPCRouter, publicProcedure, protectedProcedure } from "~/server/api/trpc";
+import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
+import { checkoutAddressSchema } from "~/lib/validations/address";
 
 // Collision-resistant order number generator
 const generateOrderId = customAlphabet("ABCDEFGHJKMNPQRSTUVWXYZ23456789", 6);
@@ -11,19 +12,6 @@ function generateOrderNumber(): string {
   const uniqueId = generateOrderId();
   return `JJ-${year}-${uniqueId}`;
 }
-
-const addressSchema = z.object({
-  firstName: z.string().min(1, "First name is required"),
-  lastName: z.string().min(1, "Last name is required"),
-  company: z.string().optional(),
-  address1: z.string().min(1, "Address is required"),
-  address2: z.string().optional(),
-  city: z.string().min(1, "City is required"),
-  state: z.string().min(1, "State is required"),
-  postalCode: z.string().min(1, "Postal code is required"),
-  country: z.string().default("US"),
-  phone: z.string().optional(),
-});
 
 const cartItemSchema = z.object({
   productId: z.string(),
@@ -39,8 +27,8 @@ const checkoutSchema = z.object({
   phone: z.string().optional(),
 
   // Addresses
-  shippingAddress: addressSchema,
-  billingAddress: addressSchema.optional(),
+  shippingAddress: checkoutAddressSchema,
+  billingAddress: checkoutAddressSchema.optional(),
   sameAsShipping: z.boolean().default(true),
 
   // Cart items

@@ -5,14 +5,13 @@ import Link from "next/link";
 import { api } from "~/trpc/react";
 import {
   Search,
-  Filter,
   Download,
   Eye,
   Truck,
   ShoppingCart,
   Calendar,
 } from "lucide-react";
-import { OrderStatus, PaymentStatus, FulfillmentStatus } from "../../../../generated/prisma";
+import type { OrderStatus, PaymentStatus } from "../../../../generated/prisma";
 
 const statusColors: Record<OrderStatus, string> = {
   PENDING: "bg-yellow-100 text-yellow-700",

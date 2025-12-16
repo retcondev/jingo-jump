@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import {
-  MapPin,
   Plus,
   Pencil,
   Trash2,
@@ -57,21 +56,21 @@ export default function AddressesPage() {
 
   const addMutation = api.account.addAddress.useMutation({
     onSuccess: () => {
-      utils.account.getAddresses.invalidate();
+      void utils.account.getAddresses.invalidate();
       resetForm();
     },
   });
 
   const updateMutation = api.account.updateAddress.useMutation({
     onSuccess: () => {
-      utils.account.getAddresses.invalidate();
+      void utils.account.getAddresses.invalidate();
       resetForm();
     },
   });
 
   const deleteMutation = api.account.deleteAddress.useMutation({
     onSuccess: () => {
-      utils.account.getAddresses.invalidate();
+      void utils.account.getAddresses.invalidate();
       setDeleteConfirm(null);
     },
   });

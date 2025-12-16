@@ -1,6 +1,8 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
+import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { Grid3x3, List } from "lucide-react";
 import { ProductCard } from "~/app/_components/shop/ProductCard";
 import { FilterSidebar } from "~/app/_components/shop/FilterSidebar";
@@ -15,27 +17,102 @@ interface ShopContentProps {
 }
 
 export function ShopContent({ products, filterOptions }: ShopContentProps) {
+  const searchParams = useSearchParams();
   const [viewMode, setViewMode] = useState<ViewMode>("grid");
   const [sortBy, setSortBy] = useState<SortOption>("featured");
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 9;
 
+  // Get filter values from URL
+  const selectedCategories = useMemo(() => {
+    const categories = searchParams.get("categories");
+    return categories ? categories.split(",").filter(Boolean) : [];
+  }, [searchParams]);
+
+  const selectedSizes = useMemo(() => {
+    const sizes = searchParams.get("sizes");
+    return sizes ? sizes.split(",").filter(Boolean) : [];
+  }, [searchParams]);
+
+  const selectedAges = useMemo(() => {
+    const ages = searchParams.get("ages");
+    return ages ? ages.split(",").filter(Boolean) : [];
+  }, [searchParams]);
+
+  const minPrice = useMemo(() => {
+    const value = searchParams.get("minPrice");
+    return value ? Number(value) : null;
+  }, [searchParams]);
+
+  const maxPrice = useMemo(() => {
+    const value = searchParams.get("maxPrice");
+    return value ? Number(value) : null;
+  }, [searchParams]);
+
+  // Filter products based on URL params
+  const filteredProducts = useMemo(() => {
+    return products.filter((product) => {
+      // Category filter - match by category label converted to id format
+      if (selectedCategories.length > 0) {
+        const productCategoryId = product.category.toLowerCase().replace(/\s+/g, "-");
+        if (!selectedCategories.includes(productCategoryId)) {
+          return false;
+        }
+      }
+
+      // Size filter
+      if (selectedSizes.length > 0 && product.size) {
+        const productSizeId = product.size.toLowerCase().replace(/[()]/g, "").replace(/\s+/g, "-");
+        if (!selectedSizes.includes(productSizeId)) {
+          return false;
+        }
+      } else if (selectedSizes.length > 0 && !product.size) {
+        return false;
+      }
+
+      // Age filter
+      if (selectedAges.length > 0 && product.ageRange) {
+        const productAgeId = product.ageRange.toLowerCase().replace(/[()]/g, "").replace(/\s+/g, "-");
+        if (!selectedAges.includes(productAgeId)) {
+          return false;
+        }
+      } else if (selectedAges.length > 0 && !product.ageRange) {
+        return false;
+      }
+
+      // Price filter
+      if (minPrice !== null && product.price < minPrice) {
+        return false;
+      }
+      if (maxPrice !== null && product.price > maxPrice) {
+        return false;
+      }
+
+      return true;
+    });
+  }, [products, selectedCategories, selectedSizes, selectedAges, minPrice, maxPrice]);
+
   // Sort products
   const sortedProducts = useMemo(() => {
-    const sorted = [...products];
+    const sorted = [...filteredProducts];
     switch (sortBy) {
       case "price-low":
         return sorted.sort((a, b) => a.price - b.price);
       case "price-high":
         return sorted.sort((a, b) => b.price - a.price);
       case "newest":
-        return sorted.sort((a, b) => b.id - a.id);
+        // Sort by id - handle both string and number IDs
+        return sorted.sort((a, b) => {
+          const aId = typeof a.id === "string" ? a.id : String(a.id);
+          const bId = typeof b.id === "string" ? b.id : String(b.id);
+          return bId.localeCompare(aId);
+        });
       case "popular":
         return sorted.sort((a, b) => (b.badge === "POPULAR" ? 1 : 0) - (a.badge === "POPULAR" ? 1 : 0));
       default:
         return sorted;
     }
-  }, [products, sortBy]);
+  }, [filteredProducts, sortBy]);
 
   // Calculate pagination
   const totalProducts = sortedProducts.length;
@@ -43,6 +120,11 @@ export function ShopContent({ products, filterOptions }: ShopContentProps) {
   const startIndex = (currentPage - 1) * productsPerPage;
   const endIndex = startIndex + productsPerPage;
   const currentProducts = sortedProducts.slice(startIndex, endIndex);
+
+  // Reset to page 1 when filters change
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedCategories, selectedSizes, selectedAges, minPrice, maxPrice]);
 
   return (
     <div className="grid gap-10 lg:grid-cols-[320px_1fr]">
@@ -120,12 +202,12 @@ export function ShopContent({ products, filterOptions }: ShopContentProps) {
             <p className="text-slate-600">
               Try adjusting your filters or browse all products
             </p>
-            <a
+            <Link
               href="/shop"
               className="mt-6 px-6 py-3 bg-primary-500 text-white font-semibold rounded-full hover:bg-primary-600 transition-colors"
             >
               View All Products
-            </a>
+            </Link>
           </div>
         )}
 

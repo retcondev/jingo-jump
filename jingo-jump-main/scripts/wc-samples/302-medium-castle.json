@@ -1,0 +1,556 @@
+{
+  "id": 30002,
+  "name": "Medium Castle",
+  "slug": "medium-castle",
+  "permalink": "https://jingojump.com/product/medium-castle/",
+  "date_created": "2024-05-26T14:12:56",
+  "date_created_gmt": "2024-05-26T14:12:56",
+  "date_modified": "2025-11-11T19:39:04",
+  "date_modified_gmt": "2025-11-11T19:39:04",
+  "type": "simple",
+  "status": "publish",
+  "featured": false,
+  "catalog_visibility": "visible",
+  "description": "",
+  "short_description": "<table style=\"width: 240px;\" border=\"0\" cellspacing=\"2\" cellpadding=\"0\">\n<tbody>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Model #</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">MEDC2</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Sizes</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">10&#8242; L x 10&#8242; W x 13&#8242; H</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Weight (lbs):</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">150</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Pices</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">1</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Blowers</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">1</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Operators</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">1</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Riders</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">4-6</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Indoor</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">Yes</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Outdoor</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">Yes</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Warranty:</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">12 Months</span></td>\n</tr>\n</tbody>\n</table>\n<p><strong><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: medium;\">Unit includes</span></strong></p>\n<p><img class=\"alignnone size-medium wp-image-31900\" src=\"https://jingojump.com/wp-content/uploads/2024/05/AccBouncer_2024_01-400x69.jpg\" alt=\"\" width=\"400\" height=\"69\" /><br />\n<a href=\"https://jingojump.com/commercial-bouncer-video/\"><img class=\"alignnone size-full wp-image-7758\" src=\"https://www.jingojump.com/wp-content/uploads/2021/03/video_product21.jpg\" alt=\"\" width=\"120\" height=\"69\" /></a><br />\n<span style=\"color: black; font-family: Arial,Helvetica,sans-serif; font-size: xx-small;\">Note: Due to constant product development and improvement, artwork, shape, color, size, description and schematic that appear on the web site may not reflect the latest changes.<br />\n</span></p>\n",
+  "sku": "302",
+  "price": "799",
+  "regular_price": "1095",
+  "sale_price": "799",
+  "date_on_sale_from": null,
+  "date_on_sale_from_gmt": null,
+  "date_on_sale_to": null,
+  "date_on_sale_to_gmt": null,
+  "on_sale": true,
+  "purchasable": true,
+  "total_sales": 7,
+  "virtual": false,
+  "downloadable": true,
+  "downloads": [],
+  "download_limit": -1,
+  "download_expiry": -1,
+  "external_url": "",
+  "button_text": "",
+  "tax_status": "taxable",
+  "tax_class": "",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "backorders": "no",
+  "backorders_allowed": false,
+  "backordered": false,
+  "low_stock_amount": null,
+  "sold_individually": false,
+  "weight": "260",
+  "dimensions": {
+    "length": "",
+    "width": "",
+    "height": ""
+  },
+  "shipping_required": true,
+  "shipping_taxable": true,
+  "shipping_class": "bouncers",
+  "shipping_class_id": 87,
+  "reviews_allowed": false,
+  "average_rating": "0.00",
+  "rating_count": 0,
+  "upsell_ids": [],
+  "cross_sell_ids": [],
+  "parent_id": 0,
+  "purchase_note": "",
+  "categories": [
+    {
+      "id": 108,
+      "name": "Bouncers 13 x 13",
+      "slug": "bouncers-13-x-13"
+    },
+    {
+      "id": 102,
+      "name": "IN STOCK",
+      "slug": "in-stock"
+    }
+  ],
+  "brands": [],
+  "tags": [],
+  "images": [
+    {
+      "id": 28110,
+      "date_created": "2024-05-23T12:38:51",
+      "date_created_gmt": "2024-05-23T12:38:51",
+      "date_modified": "2024-05-26T14:12:59",
+      "date_modified_gmt": "2024-05-26T14:12:59",
+      "src": "https://jingojump.com/wp-content/uploads/2024/05/MEDC2_bouncers_for_sale18.jpg",
+      "name": "MEDC2_bouncers_for_sale18.jpg",
+      "alt": "",
+      "srcset": "https://jingojump.com/wp-content/uploads/2024/05/MEDC2_bouncers_for_sale18.jpg 700w, https://jingojump.com/wp-content/uploads/2024/05/MEDC2_bouncers_for_sale18-430x325.jpg 430w, https://jingojump.com/wp-content/uploads/2024/05/MEDC2_bouncers_for_sale18-150x113.jpg 150w, https://jingojump.com/wp-content/uploads/2024/05/MEDC2_bouncers_for_sale18-397x300.jpg 397w",
+      "sizes": "(max-width: 700px) 100vw, 700px",
+      "thumbnail": "https://jingojump.com/wp-content/uploads/2024/05/MEDC2_bouncers_for_sale18-430x325.jpg"
+    }
+  ],
+  "attributes": [],
+  "default_attributes": [],
+  "variations": [],
+  "grouped_products": [],
+  "menu_order": 176,
+  "price_html": "<del aria-hidden=\"true\"><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;</span>1,095.00</bdi></span></del> <span class=\"screen-reader-text\">Original price was: &#036;1,095.00.</span><ins aria-hidden=\"true\"><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;</span>799.00</bdi></span></ins><span class=\"screen-reader-text\">Current price is: &#036;799.00.</span>",
+  "related_ids": [
+    29952,
+    29949,
+    30012,
+    29950,
+    29953
+  ],
+  "meta_data": [
+    {
+      "id": 41726,
+      "key": "_wpb_vc_js_status",
+      "value": ""
+    },
+    {
+      "id": 41727,
+      "key": "_yoast_wpseo_primary_product_cat",
+      "value": "20"
+    },
+    {
+      "id": 41729,
+      "key": "_yoast_wpseo_title",
+      "value": "Medium Castle - Shop | Jingo Jump, Inc"
+    },
+    {
+      "id": 41730,
+      "key": "_yoast_wpseo_metadesc",
+      "value": "Shop this Commercial Grade Medium Castle online from Jingo Jump, Inc"
+    },
+    {
+      "id": 41731,
+      "key": "_yoast_wpseo_metakeywords",
+      "value": "commercial grade bouncers, bouncers sale, inflatables manufacturer, bounce houses wholesale, commercial bouncers, bounce house for sale, jumpers for sale"
+    },
+    {
+      "id": 41732,
+      "key": "_yoast_wpseo_focuskw_text_input",
+      "value": "commercial grade bouncers, bouncers sale, inflatables manufacturer, bounce houses wholesale, commercial bouncers, bounce house for sale, jumpers for sale"
+    },
+    {
+      "id": 41733,
+      "key": "_yoast_wpseo_focuskw",
+      "value": "commercial grade bouncers, bouncers sale, inflatables manufacturer, bounce houses wholesale, commercial bouncers, bounce house for sale, jumpers for sale"
+    },
+    {
+      "id": 41734,
+      "key": "_yoast_wpseo_linkdex",
+      "value": "24"
+    },
+    {
+      "id": 41735,
+      "key": "_wp_page_template",
+      "value": "default"
+    },
+    {
+      "id": 41736,
+      "key": "_yoast_wpseo_estimated-reading-time-minutes",
+      "value": "1"
+    },
+    {
+      "id": 41737,
+      "key": "_yoast_indexnow_last_ping",
+      "value": "1712254476"
+    },
+    {
+      "id": 41738,
+      "key": "redux-metabox-section",
+      "value": ""
+    },
+    {
+      "id": 41739,
+      "key": "product-hot-flash",
+      "value": ""
+    },
+    {
+      "id": 41740,
+      "key": "product-hot-time",
+      "value": ""
+    },
+    {
+      "id": 41741,
+      "key": "cmplz_hide_cookiebanner",
+      "value": ""
+    },
+    {
+      "id": 41742,
+      "key": "_yoast_wpseo_wordproof_timestamp",
+      "value": ""
+    },
+    {
+      "id": 41744,
+      "key": "_yoast_wpseo_focuskeywords",
+      "value": ""
+    },
+    {
+      "id": 41745,
+      "key": "_yoast_wpseo_keywordsynonyms",
+      "value": ""
+    },
+    {
+      "id": 41746,
+      "key": "woo_feed_availability_date",
+      "value": ""
+    },
+    {
+      "id": 235425,
+      "key": "woodmart_price_unit_of_measure",
+      "value": ""
+    },
+    {
+      "id": 235426,
+      "key": "woodmart_fbt_bundles_id",
+      "value": [
+        ""
+      ]
+    },
+    {
+      "id": 235427,
+      "key": "_ppcp_button_position",
+      "value": "bottom"
+    },
+    {
+      "id": 235428,
+      "key": "woodmart_total_stock_quantity",
+      "value": ""
+    },
+    {
+      "id": 235429,
+      "key": "_product_360_image_gallery",
+      "value": ""
+    },
+    {
+      "id": 235430,
+      "key": "_woodmart_whb_header",
+      "value": "none"
+    },
+    {
+      "id": 235431,
+      "key": "_woodmart_main_layout",
+      "value": "default"
+    },
+    {
+      "id": 235432,
+      "key": "_woodmart_sidebar_width",
+      "value": "default"
+    },
+    {
+      "id": 235433,
+      "key": "_woodmart_custom_sidebar",
+      "value": "none"
+    },
+    {
+      "id": 235434,
+      "key": "_woodmart_new_label",
+      "value": ""
+    },
+    {
+      "id": 235435,
+      "key": "_woodmart_new_label_date",
+      "value": ""
+    },
+    {
+      "id": 235436,
+      "key": "_woodmart_swatches_attribute",
+      "value": ""
+    },
+    {
+      "id": 235437,
+      "key": "_woodmart_related_off",
+      "value": ""
+    },
+    {
+      "id": 235438,
+      "key": "_woodmart_exclude_show_single_variation",
+      "value": ""
+    },
+    {
+      "id": 235439,
+      "key": "_woodmart_product_video",
+      "value": ""
+    },
+    {
+      "id": 235440,
+      "key": "_woodmart_product_hashtag",
+      "value": ""
+    },
+    {
+      "id": 235441,
+      "key": "_woodmart_single_product_style",
+      "value": "inherit"
+    },
+    {
+      "id": 235442,
+      "key": "_woodmart_thums_position",
+      "value": "inherit"
+    },
+    {
+      "id": 235443,
+      "key": "_woodmart_extra_content",
+      "value": ""
+    },
+    {
+      "id": 235444,
+      "key": "_woodmart_extra_position",
+      "value": "after"
+    },
+    {
+      "id": 235445,
+      "key": "_woodmart_product_design",
+      "value": "inherit"
+    },
+    {
+      "id": 235446,
+      "key": "_woodmart_product-background",
+      "value": ""
+    },
+    {
+      "id": 235447,
+      "key": "_woodmart_hide_tabs_titles",
+      "value": ""
+    },
+    {
+      "id": 235448,
+      "key": "_woodmart_product_custom_tab_title",
+      "value": ""
+    },
+    {
+      "id": 235449,
+      "key": "_woodmart_product_custom_tab_content_type",
+      "value": "text"
+    },
+    {
+      "id": 235450,
+      "key": "_woodmart_product_custom_tab_content",
+      "value": ""
+    },
+    {
+      "id": 235451,
+      "key": "_woodmart_product_custom_tab_html_block",
+      "value": ""
+    },
+    {
+      "id": 235452,
+      "key": "_woodmart_product_custom_tab_title_2",
+      "value": ""
+    },
+    {
+      "id": 235453,
+      "key": "_woodmart_product_custom_tab_content_type_2",
+      "value": "text"
+    },
+    {
+      "id": 235454,
+      "key": "_woodmart_product_custom_tab_content_2",
+      "value": ""
+    },
+    {
+      "id": 235455,
+      "key": "_woodmart_product_custom_tab_html_block_2",
+      "value": ""
+    },
+    {
+      "id": 252668,
+      "key": "_yoast_wpseo_primary_product_brand",
+      "value": ""
+    },
+    {
+      "id": 252669,
+      "key": "_yoast_wpseo_content_score",
+      "value": "60"
+    },
+    {
+      "id": 289984,
+      "key": "_wc_gla_synced_at",
+      "value": "1764373291"
+    },
+    {
+      "id": 289985,
+      "key": "_wc_gla_sync_status",
+      "value": "synced"
+    },
+    {
+      "id": 289986,
+      "key": "_wc_gla_visibility",
+      "value": "sync-and-show"
+    },
+    {
+      "id": 289987,
+      "key": "_wc_gla_google_ids",
+      "value": {
+        "US": "online:en:US:gla_30002"
+      }
+    },
+    {
+      "id": 292877,
+      "key": "_wc_gla_notification_status",
+      "value": "updated"
+    },
+    {
+      "id": 309468,
+      "key": "_wc_gla_mc_status",
+      "value": "disapproved"
+    },
+    {
+      "id": 312045,
+      "key": "_elementor_page_assets",
+      "value": []
+    }
+  ],
+  "stock_status": "instock",
+  "has_options": false,
+  "post_password": "",
+  "global_unique_id": "",
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.5 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Medium Castle - Shop | Jingo Jump, Inc</title>\n<meta name=\"description\" content=\"Shop this Commercial Grade Medium Castle online from Jingo Jump, Inc\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://jingojump.com/product/medium-castle/\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:locale\" content=\"en_US\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:type\" content=\"article\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:title\" content=\"Medium Castle - Shop | Jingo Jump, Inc\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:description\" content=\"Shop this Commercial Grade Medium Castle online from Jingo Jump, Inc\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:url\" content=\"https://jingojump.com/product/medium-castle/\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:site_name\" content=\"Jingo Jump\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"article:modified_time\" content=\"2025-11-11T19:39:04+00:00\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:image\" content=\"https://jingojump.com/wp-content/uploads/2024/05/MEDC2_bouncers_for_sale18.jpg\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:width\" content=\"700\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:height\" content=\"529\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" class=\"yoast-seo-meta-tag\" />\n\t<meta name=\"twitter:data1\" content=\"1 minute\" class=\"yoast-seo-meta-tag\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://jingojump.com/product/medium-castle/\",\"url\":\"https://jingojump.com/product/medium-castle/\",\"name\":\"Medium Castle - Shop | Jingo Jump, Inc\",\"isPartOf\":{\"@id\":\"https://jingojump.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://jingojump.com/product/medium-castle/#primaryimage\"},\"image\":{\"@id\":\"https://jingojump.com/product/medium-castle/#primaryimage\"},\"thumbnailUrl\":\"https://jingojump.com/wp-content/uploads/2024/05/MEDC2_bouncers_for_sale18.jpg\",\"datePublished\":\"2024-05-26T14:12:56+00:00\",\"dateModified\":\"2025-11-11T19:39:04+00:00\",\"description\":\"Shop this Commercial Grade Medium Castle online from Jingo Jump, Inc\",\"breadcrumb\":{\"@id\":\"https://jingojump.com/product/medium-castle/#breadcrumb\"},\"inLanguage\":\"en\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://jingojump.com/product/medium-castle/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"en\",\"@id\":\"https://jingojump.com/product/medium-castle/#primaryimage\",\"url\":\"https://jingojump.com/wp-content/uploads/2024/05/MEDC2_bouncers_for_sale18.jpg\",\"contentUrl\":\"https://jingojump.com/wp-content/uploads/2024/05/MEDC2_bouncers_for_sale18.jpg\",\"width\":700,\"height\":529},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://jingojump.com/product/medium-castle/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://jingojump.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Shop\",\"item\":\"https://jingojump.com/shop/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Medium Castle\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://jingojump.com/#website\",\"url\":\"https://jingojump.com/\",\"name\":\"Jingo Jump\",\"description\":\"Inflatable Bouncers for sale\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://jingojump.com/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+    "title": "Medium Castle - Shop | Jingo Jump, Inc",
+    "description": "Shop this Commercial Grade Medium Castle online from Jingo Jump, Inc",
+    "robots": {
+      "index": "index",
+      "follow": "follow",
+      "max-snippet": "max-snippet:-1",
+      "max-image-preview": "max-image-preview:large",
+      "max-video-preview": "max-video-preview:-1"
+    },
+    "canonical": "https://jingojump.com/product/medium-castle/",
+    "og_locale": "en_US",
+    "og_type": "article",
+    "og_title": "Medium Castle - Shop | Jingo Jump, Inc",
+    "og_description": "Shop this Commercial Grade Medium Castle online from Jingo Jump, Inc",
+    "og_url": "https://jingojump.com/product/medium-castle/",
+    "og_site_name": "Jingo Jump",
+    "article_modified_time": "2025-11-11T19:39:04+00:00",
+    "og_image": [
+      {
+        "width": 700,
+        "height": 529,
+        "url": "https://jingojump.com/wp-content/uploads/2024/05/MEDC2_bouncers_for_sale18.jpg",
+        "type": "image/jpeg"
+      }
+    ],
+    "twitter_card": "summary_large_image",
+    "twitter_misc": {
+      "Est. reading time": "1 minute"
+    },
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://jingojump.com/product/medium-castle/",
+          "url": "https://jingojump.com/product/medium-castle/",
+          "name": "Medium Castle - Shop | Jingo Jump, Inc",
+          "isPartOf": {
+            "@id": "https://jingojump.com/#website"
+          },
+          "primaryImageOfPage": {
+            "@id": "https://jingojump.com/product/medium-castle/#primaryimage"
+          },
+          "image": {
+            "@id": "https://jingojump.com/product/medium-castle/#primaryimage"
+          },
+          "thumbnailUrl": "https://jingojump.com/wp-content/uploads/2024/05/MEDC2_bouncers_for_sale18.jpg",
+          "datePublished": "2024-05-26T14:12:56+00:00",
+          "dateModified": "2025-11-11T19:39:04+00:00",
+          "description": "Shop this Commercial Grade Medium Castle online from Jingo Jump, Inc",
+          "breadcrumb": {
+            "@id": "https://jingojump.com/product/medium-castle/#breadcrumb"
+          },
+          "inLanguage": "en",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://jingojump.com/product/medium-castle/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "ImageObject",
+          "inLanguage": "en",
+          "@id": "https://jingojump.com/product/medium-castle/#primaryimage",
+          "url": "https://jingojump.com/wp-content/uploads/2024/05/MEDC2_bouncers_for_sale18.jpg",
+          "contentUrl": "https://jingojump.com/wp-content/uploads/2024/05/MEDC2_bouncers_for_sale18.jpg",
+          "width": 700,
+          "height": 529
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://jingojump.com/product/medium-castle/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jingojump.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shop",
+              "item": "https://jingojump.com/shop/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Medium Castle"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://jingojump.com/#website",
+          "url": "https://jingojump.com/",
+          "name": "Jingo Jump",
+          "description": "Inflatable Bouncers for sale",
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://jingojump.com/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en"
+        }
+      ]
+    }
+  },
+  "google_listings_and_ads__channel_visibility": {
+    "is_visible": true,
+    "channel_visibility": "sync-and-show",
+    "sync_status": "synced",
+    "issues": []
+  },
+  "_links": {
+    "self": [
+      {
+        "href": "https://jingojump.com/wp-json/wc/v3/products/30002",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://jingojump.com/wp-json/wc/v3/products"
+      }
+    ]
+  }
+}

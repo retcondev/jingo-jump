@@ -4,7 +4,6 @@ import { useState, useRef } from "react";
 import { api } from "~/trpc/react";
 import {
   Search,
-  Download,
   Upload,
   Plus,
   Trash2,
@@ -42,7 +41,7 @@ export default function SubscribersPage() {
 
   const createSubscriber = api.adminSubscribers.create.useMutation({
     onSuccess: () => {
-      refetch();
+      void refetch();
       setShowAddModal(false);
       setNewEmail("");
       setNewPhone("");
@@ -52,16 +51,16 @@ export default function SubscribersPage() {
   });
 
   const deleteSubscriber = api.adminSubscribers.delete.useMutation({
-    onSuccess: () => refetch(),
+    onSuccess: () => void refetch(),
   });
 
   const unsubscribe = api.adminSubscribers.unsubscribe.useMutation({
-    onSuccess: () => refetch(),
+    onSuccess: () => void refetch(),
   });
 
   const bulkImport = api.adminSubscribers.bulkImport.useMutation({
     onSuccess: (result) => {
-      refetch();
+      void refetch();
       setShowImportModal(false);
       alert(`Import complete: ${result.created} created, ${result.updated} updated, ${result.errors.length} errors`);
     },
@@ -86,16 +85,16 @@ export default function SubscribersPage() {
           });
           return {
             email: obj.email ?? "",
-            phone: obj.phone || null,
-            firstName: obj.firstname || obj["first name"] || obj.first_name || null,
-            lastName: obj.lastname || obj["last name"] || obj.last_name || null,
+            phone: obj.phone ?? null,
+            firstName: obj.firstname ?? obj["first name"] ?? obj.first_name ?? null,
+            lastName: obj.lastname ?? obj["last name"] ?? obj.last_name ?? null,
             emailSubscribed: true,
             smsSubscribed: !!obj.phone,
           };
         }).filter((s) => s.email);
 
         bulkImport.mutate({ subscribers, source: "csv_import" });
-      } catch (error) {
+      } catch {
         alert("Error parsing CSV file");
       }
     };

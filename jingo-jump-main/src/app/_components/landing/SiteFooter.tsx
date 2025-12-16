@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export function SiteFooter() {
   return (
-    <footer id="footer" className="relative bg-gradient-to-b from-gray-900 to-[#1a1a1a] text-white overflow-hidden">
+    <footer id="footer" className="relative bg-linear-to-b from-gray-900 to-neutral-900 text-white overflow-hidden">
       {/* Decorative Background Elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 right-0 w-96 h-96 bg-primary-500 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#28a7e1] rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary-500 rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 py-20">
@@ -48,28 +48,28 @@ export function SiteFooter() {
             <h4 className="text-sm font-bold uppercase tracking-wider mb-6 text-white">Shop</h4>
             <ul className="space-y-3">
               <li>
-                <a href="/shop" className="text-gray-400 hover:text-primary-500 transition-colors duration-200 text-sm flex items-center group">
+                <Link href="/shop" className="text-gray-400 hover:text-primary-500 transition-colors duration-200 text-sm flex items-center group">
                   <i className="fa-solid fa-chevron-right text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
                   Bounce Houses
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/shop" className="text-gray-400 hover:text-primary-500 transition-colors duration-200 text-sm flex items-center group">
+                <Link href="/shop" className="text-gray-400 hover:text-primary-500 transition-colors duration-200 text-sm flex items-center group">
                   <i className="fa-solid fa-chevron-right text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
                   Water Slides
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/shop" className="text-gray-400 hover:text-primary-500 transition-colors duration-200 text-sm flex items-center group">
+                <Link href="/shop" className="text-gray-400 hover:text-primary-500 transition-colors duration-200 text-sm flex items-center group">
                   <i className="fa-solid fa-chevron-right text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
                   Combos
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/shop" className="text-gray-400 hover:text-primary-500 transition-colors duration-200 text-sm flex items-center group">
+                <Link href="/shop" className="text-gray-400 hover:text-primary-500 transition-colors duration-200 text-sm flex items-center group">
                   <i className="fa-solid fa-chevron-right text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
                   Obstacle Courses
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -119,7 +119,7 @@ export function SiteFooter() {
                   className="w-full px-4 py-3 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder:text-gray-400 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all"
                 />
               </div>
-              <button className="w-full bg-gradient-to-r from-primary-500 to-primary-600 px-6 py-3 rounded-xl font-semibold hover:from-primary-600 hover:to-primary-500 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+              <button className="w-full bg-linear-to-r from-primary-500 to-primary-600 px-6 py-3 rounded-xl font-semibold hover:from-primary-600 hover:to-primary-500 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
                 Subscribe Now
               </button>
             </form>

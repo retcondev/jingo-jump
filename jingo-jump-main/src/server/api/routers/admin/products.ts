@@ -16,7 +16,7 @@ const productCreateSchema = z.object({
   price: z.number().min(0, "Price must be positive"),
   salePrice: z.number().min(0).optional().nullable(),
   costPrice: z.number().min(0).optional().nullable(),
-  category: z.string().min(1, "Category is required"),
+  categoryId: z.string().min(1, "Category is required"),
   subcategory: z.string().optional().nullable(),
   stockQuantity: z.number().int().min(0).default(0),
   lowStockThreshold: z.number().int().min(0).default(5),
@@ -41,7 +41,7 @@ const productListSchema = z.object({
   page: z.number().int().min(1).default(1),
   limit: z.number().int().min(1).max(100).default(20),
   search: z.string().optional(),
-  category: z.string().optional(),
+  categoryId: z.string().optional(),
   status: z.nativeEnum(ProductStatus).optional(),
   sortBy: z.enum(["name", "price", "createdAt", "stockQuantity", "sku"]).default("createdAt"),
   sortOrder: z.enum(["asc", "desc"]).default("desc"),
@@ -56,7 +56,7 @@ export const adminProductsRouter = createTRPCRouter({
   list: staffProcedure
     .input(productListSchema)
     .query(async ({ ctx, input }) => {
-      const { page, limit, search, category, status, sortBy, sortOrder } = input;
+      const { page, limit, search, categoryId, status, sortBy, sortOrder } = input;
       const skip = (page - 1) * limit;
 
       const where = {
@@ -67,7 +67,7 @@ export const adminProductsRouter = createTRPCRouter({
             { description: { contains: search } },
           ],
         }),
-        ...(category && { category }),
+        ...(categoryId && { categoryId }),
         ...(status && { status }),
       };
 
@@ -82,6 +82,7 @@ export const adminProductsRouter = createTRPCRouter({
               orderBy: { position: "asc" },
               take: 1,
             },
+            categoryRelation: true,
             _count: {
               select: { orderItems: true },
             },
@@ -340,11 +341,11 @@ export const adminProductsRouter = createTRPCRouter({
 
   // Get categories (for filters)
   getCategories: staffProcedure.query(async ({ ctx }) => {
-    const products = await ctx.db.product.findMany({
-      select: { category: true },
-      distinct: ["category"],
+    const categories = await ctx.db.category.findMany({
+      orderBy: { position: "asc" },
+      select: { id: true, name: true, slug: true },
     });
-    return products.map((p) => p.category);
+    return categories;
   }),
 
   // Get low stock products

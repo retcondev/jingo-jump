@@ -28,7 +28,7 @@ export function Model3DControls({
       position,
       rotation,
     };
-    navigator.clipboard.writeText(JSON.stringify(config, null, 2));
+    void navigator.clipboard.writeText(JSON.stringify(config, null, 2));
     alert("Configuration copied to clipboard!");
   };
 

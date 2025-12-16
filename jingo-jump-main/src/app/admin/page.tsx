@@ -13,6 +13,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import Link from "next/link";
+import { Card, Badge } from "~/components/ui";
 
 function StatCard({
   title,
@@ -34,20 +35,20 @@ function StatCard({
   const isPositive = change && change >= 0;
 
   return (
-    <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+    <Card variant="elevated">
       <div className="flex items-start justify-between">
         <div>
-          <p className="text-sm font-medium text-slate-500">{title}</p>
-          <p className="mt-2 text-3xl font-bold text-slate-900">{value}</p>
+          <p className="text-sm font-semibold text-gray-500">{title}</p>
+          <p className="mt-2 text-3xl font-bold text-gray-900">{value}</p>
           {change !== undefined && (
-            <div className="mt-2 flex items-center gap-1">
+            <div className="mt-2 flex items-center gap-1.5">
               {isPositive ? (
                 <TrendingUp className="h-4 w-4 text-green-500" />
               ) : (
                 <TrendingDown className="h-4 w-4 text-red-500" />
               )}
               <span
-                className={`text-sm font-medium ${
+                className={`text-sm font-semibold ${
                   isPositive ? "text-green-600" : "text-red-600"
                 }`}
               >
@@ -55,16 +56,16 @@ function StatCard({
                 {change.toFixed(1)}%
               </span>
               {changeLabel && (
-                <span className="text-sm text-slate-500">{changeLabel}</span>
+                <span className="text-sm text-gray-500">{changeLabel}</span>
               )}
             </div>
           )}
         </div>
-        <div className={`rounded-lg ${iconBg} p-3`}>
+        <div className={`rounded-xl ${iconBg} p-3 shadow-sm`}>
           <Icon className={`h-6 w-6 ${iconColor}`} />
         </div>
       </div>
-    </div>
+    </Card>
   );
 }
 
@@ -74,8 +75,8 @@ function RecentOrdersTable() {
   if (isLoading) {
     return (
       <div className="animate-pulse space-y-4">
-        {[...Array(5)].map((_, i) => (
-          <div key={i} className="h-12 rounded bg-slate-100" />
+        {Array.from({ length: 5 }).map((_, i) => (
+          <div key={i} className="h-12 rounded-xl bg-gray-100" />
         ))}
       </div>
     );
@@ -83,51 +84,47 @@ function RecentOrdersTable() {
 
   if (!orders?.length) {
     return (
-      <p className="py-8 text-center text-sm text-slate-500">No recent orders</p>
+      <p className="py-8 text-center text-sm text-gray-500">No recent orders</p>
     );
   }
+
+  const statusVariants: Record<string, "success" | "info" | "error" | "warning"> = {
+    DELIVERED: "success",
+    SHIPPED: "info",
+    CANCELLED: "error",
+  };
 
   return (
     <div className="overflow-x-auto">
       <table className="w-full">
         <thead>
-          <tr className="border-b border-slate-200 text-left text-xs font-medium uppercase tracking-wider text-slate-500">
+          <tr className="border-b border-gray-200 text-left text-xs font-bold uppercase tracking-wider text-gray-500">
             <th className="pb-3 pr-4">Order</th>
             <th className="pb-3 pr-4">Customer</th>
             <th className="pb-3 pr-4">Status</th>
             <th className="pb-3 text-right">Total</th>
           </tr>
         </thead>
-        <tbody className="divide-y divide-slate-100">
+        <tbody className="divide-y divide-gray-100">
           {orders.map((order) => (
             <tr key={order.id} className="text-sm">
               <td className="py-3 pr-4">
                 <Link
                   href={`/admin/orders/${order.id}`}
-                  className="font-medium text-primary-600 hover:text-primary-700"
+                  className="font-semibold text-primary-600 hover:text-primary-700"
                 >
                   {order.orderNumber}
                 </Link>
               </td>
-              <td className="py-3 pr-4 text-slate-600">
+              <td className="py-3 pr-4 text-gray-600">
                 {order.customer.firstName} {order.customer.lastName}
               </td>
               <td className="py-3 pr-4">
-                <span
-                  className={`inline-flex rounded-full px-2 py-1 text-xs font-medium ${
-                    order.status === "DELIVERED"
-                      ? "bg-green-100 text-green-700"
-                      : order.status === "SHIPPED"
-                        ? "bg-blue-100 text-blue-700"
-                        : order.status === "CANCELLED"
-                          ? "bg-red-100 text-red-700"
-                          : "bg-yellow-100 text-yellow-700"
-                  }`}
-                >
+                <Badge variant={statusVariants[order.status] ?? "warning"}>
                   {order.status}
-                </span>
+                </Badge>
               </td>
-              <td className="py-3 text-right font-medium text-slate-900">
+              <td className="py-3 text-right font-semibold text-gray-900">
                 ${order.totalAmount.toFixed(2)}
               </td>
             </tr>
@@ -146,8 +143,8 @@ function LowStockAlert() {
   if (isLoading) {
     return (
       <div className="animate-pulse space-y-3">
-        {[...Array(3)].map((_, i) => (
-          <div key={i} className="h-10 rounded bg-slate-100" />
+        {Array.from({ length: 3 }).map((_, i) => (
+          <div key={i} className="h-10 rounded-xl bg-gray-100" />
         ))}
       </div>
     );
@@ -155,9 +152,12 @@ function LowStockAlert() {
 
   if (!products?.length) {
     return (
-      <p className="py-4 text-center text-sm text-slate-500">
-        All products well stocked
-      </p>
+      <div className="flex flex-col items-center py-8">
+        <div className="h-12 w-12 rounded-full bg-green-100 flex items-center justify-center">
+          <Package className="h-6 w-6 text-green-600" />
+        </div>
+        <p className="mt-3 text-sm font-medium text-gray-600">All products well stocked</p>
+      </div>
     );
   }
 
@@ -166,20 +166,22 @@ function LowStockAlert() {
       {products.map((product) => (
         <div
           key={product.id}
-          className="flex items-center justify-between rounded-lg bg-red-50 px-4 py-3"
+          className="flex items-center justify-between rounded-xl bg-red-50 px-4 py-3 transition-colors hover:bg-red-100"
         >
           <div className="flex items-center gap-3">
-            <AlertTriangle className="h-5 w-5 text-red-500" />
+            <div className="h-10 w-10 rounded-lg bg-red-100 flex items-center justify-center">
+              <AlertTriangle className="h-5 w-5 text-red-500" />
+            </div>
             <div>
-              <p className="text-sm font-medium text-slate-900">{product.name}</p>
-              <p className="text-xs text-slate-500">SKU: {product.sku}</p>
+              <p className="text-sm font-semibold text-gray-900">{product.name}</p>
+              <p className="text-xs text-gray-500">SKU: {product.sku}</p>
             </div>
           </div>
           <div className="text-right">
             <p className="text-sm font-bold text-red-600">
               {product.stockQuantity} left
             </p>
-            <p className="text-xs text-slate-500">
+            <p className="text-xs text-gray-500">
               Min: {product.lowStockThreshold}
             </p>
           </div>
@@ -196,8 +198,8 @@ export default function AdminDashboard() {
     <div className="space-y-8">
       {/* Page Header */}
       <div>
-        <h1 className="text-2xl font-bold text-slate-900">Dashboard</h1>
-        <p className="mt-1 text-sm text-slate-500">
+        <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
+        <p className="mt-1 text-sm text-gray-500">
           Welcome back! Here&apos;s what&apos;s happening with your store.
         </p>
       </div>
@@ -216,103 +218,111 @@ export default function AdminDashboard() {
           change={stats?.revenue.growthPercent}
           changeLabel="vs last month"
           icon={DollarSign}
-          iconColor="text-green-500"
-          iconBg="bg-green-50"
+          iconColor="text-green-600"
+          iconBg="bg-green-100"
         />
         <StatCard
           title="Orders"
           value={isLoading ? "..." : stats?.orders.total ?? 0}
           icon={ShoppingCart}
-          iconColor="text-blue-500"
-          iconBg="bg-blue-50"
+          iconColor="text-blue-600"
+          iconBg="bg-blue-100"
         />
         <StatCard
           title="Products"
           value={isLoading ? "..." : stats?.products.active ?? 0}
           icon={Package}
-          iconColor="text-purple-500"
-          iconBg="bg-purple-50"
+          iconColor="text-purple-600"
+          iconBg="bg-purple-100"
         />
         <StatCard
           title="Customers"
           value={isLoading ? "..." : stats?.customers.total ?? 0}
           icon={Users}
-          iconColor="text-orange-500"
-          iconBg="bg-orange-50"
+          iconColor="text-orange-600"
+          iconBg="bg-orange-100"
         />
       </div>
 
       {/* Secondary Stats */}
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+        <Card>
           <div className="flex items-center justify-between">
-            <p className="text-sm font-medium text-slate-500">Today&apos;s Revenue</p>
-            <DollarSign className="h-5 w-5 text-slate-400" />
+            <p className="text-sm font-semibold text-gray-500">Today&apos;s Revenue</p>
+            <div className="h-10 w-10 rounded-xl bg-green-100 flex items-center justify-center">
+              <DollarSign className="h-5 w-5 text-green-600" />
+            </div>
           </div>
-          <p className="mt-2 text-2xl font-bold text-slate-900">
+          <p className="mt-3 text-2xl font-bold text-gray-900">
             ${(stats?.revenue.today ?? 0).toFixed(2)}
           </p>
-        </div>
-        <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+        </Card>
+        <Card>
           <div className="flex items-center justify-between">
-            <p className="text-sm font-medium text-slate-500">Pending Orders</p>
-            <ShoppingCart className="h-5 w-5 text-slate-400" />
+            <p className="text-sm font-semibold text-gray-500">Pending Orders</p>
+            <div className="h-10 w-10 rounded-xl bg-amber-100 flex items-center justify-center">
+              <ShoppingCart className="h-5 w-5 text-amber-600" />
+            </div>
           </div>
-          <p className="mt-2 text-2xl font-bold text-yellow-600">
+          <p className="mt-3 text-2xl font-bold text-amber-600">
             {stats?.orders.pending ?? 0}
           </p>
-        </div>
-        <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+        </Card>
+        <Card>
           <div className="flex items-center justify-between">
-            <p className="text-sm font-medium text-slate-500">Low Stock Items</p>
-            <AlertTriangle className="h-5 w-5 text-slate-400" />
+            <p className="text-sm font-semibold text-gray-500">Low Stock Items</p>
+            <div className="h-10 w-10 rounded-xl bg-red-100 flex items-center justify-center">
+              <AlertTriangle className="h-5 w-5 text-red-600" />
+            </div>
           </div>
-          <p className="mt-2 text-2xl font-bold text-red-600">
+          <p className="mt-3 text-2xl font-bold text-red-600">
             {stats?.products.lowStock ?? 0}
           </p>
-        </div>
-        <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+        </Card>
+        <Card>
           <div className="flex items-center justify-between">
-            <p className="text-sm font-medium text-slate-500">Email Subscribers</p>
-            <Mail className="h-5 w-5 text-slate-400" />
+            <p className="text-sm font-semibold text-gray-500">Email Subscribers</p>
+            <div className="h-10 w-10 rounded-xl bg-primary-100 flex items-center justify-center">
+              <Mail className="h-5 w-5 text-primary-600" />
+            </div>
           </div>
-          <p className="mt-2 text-2xl font-bold text-slate-900">
+          <p className="mt-3 text-2xl font-bold text-gray-900">
             {stats?.subscribers.activeEmail ?? 0}
           </p>
-        </div>
+        </Card>
       </div>
 
       {/* Content Grid */}
       <div className="grid gap-6 lg:grid-cols-2">
         {/* Recent Orders */}
-        <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+        <Card>
           <div className="mb-6 flex items-center justify-between">
-            <h2 className="text-lg font-semibold text-slate-900">Recent Orders</h2>
+            <h2 className="text-lg font-bold text-gray-900">Recent Orders</h2>
             <Link
               href="/admin/orders"
-              className="flex items-center gap-1 text-sm font-medium text-primary-600 hover:text-primary-700"
+              className="flex items-center gap-1 text-sm font-semibold text-primary-600 hover:text-primary-700 transition-colors"
             >
               View all
               <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
           <RecentOrdersTable />
-        </div>
+        </Card>
 
         {/* Low Stock Alert */}
-        <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+        <Card>
           <div className="mb-6 flex items-center justify-between">
-            <h2 className="text-lg font-semibold text-slate-900">Low Stock Alert</h2>
+            <h2 className="text-lg font-bold text-gray-900">Low Stock Alert</h2>
             <Link
               href="/admin/products"
-              className="flex items-center gap-1 text-sm font-medium text-primary-600 hover:text-primary-700"
+              className="flex items-center gap-1 text-sm font-semibold text-primary-600 hover:text-primary-700 transition-colors"
             >
               Manage inventory
               <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
           <LowStockAlert />
-        </div>
+        </Card>
       </div>
     </div>
   );

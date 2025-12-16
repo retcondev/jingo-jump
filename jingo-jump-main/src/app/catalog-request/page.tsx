@@ -1,11 +1,9 @@
 "use client";
 
-import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { NavBar, SiteFooter } from "../_components/landing";
-import { Mail, Phone, MapPin, CheckCircle, BookOpen, Truck, DollarSign } from "lucide-react";
+import { Mail, Phone, CheckCircle, BookOpen, Truck, DollarSign } from "lucide-react";
 
 export default function CatalogRequestPage() {
   const [formData, setFormData] = useState({
@@ -66,7 +64,7 @@ export default function CatalogRequestPage() {
       <NavBar />
 
       {/* Hero Section */}
-      <section className="relative pt-[140px] pb-20 px-6 bg-gradient-to-br from-primary-500 via-primary-600 to-primary-700 overflow-hidden">
+      <section className="relative pt-[140px] pb-20 px-6 bg-linear-to-br from-primary-500 via-primary-600 to-primary-700 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 right-20 w-72 h-72 bg-white rounded-full blur-3xl"></div>
           <div className="absolute bottom-10 left-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
@@ -91,11 +89,11 @@ export default function CatalogRequestPage() {
                 key={benefit.title}
                 className="flex items-start gap-4 p-6 bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300"
               >
-                <div className="flex-shrink-0 w-12 h-12 bg-primary-500/10 rounded-xl flex items-center justify-center">
+                <div className="shrink-0 w-12 h-12 bg-primary-500/10 rounded-xl flex items-center justify-center">
                   <benefit.icon className="w-6 h-6 text-primary-500" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg text-[#1a1a1a] mb-1">{benefit.title}</h3>
+                  <h3 className="font-semibold text-lg text-neutral-900 mb-1">{benefit.title}</h3>
                   <p className="text-gray-600 text-sm">{benefit.description}</p>
                 </div>
               </div>
@@ -112,7 +110,7 @@ export default function CatalogRequestPage() {
               <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <CheckCircle className="w-10 h-10 text-green-500" />
               </div>
-              <h2 className="text-3xl font-bold text-[#1a1a1a] mb-4">Thank You!</h2>
+              <h2 className="text-3xl font-bold text-neutral-900 mb-4">Thank You!</h2>
               <p className="text-gray-600 mb-8 max-w-md mx-auto">
                 Your catalog request has been received. We&apos;ll send your free catalog within 5-7 business days.
               </p>
@@ -126,7 +124,7 @@ export default function CatalogRequestPage() {
           ) : (
             <>
               <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold text-[#1a1a1a] mb-4">
+                <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
                   Fill Out Your Information
                 </h2>
                 <p className="text-gray-600">
@@ -137,7 +135,7 @@ export default function CatalogRequestPage() {
               <form onSubmit={handleSubmit} className="space-y-8">
                 {/* Personal Information */}
                 <div className="bg-gray-50 rounded-2xl p-8">
-                  <h3 className="text-xl font-semibold text-[#1a1a1a] mb-6">Personal Information</h3>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-6">Personal Information</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -207,7 +205,7 @@ export default function CatalogRequestPage() {
 
                 {/* Mailing Address */}
                 <div className="bg-gray-50 rounded-2xl p-8">
-                  <h3 className="text-xl font-semibold text-[#1a1a1a] mb-6">Mailing Address</h3>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-6">Mailing Address</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="md:col-span-2">
                       <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -278,7 +276,7 @@ export default function CatalogRequestPage() {
 
                 {/* Business Information */}
                 <div className="bg-gray-50 rounded-2xl p-8">
-                  <h3 className="text-xl font-semibold text-[#1a1a1a] mb-6">
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-6">
                     Additional Information
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -366,7 +364,7 @@ export default function CatalogRequestPage() {
               </div>
               <div>
                 <p className="text-sm text-gray-500">Call Us</p>
-                <a href="tel:1-800-546-4648" className="font-semibold text-[#1a1a1a] hover:text-primary-500 transition-colors">
+                <a href="tel:1-800-546-4648" className="font-semibold text-neutral-900 hover:text-primary-500 transition-colors">
                   1-800-546-4648
                 </a>
               </div>
@@ -377,7 +375,7 @@ export default function CatalogRequestPage() {
               </div>
               <div>
                 <p className="text-sm text-gray-500">Email Us</p>
-                <a href="mailto:info@jingojump.com" className="font-semibold text-[#1a1a1a] hover:text-primary-500 transition-colors">
+                <a href="mailto:info@jingojump.com" className="font-semibold text-neutral-900 hover:text-primary-500 transition-colors">
                   info@jingojump.com
                 </a>
               </div>

@@ -6,7 +6,6 @@ import {
   Package,
   ChevronRight,
   ChevronLeft,
-  Search,
   ShoppingBag,
 } from "lucide-react";
 import { api } from "~/trpc/react";

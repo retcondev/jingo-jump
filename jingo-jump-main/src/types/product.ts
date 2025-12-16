@@ -1,14 +1,116 @@
+import { z } from "zod";
+import { type Prisma } from "../../generated/prisma";
+
+// Badge schema for safe validation
+export const BadgeSchema = z.enum(["NEW", "POPULAR", "SALE"]);
+export type Badge = z.infer<typeof BadgeSchema>;
+
+// Helper to safely parse badge values from database
+export function parseBadge(value: unknown): Badge | null {
+  const result = BadgeSchema.safeParse(value);
+  return result.success ? result.data : null;
+}
+
+// Product type compatible with both mock data and database
 export interface Product {
-  id: number;
+  id: number | string;
   name: string;
   category: string;
   description: string;
   price: number;
   image?: string;
-  gradient: string;
-  badge?: "NEW" | "POPULAR" | "SALE";
-  size?: string;
-  ageRange?: string;
+  gradient?: string | null;
+  badge?: Badge | null;
+  slug?: string;
+  salePrice?: number | null;
+  images?: Array<{ id: string; url: string; alt?: string | null }>;
+
+  // ============ PRODUCT SPECIFICATIONS ============
+  // Common specs (all product types)
+  modelNumber?: string | null;
+  size?: string | null;
+  weight?: number | null;
+  warranty?: string | null;
+
+  // Inflatable specs (bouncers, slides, combos, obstacle courses)
+  pieces?: number | null;
+  blowers?: number | null;
+  operators?: number | null;
+  riders?: string | null;
+  indoor?: boolean | null;
+  outdoor?: boolean | null;
+
+  // Motor/Blower specs
+  power?: string | null;
+  voltage?: string | null;
+  frequency?: string | null;
+  phase?: string | null;
+  rpm?: number | null;
+  amps?: number | null;
+
+  // Legacy fields (backward compatibility)
+  ageRange?: string | null;
+  dimensions?: string | null;
+  // ============ END SPECIFICATIONS ============
+
+  // Other fields
+  stockQuantity?: number;
+  metaTitle?: string | null;
+  metaDescription?: string | null;
+}
+
+// Database product type derived from Prisma schema with images relation
+export type DBProduct = Prisma.ProductGetPayload<{
+  include: { images: true };
+}>;
+
+// Helper to convert DB product to Product for components
+export function dbProductToProduct(dbProduct: DBProduct): Product {
+  return {
+    id: dbProduct.id,
+    name: dbProduct.name,
+    category: dbProduct.category ?? "Uncategorized",
+    description: dbProduct.description ?? "",
+    price: dbProduct.price,
+    image: dbProduct.images[0]?.url,
+    gradient: dbProduct.gradient,
+    badge: parseBadge(dbProduct.badge),
+    slug: dbProduct.slug,
+    salePrice: dbProduct.salePrice,
+    images: dbProduct.images,
+
+    // ============ PRODUCT SPECIFICATIONS ============
+    // Common specs
+    modelNumber: dbProduct.modelNumber,
+    size: dbProduct.size,
+    weight: dbProduct.weight,
+    warranty: dbProduct.warranty,
+
+    // Inflatable specs
+    pieces: dbProduct.pieces,
+    blowers: dbProduct.blowers,
+    operators: dbProduct.operators,
+    riders: dbProduct.riders,
+    indoor: dbProduct.indoor,
+    outdoor: dbProduct.outdoor,
+
+    // Motor/Blower specs
+    power: dbProduct.power,
+    voltage: dbProduct.voltage,
+    frequency: dbProduct.frequency,
+    phase: dbProduct.phase,
+    rpm: dbProduct.rpm,
+    amps: dbProduct.amps,
+
+    // Legacy fields
+    ageRange: dbProduct.ageRange,
+    dimensions: dbProduct.dimensions,
+    // ============ END SPECIFICATIONS ============
+
+    stockQuantity: dbProduct.stockQuantity,
+    metaTitle: dbProduct.metaTitle,
+    metaDescription: dbProduct.metaDescription,
+  };
 }
 
 export interface FilterOptions {

@@ -1,0 +1,417 @@
+{
+  "id": 29944,
+  "name": "Balloon Combo 3",
+  "slug": "balloon-combo-3",
+  "permalink": "https://jingojump.com/product/balloon-combo-3/",
+  "date_created": "2024-05-26T14:12:49",
+  "date_created_gmt": "2024-05-26T14:12:49",
+  "date_modified": "2025-11-28T23:34:11",
+  "date_modified_gmt": "2025-11-28T23:34:11",
+  "type": "simple",
+  "status": "publish",
+  "featured": true,
+  "catalog_visibility": "visible",
+  "description": "",
+  "short_description": "<table style=\"width: 240px;\" border=\"0\" cellspacing=\"2\" cellpadding=\"0\">\n<tbody>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Model #</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">MBC10</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Sizes</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">13&#8242; H x 10&#8242; W x 24&#8242; L</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Weight (lbs):</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">245</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Pices</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">1</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Blowers</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">1</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Operators</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">1</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Riders</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">10-12</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Indoor</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">Yes</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Outdoor</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">Yes</span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Warranty:</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">12 Months</span></td>\n</tr>\n</tbody>\n</table>\n<p><strong><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: medium;\">Unit includes</span></strong></p>\n<p><img class=\"alignnone size-full wp-image-5488\" src=\"https://www.jingojump.com/wp-content/uploads/2020/04/accesories21.jpg\" alt=\"\" width=\"270\" height=\"54\" /><br />\n<a href=\"https://www.jingojump.com/product-videos-2/\"><img class=\"alignnone size-full wp-image-7758\" src=\"https://www.jingojump.com/wp-content/uploads/2021/03/video_product21.jpg\" alt=\"\" width=\"120\" height=\"69\" /></a></p>\n",
+  "sku": "80",
+  "price": "1795",
+  "regular_price": "1895",
+  "sale_price": "1795",
+  "date_on_sale_from": null,
+  "date_on_sale_from_gmt": null,
+  "date_on_sale_to": null,
+  "date_on_sale_to_gmt": null,
+  "on_sale": true,
+  "purchasable": true,
+  "total_sales": 0,
+  "virtual": false,
+  "downloadable": true,
+  "downloads": [],
+  "download_limit": -1,
+  "download_expiry": -1,
+  "external_url": "",
+  "button_text": "",
+  "tax_status": "taxable",
+  "tax_class": "",
+  "manage_stock": false,
+  "stock_quantity": null,
+  "backorders": "no",
+  "backorders_allowed": false,
+  "backordered": false,
+  "low_stock_amount": null,
+  "sold_individually": false,
+  "weight": "360",
+  "dimensions": {
+    "length": "",
+    "width": "",
+    "height": ""
+  },
+  "shipping_required": true,
+  "shipping_taxable": true,
+  "shipping_class": "bouncers",
+  "shipping_class_id": 87,
+  "reviews_allowed": false,
+  "average_rating": "0.00",
+  "rating_count": 0,
+  "upsell_ids": [],
+  "cross_sell_ids": [],
+  "parent_id": 0,
+  "purchase_note": "",
+  "categories": [
+    {
+      "id": 20,
+      "name": "uncategorized",
+      "slug": "uncategorized"
+    }
+  ],
+  "brands": [],
+  "tags": [],
+  "images": [
+    {
+      "id": 28007,
+      "date_created": "2024-05-23T12:38:22",
+      "date_created_gmt": "2024-05-23T12:38:22",
+      "date_modified": "2024-05-26T14:12:52",
+      "date_modified_gmt": "2024-05-26T14:12:52",
+      "src": "https://jingojump.com/wp-content/uploads/2024/05/inflatables_bln_combo3-02.jpg",
+      "name": "inflatables_bln_combo3-02.jpg",
+      "alt": "",
+      "srcset": "https://jingojump.com/wp-content/uploads/2024/05/inflatables_bln_combo3-02.jpg 700w, https://jingojump.com/wp-content/uploads/2024/05/inflatables_bln_combo3-02-430x325.jpg 430w, https://jingojump.com/wp-content/uploads/2024/05/inflatables_bln_combo3-02-150x113.jpg 150w, https://jingojump.com/wp-content/uploads/2024/05/inflatables_bln_combo3-02-397x300.jpg 397w",
+      "sizes": "(max-width: 700px) 100vw, 700px",
+      "thumbnail": "https://jingojump.com/wp-content/uploads/2024/05/inflatables_bln_combo3-02-430x325.jpg"
+    },
+    {
+      "id": 28009,
+      "date_created": "2024-05-23T12:38:22",
+      "date_created_gmt": "2024-05-23T12:38:22",
+      "date_modified": "2024-05-23T12:38:22",
+      "date_modified_gmt": "2024-05-23T12:38:22",
+      "src": "https://jingojump.com/wp-content/uploads/2024/05/basket_ball_inflatables_for_sale18-1.jpg",
+      "name": "basket_ball_inflatables_for_sale18-1.jpg",
+      "alt": "",
+      "srcset": "https://jingojump.com/wp-content/uploads/2024/05/basket_ball_inflatables_for_sale18-1.jpg 700w, https://jingojump.com/wp-content/uploads/2024/05/basket_ball_inflatables_for_sale18-1-430x325.jpg 430w, https://jingojump.com/wp-content/uploads/2024/05/basket_ball_inflatables_for_sale18-1-150x113.jpg 150w, https://jingojump.com/wp-content/uploads/2024/05/basket_ball_inflatables_for_sale18-1-397x300.jpg 397w",
+      "sizes": "(max-width: 700px) 100vw, 700px",
+      "thumbnail": "https://jingojump.com/wp-content/uploads/2024/05/basket_ball_inflatables_for_sale18-1-430x325.jpg"
+    },
+    {
+      "id": 28010,
+      "date_created": "2024-05-23T12:38:23",
+      "date_created_gmt": "2024-05-23T12:38:23",
+      "date_modified": "2024-05-23T12:38:23",
+      "date_modified_gmt": "2024-05-23T12:38:23",
+      "src": "https://jingojump.com/wp-content/uploads/2024/05/inflatables_bln_combo3.jpg",
+      "name": "inflatables_bln_combo3.jpg",
+      "alt": "",
+      "srcset": "https://jingojump.com/wp-content/uploads/2024/05/inflatables_bln_combo3.jpg 700w, https://jingojump.com/wp-content/uploads/2024/05/inflatables_bln_combo3-430x325.jpg 430w, https://jingojump.com/wp-content/uploads/2024/05/inflatables_bln_combo3-150x113.jpg 150w, https://jingojump.com/wp-content/uploads/2024/05/inflatables_bln_combo3-397x300.jpg 397w",
+      "sizes": "(max-width: 700px) 100vw, 700px",
+      "thumbnail": "https://jingojump.com/wp-content/uploads/2024/05/inflatables_bln_combo3-430x325.jpg"
+    }
+  ],
+  "attributes": [],
+  "default_attributes": [],
+  "variations": [],
+  "grouped_products": [],
+  "menu_order": 74,
+  "price_html": "<del aria-hidden=\"true\"><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;</span>1,895.00</bdi></span></del> <span class=\"screen-reader-text\">Original price was: &#036;1,895.00.</span><ins aria-hidden=\"true\"><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;</span>1,795.00</bdi></span></ins><span class=\"screen-reader-text\">Current price is: &#036;1,795.00.</span>",
+  "related_ids": [
+    30070,
+    29955,
+    29933,
+    30125,
+    30001
+  ],
+  "meta_data": [
+    {
+      "id": 40439,
+      "key": "_wpb_vc_js_status",
+      "value": "false"
+    },
+    {
+      "id": 40440,
+      "key": "_yoast_wpseo_primary_product_cat",
+      "value": "58"
+    },
+    {
+      "id": 40441,
+      "key": "_yoast_wpseo_content_score",
+      "value": "60"
+    },
+    {
+      "id": 40442,
+      "key": "_yoast_wpseo_title",
+      "value": "Balloon Combo 3 - commercial Inflatable jumper for sale | Jingo Jump, Inc - USA"
+    },
+    {
+      "id": 40443,
+      "key": "_yoast_wpseo_metadesc",
+      "value": "This Balloon Combo 3 is on sale online from Jingo Jump, Inc in USA. This combo is perfect for kids summer activities."
+    },
+    {
+      "id": 40444,
+      "key": "_yoast_wpseo_metakeywords",
+      "value": "commercial bouncer manufacturer, commercial bounce house for sale, commercial Inflatable manufacturer, bounce houses wholesale, jumpers for sale, commercial grade bounce house, inflatable bouncers for sale, jumper for sale commercial inflatables for sale, commercial jumpers for sale, inflatable jumpers for sale"
+    },
+    {
+      "id": 40445,
+      "key": "_yoast_wpseo_focuskw_text_input",
+      "value": "Inflatable combo jumper for sale"
+    },
+    {
+      "id": 40446,
+      "key": "_yoast_wpseo_focuskw",
+      "value": "Inflatable combo jumper for sale"
+    },
+    {
+      "id": 40447,
+      "key": "_yoast_wpseo_linkdex",
+      "value": "34"
+    },
+    {
+      "id": 40448,
+      "key": "_wp_page_template",
+      "value": "default"
+    },
+    {
+      "id": 40449,
+      "key": "_yoast_wpseo_estimated-reading-time-minutes",
+      "value": ""
+    },
+    {
+      "id": 40450,
+      "key": "_yoast_indexnow_last_ping",
+      "value": "1716419101"
+    },
+    {
+      "id": 40451,
+      "key": "redux-metabox-section",
+      "value": ""
+    },
+    {
+      "id": 40452,
+      "key": "product-hot-flash",
+      "value": ""
+    },
+    {
+      "id": 40453,
+      "key": "product-hot-time",
+      "value": ""
+    },
+    {
+      "id": 40454,
+      "key": "cmplz_hide_cookiebanner",
+      "value": ""
+    },
+    {
+      "id": 40455,
+      "key": "_yoast_wpseo_wordproof_timestamp",
+      "value": ""
+    },
+    {
+      "id": 40456,
+      "key": "_yoast_wpseo_inclusive_language_score",
+      "value": ""
+    },
+    {
+      "id": 40457,
+      "key": "_yoast_wpseo_focuskeywords",
+      "value": ""
+    },
+    {
+      "id": 40458,
+      "key": "_yoast_wpseo_keywordsynonyms",
+      "value": ""
+    },
+    {
+      "id": 40459,
+      "key": "woo_feed_availability_date",
+      "value": ""
+    },
+    {
+      "id": 289872,
+      "key": "_wc_gla_synced_at",
+      "value": "1764373291"
+    },
+    {
+      "id": 289873,
+      "key": "_wc_gla_sync_status",
+      "value": "synced"
+    },
+    {
+      "id": 289874,
+      "key": "_wc_gla_visibility",
+      "value": "sync-and-show"
+    },
+    {
+      "id": 289875,
+      "key": "_wc_gla_google_ids",
+      "value": {
+        "US": "online:en:US:gla_29944"
+      }
+    },
+    {
+      "id": 304036,
+      "key": "_wc_gla_notification_status",
+      "value": "updated"
+    },
+    {
+      "id": 309440,
+      "key": "_wc_gla_mc_status",
+      "value": "disapproved"
+    },
+    {
+      "id": 311972,
+      "key": "_elementor_page_assets",
+      "value": []
+    }
+  ],
+  "stock_status": "outofstock",
+  "has_options": false,
+  "post_password": "",
+  "global_unique_id": "",
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.5 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Balloon Combo 3 - commercial Inflatable jumper for sale | Jingo Jump, Inc - USA</title>\n<meta name=\"description\" content=\"This Balloon Combo 3 is on sale online from Jingo Jump, Inc in USA. This combo is perfect for kids summer activities.\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://jingojump.com/product/balloon-combo-3/\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:locale\" content=\"en_US\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:type\" content=\"article\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:title\" content=\"Balloon Combo 3 - commercial Inflatable jumper for sale | Jingo Jump, Inc - USA\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:description\" content=\"This Balloon Combo 3 is on sale online from Jingo Jump, Inc in USA. This combo is perfect for kids summer activities.\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:url\" content=\"https://jingojump.com/product/balloon-combo-3/\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:site_name\" content=\"Jingo Jump\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"article:modified_time\" content=\"2025-11-28T23:34:11+00:00\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:image\" content=\"https://jingojump.com/wp-content/uploads/2024/05/inflatables_bln_combo3-02.jpg\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:width\" content=\"700\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:height\" content=\"529\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" class=\"yoast-seo-meta-tag\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://jingojump.com/product/balloon-combo-3/\",\"url\":\"https://jingojump.com/product/balloon-combo-3/\",\"name\":\"Balloon Combo 3 - commercial Inflatable jumper for sale | Jingo Jump, Inc - USA\",\"isPartOf\":{\"@id\":\"https://jingojump.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://jingojump.com/product/balloon-combo-3/#primaryimage\"},\"image\":{\"@id\":\"https://jingojump.com/product/balloon-combo-3/#primaryimage\"},\"thumbnailUrl\":\"https://jingojump.com/wp-content/uploads/2024/05/inflatables_bln_combo3-02.jpg\",\"datePublished\":\"2024-05-26T14:12:49+00:00\",\"dateModified\":\"2025-11-28T23:34:11+00:00\",\"description\":\"This Balloon Combo 3 is on sale online from Jingo Jump, Inc in USA. This combo is perfect for kids summer activities.\",\"breadcrumb\":{\"@id\":\"https://jingojump.com/product/balloon-combo-3/#breadcrumb\"},\"inLanguage\":\"en\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://jingojump.com/product/balloon-combo-3/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"en\",\"@id\":\"https://jingojump.com/product/balloon-combo-3/#primaryimage\",\"url\":\"https://jingojump.com/wp-content/uploads/2024/05/inflatables_bln_combo3-02.jpg\",\"contentUrl\":\"https://jingojump.com/wp-content/uploads/2024/05/inflatables_bln_combo3-02.jpg\",\"width\":700,\"height\":529},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://jingojump.com/product/balloon-combo-3/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://jingojump.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Shop\",\"item\":\"https://jingojump.com/shop/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Balloon Combo 3\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://jingojump.com/#website\",\"url\":\"https://jingojump.com/\",\"name\":\"Jingo Jump\",\"description\":\"Inflatable Bouncers for sale\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://jingojump.com/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+    "title": "Balloon Combo 3 - commercial Inflatable jumper for sale | Jingo Jump, Inc - USA",
+    "description": "This Balloon Combo 3 is on sale online from Jingo Jump, Inc in USA. This combo is perfect for kids summer activities.",
+    "robots": {
+      "index": "index",
+      "follow": "follow",
+      "max-snippet": "max-snippet:-1",
+      "max-image-preview": "max-image-preview:large",
+      "max-video-preview": "max-video-preview:-1"
+    },
+    "canonical": "https://jingojump.com/product/balloon-combo-3/",
+    "og_locale": "en_US",
+    "og_type": "article",
+    "og_title": "Balloon Combo 3 - commercial Inflatable jumper for sale | Jingo Jump, Inc - USA",
+    "og_description": "This Balloon Combo 3 is on sale online from Jingo Jump, Inc in USA. This combo is perfect for kids summer activities.",
+    "og_url": "https://jingojump.com/product/balloon-combo-3/",
+    "og_site_name": "Jingo Jump",
+    "article_modified_time": "2025-11-28T23:34:11+00:00",
+    "og_image": [
+      {
+        "width": 700,
+        "height": 529,
+        "url": "https://jingojump.com/wp-content/uploads/2024/05/inflatables_bln_combo3-02.jpg",
+        "type": "image/jpeg"
+      }
+    ],
+    "twitter_card": "summary_large_image",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://jingojump.com/product/balloon-combo-3/",
+          "url": "https://jingojump.com/product/balloon-combo-3/",
+          "name": "Balloon Combo 3 - commercial Inflatable jumper for sale | Jingo Jump, Inc - USA",
+          "isPartOf": {
+            "@id": "https://jingojump.com/#website"
+          },
+          "primaryImageOfPage": {
+            "@id": "https://jingojump.com/product/balloon-combo-3/#primaryimage"
+          },
+          "image": {
+            "@id": "https://jingojump.com/product/balloon-combo-3/#primaryimage"
+          },
+          "thumbnailUrl": "https://jingojump.com/wp-content/uploads/2024/05/inflatables_bln_combo3-02.jpg",
+          "datePublished": "2024-05-26T14:12:49+00:00",
+          "dateModified": "2025-11-28T23:34:11+00:00",
+          "description": "This Balloon Combo 3 is on sale online from Jingo Jump, Inc in USA. This combo is perfect for kids summer activities.",
+          "breadcrumb": {
+            "@id": "https://jingojump.com/product/balloon-combo-3/#breadcrumb"
+          },
+          "inLanguage": "en",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://jingojump.com/product/balloon-combo-3/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "ImageObject",
+          "inLanguage": "en",
+          "@id": "https://jingojump.com/product/balloon-combo-3/#primaryimage",
+          "url": "https://jingojump.com/wp-content/uploads/2024/05/inflatables_bln_combo3-02.jpg",
+          "contentUrl": "https://jingojump.com/wp-content/uploads/2024/05/inflatables_bln_combo3-02.jpg",
+          "width": 700,
+          "height": 529
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://jingojump.com/product/balloon-combo-3/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jingojump.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shop",
+              "item": "https://jingojump.com/shop/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Balloon Combo 3"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://jingojump.com/#website",
+          "url": "https://jingojump.com/",
+          "name": "Jingo Jump",
+          "description": "Inflatable Bouncers for sale",
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://jingojump.com/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en"
+        }
+      ]
+    }
+  },
+  "google_listings_and_ads__channel_visibility": {
+    "is_visible": true,
+    "channel_visibility": "sync-and-show",
+    "sync_status": "synced",
+    "issues": []
+  },
+  "_links": {
+    "self": [
+      {
+        "href": "https://jingojump.com/wp-json/wc/v3/products/29944",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://jingojump.com/wp-json/wc/v3/products"
+      }
+    ]
+  }
+}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const bannerSlides = [
@@ -28,7 +29,9 @@ const bannerSlides = [
     cta: "Save Up to 50%",
     alt: "Clearance sale items"
   }
-];
+] as const;
+
+type BannerSlide = (typeof bannerSlides)[number];
 
 export function TrendingNow() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -55,8 +58,22 @@ export function TrendingNow() {
   };
 
   // Get previous and next slide indices
-  const prevSlide = (currentSlide - 1 + bannerSlides.length) % bannerSlides.length;
-  const nextSlide = (currentSlide + 1) % bannerSlides.length;
+  const prevSlideIndex = (currentSlide - 1 + bannerSlides.length) % bannerSlides.length;
+  const nextSlideIndex = (currentSlide + 1) % bannerSlides.length;
+
+  // Get slide data with type-safe fallback
+  const getSlide = (index: number): BannerSlide => {
+    const slide = bannerSlides[index];
+    if (!slide) {
+      // This should never happen with our modulo logic, but satisfies TypeScript
+      return bannerSlides[0];
+    }
+    return slide;
+  };
+
+  const prevSlideData = getSlide(prevSlideIndex);
+  const currentSlideData = getSlide(currentSlide);
+  const nextSlideData = getSlide(nextSlideIndex);
 
   return (
     <section id="trending-now" className="pt-6 pb-12 px-6 bg-white overflow-hidden">
@@ -67,25 +84,30 @@ export function TrendingNow() {
             className="absolute left-0 w-[35%] h-[400px] rounded-xl overflow-hidden shadow-lg transition-all duration-700 cursor-pointer opacity-60 hover:opacity-80 z-0"
             onClick={goToPrevious}
           >
-            <img
+            <Image
               className="w-full h-full object-cover"
-              src={bannerSlides[prevSlide].image}
-              alt={bannerSlides[prevSlide].alt}
+              src={prevSlideData.image}
+              alt={prevSlideData.alt}
+              fill
+              sizes="35vw"
             />
             <div className="absolute inset-0 bg-black/40" />
           </div>
 
           {/* Current Slide (Center) */}
           <div className="relative w-[55%] h-[500px] rounded-2xl overflow-hidden shadow-2xl transition-all duration-700 z-10 mx-4">
-            <img
+            <Image
               className="w-full h-full object-cover"
-              src={bannerSlides[currentSlide].image}
-              alt={bannerSlides[currentSlide].alt}
+              src={currentSlideData.image}
+              alt={currentSlideData.alt}
+              fill
+              sizes="55vw"
+              priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col items-center justify-end pb-16">
-              <h2 className="text-5xl font-bold text-white mb-6">{bannerSlides[currentSlide].title}</h2>
+            <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent flex flex-col items-center justify-end pb-16">
+              <h2 className="text-5xl font-bold text-white mb-6">{currentSlideData.title}</h2>
               <button className="bg-primary-500 text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-primary-600 transition shadow-lg">
-                {bannerSlides[currentSlide].cta}
+                {currentSlideData.cta}
               </button>
             </div>
           </div>
@@ -95,10 +117,12 @@ export function TrendingNow() {
             className="absolute right-0 w-[35%] h-[400px] rounded-xl overflow-hidden shadow-lg transition-all duration-700 cursor-pointer opacity-60 hover:opacity-80 z-0"
             onClick={goToNext}
           >
-            <img
+            <Image
               className="w-full h-full object-cover"
-              src={bannerSlides[nextSlide].image}
-              alt={bannerSlides[nextSlide].alt}
+              src={nextSlideData.image}
+              alt={nextSlideData.alt}
+              fill
+              sizes="35vw"
             />
             <div className="absolute inset-0 bg-black/40" />
           </div>
@@ -109,7 +133,7 @@ export function TrendingNow() {
             className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg transition z-20"
             aria-label="Previous slide"
           >
-            <ChevronLeft className="w-6 h-6 text-[#1a1a1a]" />
+            <ChevronLeft className="w-6 h-6 text-neutral-900" />
           </button>
 
           <button
@@ -117,7 +141,7 @@ export function TrendingNow() {
             className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg transition z-20"
             aria-label="Next slide"
           >
-            <ChevronRight className="w-6 h-6 text-[#1a1a1a]" />
+            <ChevronRight className="w-6 h-6 text-neutral-900" />
           </button>
 
           {/* Dots Navigation */}

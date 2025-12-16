@@ -7,12 +7,9 @@ generator client {
 }
 
 datasource db {
-    provider = "sqlite"
-    // NOTE: When using mysql or sqlserver, uncomment the @db.Text annotations in model Account below
-    // Further reading:
-    // https://next-auth.js.org/adapters/prisma#create-the-prisma-schema
-    // https://www.prisma.io/docs/reference/api-reference/prisma-schema-reference#string
-    url      = env("DATABASE_URL")
+    provider  = "postgresql"
+    url       = env("DATABASE_URL")
+    directUrl = env("DIRECT_URL")
 }
 
 // ============ USER & AUTH ============
@@ -90,6 +87,28 @@ model Post {
     @@index([name])
 }
 
+// ============ CATEGORIES ============
+
+model Category {
+    id          String  @id @default(cuid())
+    name        String  @unique
+    slug        String  @unique
+    description String?
+    image       String?
+    position    Int     @default(0)
+    featured    Boolean @default(false)
+
+    // Relations
+    products Product[]
+
+    // Timestamps
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+
+    @@index([slug])
+    @@index([position])
+}
+
 // ============ PRODUCTS ============
 
 enum ProductStatus {
@@ -111,8 +130,10 @@ model Product {
     costPrice Float? // For profit tracking
 
     // Categorization
-    category    String
-    subcategory String?
+    categoryId       String?
+    categoryRelation Category? @relation(fields: [categoryId], references: [id])
+    category         String?   // Legacy - will be removed after migration
+    subcategory      String?
 
     // Inventory
     stockQuantity     Int     @default(0)
@@ -123,11 +144,34 @@ model Product {
     images   ProductImage[]
     gradient String? // For display styling
 
-    // Attributes
-    size       String?
-    ageRange   String?
-    weight     Float? // For shipping calculation
-    dimensions String? // LxWxH
+    // ============ PRODUCT SPECIFICATIONS ============
+    // Common specs (all product types)
+    modelNumber String? // Model # or Item #
+    size        String? // Dimensions like "14' H x 23' L x 11' W"
+    weight      Float?  // Unit weight in lbs (from HTML table, NOT shipping weight)
+    warranty    String? // e.g., "12 Months", "6 Months"
+
+    // Inflatable specs (bouncers, slides, combos, obstacle courses)
+    pieces    Int?     // Number of pieces
+    blowers   Int?     // Number of blowers required
+    operators Int?     // Number of operators needed
+    riders    String?  // Capacity like "4-6" or "8-10"
+    indoor    Boolean? // Can be used indoors
+    outdoor   Boolean? // Can be used outdoors
+
+    // Motor/Blower specs
+    power     String? // e.g., "1 HP", "1.5 HP"
+    voltage   String? // e.g., "115 V"
+    frequency String? // e.g., "60 HZ"
+    phase     String? // e.g., "Single"
+    rpm       Int?    // e.g., 3350
+    amps      Float?  // e.g., 7.5
+
+    // Legacy fields (keep for backward compatibility during migration)
+    ageRange   String? // Deprecated - use riders instead
+    dimensions String? // Deprecated - use size instead
+
+    // ============ END SPECIFICATIONS ============
 
     // Status
     status   ProductStatus @default(DRAFT)
@@ -146,7 +190,7 @@ model Product {
     updatedAt   DateTime  @updatedAt
     publishedAt DateTime?
 
-    @@index([category])
+    @@index([categoryId])
     @@index([status])
     @@index([sku])
 }

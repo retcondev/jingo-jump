@@ -172,11 +172,11 @@ export default function CheckoutPage() {
       billingAddress: sameAsShipping ? undefined : billingAddress,
       sameAsShipping,
       items: items.map((item) => ({
-        productId: item.product.id,
+        productId: String(item.product.id),
         name: item.product.name,
         price: item.product.price,
         quantity: item.quantity,
-        sku: item.product.id,
+        sku: String(item.product.id),
       })),
       customerNotes: customerNotes || undefined,
       paymentMethod: "test",
@@ -225,7 +225,7 @@ export default function CheckoutPage() {
       <main className="max-w-7xl mx-auto px-4 py-8">
         {/* Test Mode Banner */}
         <div className="mb-6 p-4 bg-yellow-50 border border-yellow-200 rounded-xl flex items-start gap-3">
-          <AlertCircle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" />
+          <AlertCircle className="w-5 h-5 text-yellow-600 shrink-0 mt-0.5" />
           <div>
             <p className="font-semibold text-yellow-800">Test Mode</p>
             <p className="text-sm text-yellow-700">
@@ -381,7 +381,7 @@ export default function CheckoutPage() {
               {/* Error Message */}
               {createOrderMutation.error && (
                 <div className="p-4 bg-red-50 border border-red-200 rounded-xl flex items-start gap-3">
-                  <AlertCircle className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                  <AlertCircle className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
                   <p className="text-sm text-red-700">{createOrderMutation.error.message}</p>
                 </div>
               )}
@@ -590,7 +590,7 @@ function OrderSummary({
   items,
   totalPrice,
 }: {
-  items: Array<{ product: { id: string; name: string; price: number; image?: string; gradient?: string }; quantity: number }>;
+  items: Array<{ product: { id: string | number; name: string; price: number; image?: string; gradient?: string | null }; quantity: number }>;
   totalPrice: number;
 }) {
   return (
@@ -599,7 +599,7 @@ function OrderSummary({
       <div className="space-y-3 max-h-80 overflow-y-auto">
         {items.map((item) => (
           <div key={item.product.id} className="flex gap-3">
-            <div className="w-16 h-16 rounded-lg flex-shrink-0 flex items-center justify-center bg-white border border-slate-200">
+            <div className="w-16 h-16 rounded-lg shrink-0 flex items-center justify-center bg-white border border-slate-200">
               {item.product.image ? (
                 <Image
                   src={item.product.image}

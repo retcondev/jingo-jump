@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
+import Image from "next/image";
 import { ChevronLeft, ChevronRight, Play } from "lucide-react";
 
 // Video categories with their respective videos
@@ -93,7 +94,7 @@ export function extractYouTubeId(url: string): string | null {
 
   for (const pattern of patterns) {
     const match = url.match(pattern);
-    if (match) return match[1];
+    if (match?.[1]) return match[1];
   }
   return null;
 }
@@ -116,6 +117,17 @@ export function VideoCarousel() {
     }
   }, [activeCategory]);
 
+  const scrollToIndex = useCallback((index: number) => {
+    if (carouselRef.current) {
+      const cardWidth = carouselRef.current.scrollWidth / videos.length;
+      carouselRef.current.scrollTo({
+        left: cardWidth * index,
+        behavior: "smooth",
+      });
+    }
+    setActiveIndex(index);
+  }, [videos.length]);
+
   // Auto-scroll functionality
   useEffect(() => {
     if (isPaused || playingVideo) return;
@@ -126,18 +138,7 @@ export function VideoCarousel() {
     }, 4000); // Auto-scroll every 4 seconds
 
     return () => clearInterval(interval);
-  }, [activeIndex, isPaused, playingVideo, videos.length]);
-
-  const scrollToIndex = (index: number) => {
-    if (carouselRef.current) {
-      const cardWidth = carouselRef.current.scrollWidth / videos.length;
-      carouselRef.current.scrollTo({
-        left: cardWidth * index,
-        behavior: "smooth",
-      });
-    }
-    setActiveIndex(index);
-  };
+  }, [activeIndex, isPaused, playingVideo, videos.length, scrollToIndex]);
 
   const handlePrev = () => {
     const newIndex = activeIndex > 0 ? activeIndex - 1 : videos.length - 1;
@@ -225,7 +226,7 @@ export function VideoCarousel() {
             {videos.map((video, index) => (
               <div
                 key={`${activeCategory}-${index}`}
-                className="flex-shrink-0 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] snap-center"
+                className="shrink-0 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] snap-center"
               >
                 <div className="bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-primary-500 transition-all duration-300 group shadow-lg hover:shadow-xl">
                   {/* Video Thumbnail / Player */}
@@ -241,10 +242,12 @@ export function VideoCarousel() {
                     ) : (
                       <>
                         {/* YouTube Thumbnail */}
-                        <img
+                        <Image
                           src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`}
                           alt={video.title}
-                          className="w-full h-full object-cover"
+                          fill
+                          className="object-cover"
+                          unoptimized
                           onError={(e) => {
                             // Fallback to medium quality thumbnail if maxres doesn't exist
                             (e.target as HTMLImageElement).src = `https://img.youtube.com/vi/${video.id}/mqdefault.jpg`;

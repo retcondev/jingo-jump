@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { featuredLooks } from "./data";
 
 export function ShopTheLook() {
@@ -11,8 +12,8 @@ export function ShopTheLook() {
               key={look.title}
               className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition"
             >
-              <div className="h-72 overflow-hidden">
-                <img className="w-full h-full object-cover" src={look.image} alt={look.title} />
+              <div className="relative h-72 overflow-hidden">
+                <Image className="w-full h-full object-cover" src={look.image} alt={look.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-neutral-900 mb-2">{look.title}</h3>

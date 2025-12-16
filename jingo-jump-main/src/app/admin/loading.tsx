@@ -9,7 +9,7 @@ export default function AdminLoading() {
 
       {/* Stats Cards Skeleton */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-        {[...Array(4)].map((_, i) => (
+        {Array.from({ length: 4 }).map((_, i) => (
           <div
             key={i}
             className="bg-white rounded-xl p-6 shadow-sm border border-slate-200"
@@ -36,7 +36,7 @@ export default function AdminLoading() {
         </div>
 
         {/* Table Rows */}
-        {[...Array(5)].map((_, i) => (
+        {Array.from({ length: 5 }).map((_, i) => (
           <div
             key={i}
             className="border-b border-slate-100 px-6 py-4 flex items-center gap-6"

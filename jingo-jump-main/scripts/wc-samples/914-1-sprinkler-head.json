@@ -1,0 +1,559 @@
+{
+  "id": 30425,
+  "name": "Sprinkler Head",
+  "slug": "sprinkler-head",
+  "permalink": "https://jingojump.com/product/sprinkler-head/",
+  "date_created": "2024-05-26T14:13:48",
+  "date_created_gmt": "2024-05-26T14:13:48",
+  "date_modified": "2025-11-11T22:44:26",
+  "date_modified_gmt": "2025-11-11T22:44:26",
+  "type": "simple",
+  "status": "publish",
+  "featured": false,
+  "catalog_visibility": "visible",
+  "description": "",
+  "short_description": "<p>Plastic Sprinkler Head</p>\n<table style=\"width: 240px;\" border=\"0\" cellspacing=\"2\" cellpadding=\"0\">\n<tbody>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Pieces:</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">3 </span></td>\n</tr>\n<tr>\n<td height=\"23\"><span style=\"font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\"><strong>Price:</strong></span></td>\n<td height=\"23\"><span style=\"color: #003366; font-family: Arial,Helvetica,Geneva,Swiss,SunSans-Regular; font-size: small;\">$35.00 </span></td>\n</tr>\n</tbody>\n</table>\n",
+  "sku": "914-1",
+  "price": "20",
+  "regular_price": "20",
+  "sale_price": "",
+  "date_on_sale_from": null,
+  "date_on_sale_from_gmt": null,
+  "date_on_sale_to": null,
+  "date_on_sale_to_gmt": null,
+  "on_sale": false,
+  "purchasable": true,
+  "total_sales": 16,
+  "virtual": false,
+  "downloadable": true,
+  "downloads": [],
+  "download_limit": -1,
+  "download_expiry": -1,
+  "external_url": "",
+  "button_text": "",
+  "tax_status": "taxable",
+  "tax_class": "",
+  "manage_stock": false,
+  "stock_quantity": null,
+  "backorders": "no",
+  "backorders_allowed": false,
+  "backordered": false,
+  "low_stock_amount": null,
+  "sold_individually": false,
+  "weight": "1",
+  "dimensions": {
+    "length": "",
+    "width": "",
+    "height": ""
+  },
+  "shipping_required": true,
+  "shipping_taxable": true,
+  "shipping_class": "accessories",
+  "shipping_class_id": 99,
+  "reviews_allowed": false,
+  "average_rating": "0.00",
+  "rating_count": 0,
+  "upsell_ids": [],
+  "cross_sell_ids": [],
+  "parent_id": 0,
+  "purchase_note": "",
+  "categories": [
+    {
+      "id": 118,
+      "name": "ACCESSORIES",
+      "slug": "accessories"
+    }
+  ],
+  "brands": [],
+  "tags": [],
+  "images": [
+    {
+      "id": 33157,
+      "date_created": "2025-05-23T21:42:52",
+      "date_created_gmt": "2025-05-23T21:42:52",
+      "date_modified": "2025-05-23T21:42:52",
+      "date_modified_gmt": "2025-05-23T21:42:52",
+      "src": "https://jingojump.com/wp-content/uploads/2024/05/sprinkler_head02.jpg",
+      "name": "sprinkler_head02",
+      "alt": "",
+      "srcset": "https://jingojump.com/wp-content/uploads/2024/05/sprinkler_head02.jpg 799w, https://jingojump.com/wp-content/uploads/2024/05/sprinkler_head02-397x300.jpg 397w, https://jingojump.com/wp-content/uploads/2024/05/sprinkler_head02-768x581.jpg 768w, https://jingojump.com/wp-content/uploads/2024/05/sprinkler_head02-430x325.jpg 430w, https://jingojump.com/wp-content/uploads/2024/05/sprinkler_head02-700x529.jpg 700w, https://jingojump.com/wp-content/uploads/2024/05/sprinkler_head02-150x113.jpg 150w",
+      "sizes": "(max-width: 799px) 100vw, 799px",
+      "thumbnail": "https://jingojump.com/wp-content/uploads/2024/05/sprinkler_head02-430x325.jpg"
+    },
+    {
+      "id": 28820,
+      "date_created": "2024-05-23T12:41:39",
+      "date_created_gmt": "2024-05-23T12:41:39",
+      "date_modified": "2024-05-26T14:13:51",
+      "date_modified_gmt": "2024-05-26T14:13:51",
+      "src": "https://jingojump.com/wp-content/uploads/2024/05/sprinkler_head.jpg",
+      "name": "sprinkler_head.jpg",
+      "alt": "",
+      "srcset": "https://jingojump.com/wp-content/uploads/2024/05/sprinkler_head.jpg 799w, https://jingojump.com/wp-content/uploads/2024/05/sprinkler_head-430x325.jpg 430w, https://jingojump.com/wp-content/uploads/2024/05/sprinkler_head-150x113.jpg 150w, https://jingojump.com/wp-content/uploads/2024/05/sprinkler_head-700x529.jpg 700w, https://jingojump.com/wp-content/uploads/2024/05/sprinkler_head-397x300.jpg 397w, https://jingojump.com/wp-content/uploads/2024/05/sprinkler_head-768x581.jpg 768w",
+      "sizes": "(max-width: 799px) 100vw, 799px",
+      "thumbnail": "https://jingojump.com/wp-content/uploads/2024/05/sprinkler_head-430x325.jpg"
+    }
+  ],
+  "attributes": [],
+  "default_attributes": [],
+  "variations": [],
+  "grouped_products": [],
+  "menu_order": 198,
+  "price_html": "<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;</span>20.00</bdi></span>",
+  "related_ids": [
+    30544,
+    30320,
+    30426,
+    30315,
+    30313
+  ],
+  "meta_data": [
+    {
+      "id": 51211,
+      "key": "_wpb_vc_js_status",
+      "value": ""
+    },
+    {
+      "id": 51212,
+      "key": "_yoast_wpseo_primary_product_cat",
+      "value": ""
+    },
+    {
+      "id": 51213,
+      "key": "_yoast_wpseo_content_score",
+      "value": "60"
+    },
+    {
+      "id": 51214,
+      "key": "_yoast_wpseo_title",
+      "value": "Sprinkler Head - Accessories | Jingo Jump, Inc - Los Angeles"
+    },
+    {
+      "id": 51215,
+      "key": "_yoast_wpseo_metadesc",
+      "value": "Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller."
+    },
+    {
+      "id": 51216,
+      "key": "_yoast_wpseo_metakeywords",
+      "value": "Misting Hose, jumping castles, jumping castles for kids, kids jumping castles, bouncers, bouncers for kids, los angeles, USA ,jingo jumpmedium castle, bouncers, bouncers for kids, los angeles, usa"
+    },
+    {
+      "id": 51217,
+      "key": "_yoast_wpseo_focuskw_text_input",
+      "value": ""
+    },
+    {
+      "id": 51220,
+      "key": "_wp_page_template",
+      "value": "default"
+    },
+    {
+      "id": 51221,
+      "key": "_yoast_wpseo_estimated-reading-time-minutes",
+      "value": "1"
+    },
+    {
+      "id": 51222,
+      "key": "_yoast_indexnow_last_ping",
+      "value": ""
+    },
+    {
+      "id": 51223,
+      "key": "redux-metabox-section",
+      "value": ""
+    },
+    {
+      "id": 51224,
+      "key": "product-hot-flash",
+      "value": ""
+    },
+    {
+      "id": 51225,
+      "key": "product-hot-time",
+      "value": ""
+    },
+    {
+      "id": 51226,
+      "key": "cmplz_hide_cookiebanner",
+      "value": ""
+    },
+    {
+      "id": 51227,
+      "key": "_yoast_wpseo_wordproof_timestamp",
+      "value": ""
+    },
+    {
+      "id": 51229,
+      "key": "_yoast_wpseo_focuskeywords",
+      "value": ""
+    },
+    {
+      "id": 51230,
+      "key": "_yoast_wpseo_keywordsynonyms",
+      "value": ""
+    },
+    {
+      "id": 51231,
+      "key": "woo_feed_availability_date",
+      "value": ""
+    },
+    {
+      "id": 51232,
+      "key": "_oembed_cfd45353b04886d4cd7e1efa19930544",
+      "value": ""
+    },
+    {
+      "id": 51233,
+      "key": "_oembed_time_cfd45353b04886d4cd7e1efa19930544",
+      "value": ""
+    },
+    {
+      "id": 253507,
+      "key": "woodmart_price_unit_of_measure",
+      "value": ""
+    },
+    {
+      "id": 253508,
+      "key": "woodmart_fbt_bundles_id",
+      "value": [
+        ""
+      ]
+    },
+    {
+      "id": 253509,
+      "key": "_ppcp_button_position",
+      "value": "bottom"
+    },
+    {
+      "id": 253510,
+      "key": "woodmart_total_stock_quantity",
+      "value": ""
+    },
+    {
+      "id": 253512,
+      "key": "_product_360_image_gallery",
+      "value": ""
+    },
+    {
+      "id": 253513,
+      "key": "_woodmart_whb_header",
+      "value": "none"
+    },
+    {
+      "id": 253514,
+      "key": "_woodmart_main_layout",
+      "value": "default"
+    },
+    {
+      "id": 253515,
+      "key": "_woodmart_sidebar_width",
+      "value": "default"
+    },
+    {
+      "id": 253516,
+      "key": "_woodmart_custom_sidebar",
+      "value": "none"
+    },
+    {
+      "id": 253517,
+      "key": "_woodmart_new_label",
+      "value": ""
+    },
+    {
+      "id": 253518,
+      "key": "_woodmart_new_label_date",
+      "value": ""
+    },
+    {
+      "id": 253519,
+      "key": "_woodmart_swatches_attribute",
+      "value": ""
+    },
+    {
+      "id": 253520,
+      "key": "_woodmart_related_off",
+      "value": ""
+    },
+    {
+      "id": 253521,
+      "key": "_woodmart_exclude_show_single_variation",
+      "value": ""
+    },
+    {
+      "id": 253522,
+      "key": "_woodmart_product_video",
+      "value": ""
+    },
+    {
+      "id": 253523,
+      "key": "_woodmart_product_hashtag",
+      "value": ""
+    },
+    {
+      "id": 253524,
+      "key": "_woodmart_single_product_style",
+      "value": "inherit"
+    },
+    {
+      "id": 253525,
+      "key": "_woodmart_thums_position",
+      "value": "inherit"
+    },
+    {
+      "id": 253526,
+      "key": "_woodmart_extra_content",
+      "value": ""
+    },
+    {
+      "id": 253527,
+      "key": "_woodmart_extra_position",
+      "value": "after"
+    },
+    {
+      "id": 253528,
+      "key": "_woodmart_product_design",
+      "value": "inherit"
+    },
+    {
+      "id": 253529,
+      "key": "_woodmart_product-background",
+      "value": ""
+    },
+    {
+      "id": 253530,
+      "key": "_woodmart_hide_tabs_titles",
+      "value": ""
+    },
+    {
+      "id": 253531,
+      "key": "_woodmart_product_custom_tab_title",
+      "value": ""
+    },
+    {
+      "id": 253532,
+      "key": "_woodmart_product_custom_tab_content_type",
+      "value": "text"
+    },
+    {
+      "id": 253533,
+      "key": "_woodmart_product_custom_tab_content",
+      "value": ""
+    },
+    {
+      "id": 253534,
+      "key": "_woodmart_product_custom_tab_html_block",
+      "value": ""
+    },
+    {
+      "id": 253535,
+      "key": "_woodmart_product_custom_tab_title_2",
+      "value": ""
+    },
+    {
+      "id": 253536,
+      "key": "_woodmart_product_custom_tab_content_type_2",
+      "value": "text"
+    },
+    {
+      "id": 253537,
+      "key": "_woodmart_product_custom_tab_content_2",
+      "value": ""
+    },
+    {
+      "id": 253538,
+      "key": "_woodmart_product_custom_tab_html_block_2",
+      "value": ""
+    },
+    {
+      "id": 253539,
+      "key": "_yoast_wpseo_primary_product_brand",
+      "value": ""
+    },
+    {
+      "id": 290823,
+      "key": "_wc_gla_synced_at",
+      "value": "1764373297"
+    },
+    {
+      "id": 290824,
+      "key": "_wc_gla_sync_status",
+      "value": "synced"
+    },
+    {
+      "id": 290825,
+      "key": "_wc_gla_visibility",
+      "value": "sync-and-show"
+    },
+    {
+      "id": 290826,
+      "key": "_wc_gla_google_ids",
+      "value": {
+        "US": "online:en:US:gla_30425"
+      }
+    },
+    {
+      "id": 293492,
+      "key": "_wc_gla_notification_status",
+      "value": "updated"
+    },
+    {
+      "id": 309678,
+      "key": "_wc_gla_mc_status",
+      "value": "disapproved"
+    }
+  ],
+  "stock_status": "instock",
+  "has_options": false,
+  "post_password": "",
+  "global_unique_id": "",
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v26.5 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Sprinkler Head - Accessories | Jingo Jump, Inc - Los Angeles</title>\n<meta name=\"description\" content=\"Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller.\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://jingojump.com/product/sprinkler-head/\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:locale\" content=\"en_US\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:type\" content=\"article\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:title\" content=\"Sprinkler Head - Accessories | Jingo Jump, Inc - Los Angeles\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:description\" content=\"Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller.\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:url\" content=\"https://jingojump.com/product/sprinkler-head/\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:site_name\" content=\"Jingo Jump\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"article:modified_time\" content=\"2025-11-11T22:44:26+00:00\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:image\" content=\"https://jingojump.com/wp-content/uploads/2024/05/sprinkler_head02.jpg\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:width\" content=\"799\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:height\" content=\"604\" class=\"yoast-seo-meta-tag\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" class=\"yoast-seo-meta-tag\" />\n\t<meta name=\"twitter:data1\" content=\"1 minute\" class=\"yoast-seo-meta-tag\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://jingojump.com/product/sprinkler-head/\",\"url\":\"https://jingojump.com/product/sprinkler-head/\",\"name\":\"Sprinkler Head - Accessories | Jingo Jump, Inc - Los Angeles\",\"isPartOf\":{\"@id\":\"https://jingojump.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://jingojump.com/product/sprinkler-head/#primaryimage\"},\"image\":{\"@id\":\"https://jingojump.com/product/sprinkler-head/#primaryimage\"},\"thumbnailUrl\":\"https://jingojump.com/wp-content/uploads/2024/05/sprinkler_head02.jpg\",\"datePublished\":\"2024-05-26T14:13:48+00:00\",\"dateModified\":\"2025-11-11T22:44:26+00:00\",\"description\":\"Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller.\",\"breadcrumb\":{\"@id\":\"https://jingojump.com/product/sprinkler-head/#breadcrumb\"},\"inLanguage\":\"en\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://jingojump.com/product/sprinkler-head/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"en\",\"@id\":\"https://jingojump.com/product/sprinkler-head/#primaryimage\",\"url\":\"https://jingojump.com/wp-content/uploads/2024/05/sprinkler_head02.jpg\",\"contentUrl\":\"https://jingojump.com/wp-content/uploads/2024/05/sprinkler_head02.jpg\",\"width\":799,\"height\":604},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://jingojump.com/product/sprinkler-head/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://jingojump.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Shop\",\"item\":\"https://jingojump.com/shop/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Sprinkler Head\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://jingojump.com/#website\",\"url\":\"https://jingojump.com/\",\"name\":\"Jingo Jump\",\"description\":\"Inflatable Bouncers for sale\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://jingojump.com/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en\"}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+    "title": "Sprinkler Head - Accessories | Jingo Jump, Inc - Los Angeles",
+    "description": "Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller.",
+    "robots": {
+      "index": "index",
+      "follow": "follow",
+      "max-snippet": "max-snippet:-1",
+      "max-image-preview": "max-image-preview:large",
+      "max-video-preview": "max-video-preview:-1"
+    },
+    "canonical": "https://jingojump.com/product/sprinkler-head/",
+    "og_locale": "en_US",
+    "og_type": "article",
+    "og_title": "Sprinkler Head - Accessories | Jingo Jump, Inc - Los Angeles",
+    "og_description": "Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller.",
+    "og_url": "https://jingojump.com/product/sprinkler-head/",
+    "og_site_name": "Jingo Jump",
+    "article_modified_time": "2025-11-11T22:44:26+00:00",
+    "og_image": [
+      {
+        "width": 799,
+        "height": 604,
+        "url": "https://jingojump.com/wp-content/uploads/2024/05/sprinkler_head02.jpg",
+        "type": "image/jpeg"
+      }
+    ],
+    "twitter_card": "summary_large_image",
+    "twitter_misc": {
+      "Est. reading time": "1 minute"
+    },
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://jingojump.com/product/sprinkler-head/",
+          "url": "https://jingojump.com/product/sprinkler-head/",
+          "name": "Sprinkler Head - Accessories | Jingo Jump, Inc - Los Angeles",
+          "isPartOf": {
+            "@id": "https://jingojump.com/#website"
+          },
+          "primaryImageOfPage": {
+            "@id": "https://jingojump.com/product/sprinkler-head/#primaryimage"
+          },
+          "image": {
+            "@id": "https://jingojump.com/product/sprinkler-head/#primaryimage"
+          },
+          "thumbnailUrl": "https://jingojump.com/wp-content/uploads/2024/05/sprinkler_head02.jpg",
+          "datePublished": "2024-05-26T14:13:48+00:00",
+          "dateModified": "2025-11-11T22:44:26+00:00",
+          "description": "Buy bouncing accessories online from Jingo Jump, Inc, a trusted bouncers manufacturer and seller.",
+          "breadcrumb": {
+            "@id": "https://jingojump.com/product/sprinkler-head/#breadcrumb"
+          },
+          "inLanguage": "en",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://jingojump.com/product/sprinkler-head/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "ImageObject",
+          "inLanguage": "en",
+          "@id": "https://jingojump.com/product/sprinkler-head/#primaryimage",
+          "url": "https://jingojump.com/wp-content/uploads/2024/05/sprinkler_head02.jpg",
+          "contentUrl": "https://jingojump.com/wp-content/uploads/2024/05/sprinkler_head02.jpg",
+          "width": 799,
+          "height": 604
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://jingojump.com/product/sprinkler-head/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jingojump.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shop",
+              "item": "https://jingojump.com/shop/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Sprinkler Head"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://jingojump.com/#website",
+          "url": "https://jingojump.com/",
+          "name": "Jingo Jump",
+          "description": "Inflatable Bouncers for sale",
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://jingojump.com/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en"
+        }
+      ]
+    }
+  },
+  "google_listings_and_ads__channel_visibility": {
+    "is_visible": true,
+    "channel_visibility": "sync-and-show",
+    "sync_status": "synced",
+    "issues": []
+  },
+  "_links": {
+    "self": [
+      {
+        "href": "https://jingojump.com/wp-json/wc/v3/products/30425",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://jingojump.com/wp-json/wc/v3/products"
+      }
+    ]
+  }
+}

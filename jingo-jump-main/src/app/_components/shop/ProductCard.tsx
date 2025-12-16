@@ -11,8 +11,11 @@ interface ProductCardProps {
 
 export function ProductCard({ product }: ProductCardProps) {
   const { addToCart } = useCart();
+  // Use slug if available, otherwise fall back to id
+  const productUrl = product.slug ? `/shop/${product.slug}` : `/shop/${product.id}`;
+
   return (
-    <Link href={`/shop/${product.id}`} className="group block overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(15,23,42,0.15)]">
+    <Link href={productUrl} className="group block overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(15,23,42,0.15)]">
       {/* Product Image */}
       <div className="relative flex h-72 items-center justify-center bg-white">
         {product.badge && (
@@ -35,7 +38,7 @@ export function ProductCard({ product }: ProductCardProps) {
             width={400}
             height={288}
             className="h-full w-full object-contain p-4"
-            priority={product.id <= 3}
+            priority={typeof product.id === "number" && product.id <= 3}
           />
         ) : (
           <span className="text-sm opacity-70">[Product Image]</span>

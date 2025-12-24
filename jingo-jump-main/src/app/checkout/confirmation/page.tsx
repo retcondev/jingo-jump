@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { useSession } from "next-auth/react";
@@ -16,7 +17,7 @@ import {
 } from "lucide-react";
 import { api } from "~/trpc/react";
 
-export default function OrderConfirmationPage() {
+function OrderConfirmationContent() {
   const searchParams = useSearchParams();
   const orderId = searchParams.get("orderId");
   const { data: session } = useSession();
@@ -268,5 +269,17 @@ export default function OrderConfirmationPage() {
         </div>
       </main>
     </div>
+  );
+}
+
+export default function OrderConfirmationPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-slate-50 flex items-center justify-center">
+        <Loader2 className="w-8 h-8 animate-spin text-primary-500" />
+      </div>
+    }>
+      <OrderConfirmationContent />
+    </Suspense>
   );
 }

@@ -40,14 +40,39 @@ const videoCategories = {
     label: "Testimonials",
     videos: [
       {
-        id: "dQw4w9WgXcQ", // Replace with actual testimonial video ID
-        title: "Customer Review - Rental Business Owner",
+        id: "hRxy1OdPjAg",
+        title: "Customer Testimonial",
         description: "Hear from our satisfied customers about their experience",
       },
       {
-        id: "dQw4w9WgXcQ", // Replace with actual testimonial video ID
-        title: "Success Story - Event Planner",
-        description: "How JingoJump inflatables transformed their events",
+        id: "rHyz6ZbPHlA",
+        title: "Customer Success Story",
+        description: "How JingoJump inflatables helped their business",
+      },
+      {
+        id: "A15RqsABZn8",
+        title: "Client Review",
+        description: "Real feedback from our valued customers",
+      },
+      {
+        id: "E7pr-0acJOE",
+        title: "Business Owner Testimonial",
+        description: "See how our products make a difference",
+      },
+      {
+        id: "m2MT_qjx1kU",
+        title: "Customer Experience",
+        description: "Why customers choose JingoJump",
+      },
+      {
+        id: "s8_rLqMGyfU",
+        title: "Product Review",
+        description: "Customer feedback on quality and service",
+      },
+      {
+        id: "hvHIq4_EHoc",
+        title: "Rental Business Success",
+        description: "How JingoJump supports rental businesses",
       },
     ],
   },
@@ -70,14 +95,19 @@ const videoCategories = {
     label: "Light Commercial",
     videos: [
       {
-        id: "dQw4w9WgXcQ", // Replace with actual light commercial video ID
+        id: "eJH1KvoEopc",
         title: "Light Commercial Bounce Houses",
         description: "Perfect for residential use and small events",
       },
       {
-        id: "dQw4w9WgXcQ", // Replace with actual light commercial video ID
+        id: "GwQf8sT6E08",
         title: "Backyard Inflatables Collection",
         description: "Explore our range of backyard-friendly inflatables",
+      },
+      {
+        id: "qs6Qty-06zA",
+        title: "Light Commercial Options",
+        description: "Affordable quality for home and small business use",
       },
     ],
   },
@@ -186,13 +216,18 @@ export function VideoCarousel() {
             <button
               key={key}
               onClick={() => setActiveCategory(key)}
-              className={`px-5 py-2.5 rounded-full font-medium text-sm transition-all duration-300 ${
+              className={`relative px-5 py-2.5 rounded-full font-medium text-sm transition-all duration-300 ${
                 activeCategory === key
                   ? "bg-primary-500 text-white shadow-lg shadow-primary-500/30"
                   : "bg-slate-100 text-slate-600 hover:bg-slate-200 hover:text-slate-900"
               }`}
             >
               {videoCategories[key].label}
+              {key === "howToOrder" && (
+                <span className="absolute -top-4 -right-2 px-2 py-0.5 bg-red-500 text-white text-xs font-semibold rounded-full whitespace-nowrap shadow-md">
+                  Need help?
+                </span>
+              )}
             </button>
           ))}
         </div>
@@ -243,15 +278,11 @@ export function VideoCarousel() {
                       <>
                         {/* YouTube Thumbnail */}
                         <Image
-                          src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`}
+                          src={`https://img.youtube.com/vi/${video.id}/hqdefault.jpg`}
                           alt={video.title}
                           fill
                           className="object-cover"
                           unoptimized
-                          onError={(e) => {
-                            // Fallback to medium quality thumbnail if maxres doesn't exist
-                            (e.target as HTMLImageElement).src = `https://img.youtube.com/vi/${video.id}/mqdefault.jpg`;
-                          }}
                         />
                         {/* Play Button Overlay */}
                         <button

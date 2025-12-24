@@ -16,7 +16,7 @@ import {
 export const metadata: Metadata = {
   title: "About Us | Jingo Jump - Commercial Inflatable Manufacturer",
   description:
-    "Learn about Jingo Jump, your trusted source for commercial-grade bounce houses, water slides, and inflatables. Quality products for rental businesses since 2005.",
+    "Learn about Jingo Jump Inc., one of the nation's leading inflatable manufacturers since 2001. Quality products for rental businesses, commitment to your success.",
 };
 
 export default function AboutPage() {

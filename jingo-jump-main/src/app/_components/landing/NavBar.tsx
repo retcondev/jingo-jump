@@ -68,10 +68,10 @@ const megaMenuData = {
         color: "bg-indigo-50",
         titleColor: "text-indigo-600",
         items: [
-          { label: "Inflatable Insurance", href: "/business-info/insurance" },
+          { label: "Inflatable Insurance", href: "/insurance" },
           { label: "Business Opportunity", href: "/business-info/opportunity" },
           { label: "Manuals and Safety Documents", href: "/business-info/manuals" },
-          { label: "Financing Info", href: "/business-info/financing" },
+          // { label: "Financing Info", href: "/business-info/financing" },
         ],
       },
     ],
@@ -83,7 +83,7 @@ const simpleLinks = [
   { label: "Contact Us", href: "/contact" },
   { label: "About Us", href: "/about" },
   { label: "Video", href: "/video" },
-  { label: "Blog", href: "/blog" },
+  // { label: "Blog", href: "/blog" },
 ];
 
 export function NavBar() {

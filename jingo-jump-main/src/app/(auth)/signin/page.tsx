@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
+import { Loader2 } from "lucide-react";
 import SignInForm from "./SignInForm";
 
 export const metadata: Metadata = {
@@ -9,5 +11,13 @@ export const metadata: Metadata = {
 };
 
 export default function SignInPage() {
-  return <SignInForm />;
+  return (
+    <Suspense fallback={
+      <div className="w-full max-w-md flex items-center justify-center p-8">
+        <Loader2 className="w-8 h-8 animate-spin text-primary-500" />
+      </div>
+    }>
+      <SignInForm />
+    </Suspense>
+  );
 }

@@ -9,6 +9,7 @@ import { ChatBot } from "~/app/_components/ChatBot";
 import { CartProvider } from "~/context/CartContext";
 import { CartDrawer } from "~/app/_components/cart/CartDrawer";
 import { Providers } from "~/app/_components/Providers";
+import { NewsletterPopup } from "~/app/_components/NewsletterPopup";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://jingojump.com"),
@@ -125,6 +126,7 @@ export default function RootLayout({
             <TRPCReactProvider>{children}</TRPCReactProvider>
             <CartDrawer />
             <ChatBot />
+            <NewsletterPopup />
           </CartProvider>
         </Providers>
       </body>

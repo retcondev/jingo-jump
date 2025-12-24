@@ -6,7 +6,7 @@ import { useSearchParams } from "next/navigation";
 import { Grid3x3, List } from "lucide-react";
 import { ProductCard } from "~/app/_components/shop/ProductCard";
 import { FilterSidebar } from "~/app/_components/shop/FilterSidebar";
-import type { Product, FilterOptions } from "~/types/product";
+import { categorizeSizeFromDimensions, type Product, type FilterOptions } from "~/types/product";
 
 type ViewMode = "grid" | "list";
 type SortOption = "featured" | "price-low" | "price-high" | "newest" | "popular";
@@ -60,14 +60,12 @@ export function ShopContent({ products, filterOptions }: ShopContentProps) {
         }
       }
 
-      // Size filter
-      if (selectedSizes.length > 0 && product.size) {
-        const productSizeId = product.size.toLowerCase().replace(/[()]/g, "").replace(/\s+/g, "-");
-        if (!selectedSizes.includes(productSizeId)) {
+      // Size filter - use categorized sizes (small, medium, large)
+      if (selectedSizes.length > 0) {
+        const productSizeCategory = categorizeSizeFromDimensions(product.size);
+        if (!productSizeCategory || !selectedSizes.includes(productSizeCategory)) {
           return false;
         }
-      } else if (selectedSizes.length > 0 && !product.size) {
-        return false;
       }
 
       // Age filter

@@ -4,7 +4,7 @@ import { ChevronRight } from "lucide-react";
 import { ShopContent } from "~/app/shop/_components/ShopContent";
 import { api } from "~/trpc/server";
 import { mockProducts, filterOptions as mockFilterOptions } from "~/data/mockProducts";
-import { parseBadge, type Product } from "~/types/product";
+import { parseBadge, categorizeSizeFromDimensions, type Product } from "~/types/product";
 
 interface ShopPageProps {
   searchParams: Promise<{ search?: string; page?: string }>;
@@ -69,17 +69,31 @@ export default async function ShopPage({ searchParams }: ShopPageProps) {
         api.products.getFilterOptions(),
       ]);
 
+      // Generate size categories from product dimensions
+      const sizeCounts = new Map<string, number>([
+        ["small", 0],
+        ["medium", 0],
+        ["large", 0],
+      ]);
+
+      products.forEach((product) => {
+        const sizeCategory = categorizeSizeFromDimensions(product.size);
+        if (sizeCategory) {
+          sizeCounts.set(sizeCategory, (sizeCounts.get(sizeCategory) ?? 0) + 1);
+        }
+      });
+
       filterOptions = {
         categories: dbCategories.map((c) => ({
           id: c.slug,
           label: c.name,
           count: c.count,
         })),
-        sizes: dbFilterOptions.sizes.map((s) => ({
-          id: s.name.toLowerCase().replace(/[()]/g, "").replace(/\s+/g, "-"),
-          label: s.name,
-          count: s.count,
-        })),
+        sizes: [
+          { id: "small", label: "Small", count: sizeCounts.get("small") ?? 0 },
+          { id: "medium", label: "Medium", count: sizeCounts.get("medium") ?? 0 },
+          { id: "large", label: "Large", count: sizeCounts.get("large") ?? 0 },
+        ].filter((s) => s.count > 0),
         ageRanges: dbFilterOptions.ageRanges.map((a) => ({
           id: a.name.toLowerCase().replace(/[()]/g, "").replace(/\s+/g, "-"),
           label: a.name,
@@ -95,6 +109,29 @@ export default async function ShopPage({ searchParams }: ShopPageProps) {
   // Fallback to mock data if database is empty or errored
   if (!useDatabase) {
     products = mockProducts;
+
+    // Generate size categories for mock data
+    const sizeCounts = new Map<string, number>([
+      ["small", 0],
+      ["medium", 0],
+      ["large", 0],
+    ]);
+
+    products.forEach((product) => {
+      const sizeCategory = categorizeSizeFromDimensions(product.size);
+      if (sizeCategory) {
+        sizeCounts.set(sizeCategory, (sizeCounts.get(sizeCategory) ?? 0) + 1);
+      }
+    });
+
+    filterOptions = {
+      ...mockFilterOptions,
+      sizes: [
+        { id: "small", label: "Small", count: sizeCounts.get("small") ?? 0 },
+        { id: "medium", label: "Medium", count: sizeCounts.get("medium") ?? 0 },
+        { id: "large", label: "Large", count: sizeCounts.get("large") ?? 0 },
+      ].filter((s) => s.count > 0),
+    };
   }
 
   return (

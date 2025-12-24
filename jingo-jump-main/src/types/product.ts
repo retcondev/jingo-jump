@@ -122,3 +122,34 @@ export interface FilterOptions {
     max: number;
   };
 }
+
+// Helper function to categorize product size into Small, Medium, or Large
+export function categorizeSizeFromDimensions(sizeString: string | null | undefined): "small" | "medium" | "large" | null {
+  if (!sizeString) return null;
+
+  // Extract dimensions from string like "15' H x 15' L x 15' W"
+  const regex = /(\d+)'\s*H\s*x\s*(\d+)'\s*L\s*x\s*(\d+)'\s*W/i;
+  const matches = regex.exec(sizeString);
+  if (!matches) return null;
+
+  const height = parseInt(matches[1] ?? "0");
+  const length = parseInt(matches[2] ?? "0");
+  const width = parseInt(matches[3] ?? "0");
+
+  // Calculate volume or use max dimension to categorize
+  const maxDimension = Math.max(height, length, width);
+  const volume = height * length * width;
+
+  // Small: Max dimension <= 15' or volume <= 3000
+  if (maxDimension <= 15 || volume <= 3000) {
+    return "small";
+  }
+
+  // Large: Max dimension >= 25' or volume >= 8000
+  if (maxDimension >= 25 || volume >= 8000) {
+    return "large";
+  }
+
+  // Medium: Everything in between
+  return "medium";
+}

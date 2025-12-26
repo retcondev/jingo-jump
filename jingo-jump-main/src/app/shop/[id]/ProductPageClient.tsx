@@ -17,7 +17,6 @@ import {
   Zap,
   Award,
 } from "lucide-react";
-import { mockProducts } from "~/data/mockProducts";
 import { ProductCard } from "~/app/_components/shop/ProductCard";
 import { ModelViewer } from "~/app/_components/shop/ModelViewer";
 import { useCart } from "~/context/CartContext";
@@ -39,21 +38,8 @@ export default function ProductPageClient({
   const [showAllSpecs, setShowAllSpecs] = useState(false);
   const { addToCart } = useCart();
 
-  // Use initial product from server, or fetch client-side for mock data fallback
-  const product: Product | null = initialProduct ?? (() => {
-    // Check if it's a numeric ID for mock data
-    const isNumericId = /^\d+$/.test(slug);
-    if (isNumericId) {
-      const numericId = parseInt(slug);
-      return mockProducts.find((p) => p.id === numericId) ?? null;
-    }
-    // Try to find by matching name/slug in mock data
-    const slugMatch = mockProducts.find(
-      (p) =>
-        p.name.toLowerCase().replace(/\s+/g, "-") === slug.toLowerCase()
-    );
-    return slugMatch ?? null;
-  })();
+  // Use initial product from server
+  const product: Product | null = initialProduct;
 
   // Get related products from database if we have a DB product
   const { data: relatedFromDb } = api.products.getRelated.useQuery(
@@ -65,7 +51,7 @@ export default function ProductPageClient({
     { enabled: !!product && typeof product.id === "string" }
   );
 
-  // Fallback related products from mock data
+  // Related products from database
   const relatedProducts: Product[] = relatedFromDb
     ? relatedFromDb.map((p) => ({
         id: p.id,
@@ -80,9 +66,7 @@ export default function ProductPageClient({
         ageRange: p.ageRange,
         slug: p.slug,
       }))
-    : mockProducts
-        .filter((p) => p.category === product?.category && p.id !== product?.id)
-        .slice(0, 4);
+    : [];
 
   if (!product) {
     return (

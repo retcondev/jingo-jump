@@ -6,7 +6,6 @@ import Image from "next/image";
 import { Search, User, ShoppingCart, Menu, X, Phone, ChevronDown, LogOut, Settings, LayoutDashboard } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { useSession, signOut } from "next-auth/react";
-import { mockProducts } from "~/data/mockProducts";
 import { useCart } from "~/context/CartContext";
 
 // Mega menu data with colored sections
@@ -102,18 +101,9 @@ export function NavBar() {
 
   const isAdmin = session?.user?.role && ["ADMIN", "MANAGER", "STAFF"].includes(session.user.role);
 
-  // Filter products based on search query
+  // Search functionality disabled - can be re-implemented with API call
   const searchResults = useMemo(() => {
-    if (!searchQuery.trim()) return [];
-    const query = searchQuery.toLowerCase();
-    return mockProducts
-      .filter(
-        (product) =>
-          product.name.toLowerCase().includes(query) ||
-          product.category.toLowerCase().includes(query) ||
-          product.description.toLowerCase().includes(query)
-      )
-      .slice(0, 6); // Limit to 6 results
+    return [];
   }, [searchQuery]);
 
   useEffect(() => {

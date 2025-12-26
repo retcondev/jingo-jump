@@ -3,13 +3,31 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { ProductCard } from "~/app/_components/shop/ProductCard";
-import { mockProducts } from "~/data/mockProducts";
+import { api } from "~/trpc/react";
+import { parseBadge } from "~/types/product";
 
 export function FeaturedProducts() {
-  // Get featured products (products with badges or first 4 products)
-  const featuredProducts = mockProducts
-    .filter(product => product.badge)
-    .slice(0, 4);
+  // Fetch featured products from database
+  const { data: productsData } = api.products.list.useQuery({
+    page: 1,
+    limit: 4,
+    sortBy: "featured",
+  });
+
+  const featuredProducts = productsData?.products.map((p) => ({
+    id: p.id,
+    name: p.name,
+    category: p.categoryRelation?.name ?? "",
+    description: p.description ?? "",
+    price: p.price,
+    image: p.images[0]?.url,
+    gradient: p.gradient,
+    badge: parseBadge(p.badge),
+    size: p.size,
+    ageRange: p.ageRange,
+    slug: p.slug,
+    salePrice: p.salePrice,
+  })) ?? [];
 
   return (
     <section id="featured-products" className="py-20 px-6 bg-white">

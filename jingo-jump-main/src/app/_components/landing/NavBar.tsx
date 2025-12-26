@@ -7,6 +7,7 @@ import { Search, User, ShoppingCart, Menu, X, Phone, ChevronDown, LogOut, Settin
 import { usePathname } from "next/navigation";
 import { useSession, signOut } from "next-auth/react";
 import { useCart } from "~/context/CartContext";
+import type { Product } from "~/types/product";
 
 // Mega menu data with colored sections
 const megaMenuData = {
@@ -102,7 +103,7 @@ export function NavBar() {
   const isAdmin = session?.user?.role && ["ADMIN", "MANAGER", "STAFF"].includes(session.user.role);
 
   // Search functionality disabled - can be re-implemented with API call
-  const searchResults = useMemo(() => {
+  const searchResults = useMemo((): Product[] => {
     return [];
   }, [searchQuery]);
 
@@ -210,7 +211,7 @@ export function NavBar() {
                               >
                                 {/* Product Image */}
                                 <div className="w-14 h-14 rounded-lg overflow-hidden bg-gray-100 shrink-0">
-                                  {product.image ? (
+                                  {product.image && typeof product.image === 'string' ? (
                                     <Image
                                       src={product.image}
                                       alt={product.name}
@@ -231,7 +232,7 @@ export function NavBar() {
                                     {product.category}
                                   </p>
                                   <p className="text-sm font-bold text-primary-500 mt-0.5">
-                                    ${product.price.toLocaleString()}
+                                    ${typeof product.price === 'number' ? product.price.toLocaleString() : product.price}
                                   </p>
                                 </div>
                                 {/* Badge */}
@@ -621,7 +622,7 @@ export function NavBar() {
                           className="flex items-center gap-3 p-3 hover:bg-white transition-colors border-b border-gray-100 last:border-b-0"
                         >
                           <div className="w-12 h-12 rounded-lg overflow-hidden bg-gray-100 shrink-0">
-                            {product.image ? (
+                            {product.image && typeof product.image === 'string' ? (
                               <Image
                                 src={product.image}
                                 alt={product.name}
@@ -638,7 +639,7 @@ export function NavBar() {
                               {product.name}
                             </h4>
                             <p className="text-sm font-bold text-primary-500">
-                              ${product.price.toLocaleString()}
+                              ${typeof product.price === 'number' ? product.price.toLocaleString() : product.price}
                             </p>
                           </div>
                         </Link>

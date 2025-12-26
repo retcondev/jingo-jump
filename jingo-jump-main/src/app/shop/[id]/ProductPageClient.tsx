@@ -30,7 +30,7 @@ interface ProductPageClientProps {
 
 export default function ProductPageClient({
   initialProduct,
-  slug,
+  slug: _slug,
 }: ProductPageClientProps) {
   const [quantity, setQuantity] = useState(1);
   const [selectedImage, setSelectedImage] = useState(0);

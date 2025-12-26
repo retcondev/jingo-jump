@@ -85,6 +85,15 @@ export const authConfig = {
       if (user) {
         token.id = user.id;
         token.role = user.role ?? "CUSTOMER";
+      } else if (token.id) {
+        // Fetch updated role from database on token refresh
+        const dbUser = await db.user.findUnique({
+          where: { id: token.id as string },
+          select: { role: true },
+        });
+        if (dbUser) {
+          token.role = dbUser.role;
+        }
       }
       return token;
     },
